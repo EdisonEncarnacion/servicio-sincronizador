@@ -1,4 +1,3 @@
-// src/types/document.ts
 
 import { RowDataPacket } from 'mysql2';
 

@@ -1,7 +1,7 @@
 import { CronJob } from 'cron';
 
 import { logger } from './utils/logger';
-import { SYNC_INTERVAL_CRON } from './config/index';
+import { SYNC_INTERVAL_CRON } from './config/env';
 import { syncAllTenants } from './services/sync.service';
 
 /* const job = new CronJob(SYNC_INTERVAL_CRON, async () => {

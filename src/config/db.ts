@@ -5,7 +5,7 @@ import {
     DB_USER,
     DB_PASSWORD,
     DB_PRINCIPAL_DATABASE,
-} from './index';
+} from './env';
 
 const COMMON_OPTIONS = {
     host: DB_HOST,

@@ -1,6 +1,6 @@
 import { createTenantConnection } from '../config/db';
 import { logger } from '../utils/logger';
-import { ensureMigrationColumns, listTenants, markMigrated } from './database-service';
+import { ensureMigrationColumns, listTenantsData, markMigrated } from './database-service';
 import {
     fetchNewDocuments,
     fetchUpdatedDocuments,
@@ -8,8 +8,10 @@ import {
 } from './document.service';
 import { sendToExternalApi } from './send-api.service';
 import { determineFinalState } from '../utils/stateHelper';
+import { TenantInfo } from '../types/tenant.interface';
 
-async function processNewDocuments(conn: any, schema: string) {
+async function processNewDocuments(conn: any, tenant: TenantInfo) {
+    const schema = tenant.schemaName;
     const docs = await fetchNewDocuments(conn, schema);
     logger.info(`Tenant ${schema}: ${docs.length} documentos nuevos`);
     for (const doc of docs) {
@@ -21,7 +23,7 @@ async function processNewDocuments(conn: any, schema: string) {
         }
         try {
             logStateChange(doc, schema);
-            const ok = await sendToExternalApi(doc, schema);
+            const ok = await sendToExternalApi(doc, schema, tenant);
             if (ok) {
                 await markMigrated(conn, schema, doc.id);
                 logger.info(`(NEW) Tenant ${schema}: sincronizado ${doc.external_id}`);
@@ -33,7 +35,8 @@ async function processNewDocuments(conn: any, schema: string) {
         }
     }
 }
-async function processUpdatedDocuments(conn: any, schema: string) {
+async function processUpdatedDocuments(conn: any, tenant: TenantInfo) {
+    const schema = tenant.schemaName;
     const docs = await fetchUpdatedDocuments(conn, schema);
     logger.info(`Tenant ${schema}: ${docs.length} documentos actualizados`);
     for (const doc of docs) {
@@ -46,7 +49,7 @@ async function processUpdatedDocuments(conn: any, schema: string) {
 
         try {
             logStateChange(doc, schema);
-            const ok = await sendToExternalApi(doc, schema);
+            const ok = await sendToExternalApi(doc, schema,tenant);
             if (ok) {
                 await markMigrated(conn, schema, doc.id);
                 logger.info(`(UPDATE) Tenant ${schema}: sincronizado ${doc.external_id}`);
@@ -60,21 +63,22 @@ async function processUpdatedDocuments(conn: any, schema: string) {
 }
 
 export async function syncAllTenants() {
-    const tenants = await listTenants();
-    for (const schema of tenants) {
-        logger.info(`**** Tenant: ${schema} ****`);
-        const conn = await createTenantConnection(schema);
+    const tenantsData = await listTenantsData();
+    for (const tenant of tenantsData) {
+        console.log(tenant)
+        const { schemaName } = tenant
+        logger.info(`**** Tenant: ${schemaName} ****`);
+        const conn = await createTenantConnection(schemaName);
         try {
-            await ensureMigrationColumns(conn, schema);
-            await processNewDocuments(conn, schema);
+            await ensureMigrationColumns(conn, schemaName);
+            await processNewDocuments(conn, tenant);
             console.log('_'.repeat(100));
             // await processUpdatedDocuments(conn, schema);
         } catch (prepErr: any) {
-            logger.error(`Tenant ${schema}: error preparación -> ${prepErr.message}`);
+            logger.error(`Tenant ${schemaName}: error preparación -> ${prepErr.message}`);
         } finally {
             await conn.end();
         }
     }
 }
 
-export { listTenants };

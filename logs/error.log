@@ -33,3 +33,22 @@
 2025-04-28T07:20:06.038Z [ERROR]: (NEW) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> getaddrinfo ENOTFOUND tu-api-externa.com
 2025-04-28T07:24:24.405Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> getaddrinfo ENOTFOUND tu-api-externa.com
 2025-04-28T07:24:28.055Z [ERROR]: (NEW) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> getaddrinfo ENOTFOUND tu-api-externa.com
+2025-04-29T15:33:58.417Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:5432
+2025-04-29T15:34:17.097Z [ERROR]: Error general: Table 'smart1.companies' doesn't exist
+2025-04-29T15:40:34.748Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> write EPROTO 803C6B250C7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 112
+
+2025-04-29T15:40:42.148Z [ERROR]: (NEW) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> write EPROTO 803C6B250C7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 112
+
+2025-04-29T15:47:53.558Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> write EPROTO 801CF9FEE87F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 112
+
+2025-04-29T15:48:00.892Z [ERROR]: (NEW) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> write EPROTO 801CF9FEE87F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 112
+
+2025-04-29T21:11:46.159Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-04-29T21:12:35.081Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 400
+2025-04-29T21:13:18.658Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 400
+2025-04-29T21:13:26.168Z [ERROR]: (NEW) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Request failed with status code 500
+2025-04-29T21:23:19.497Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 400
+2025-04-29T21:24:11.555Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 400
+2025-04-29T22:38:27.017Z [ERROR]: Error general: Connection lost: The server closed the connection.
+2025-04-29T22:41:21.918Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 500
+2025-04-29T22:42:40.642Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 500

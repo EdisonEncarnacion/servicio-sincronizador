@@ -1,12 +1,12 @@
 import { RowDataPacket } from 'mysql2';
-import { DocRow } from '../types/document';
+import { DocRow } from '../types/document.interface';
 import { logger } from '../utils/logger';
 
 export async function fetchNewDocuments(
     conn: any,
     schema: string
 ): Promise<DocRow[]> {
-    const sql = `SELECT * FROM \`${schema}\`.documents WHERE migrated = 0`;
+    const sql = `SELECT * FROM \`${schema}\`.documents ` // WHERE migrated = 0 | DESACTIVADO POR PRUEBAS;
     const [rows] = (await conn.execute(sql)) as [RowDataPacket[], any];
     return rows as DocRow[];
 }

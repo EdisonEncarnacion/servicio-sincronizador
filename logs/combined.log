@@ -178,3 +178,216 @@
 2025-04-28T07:24:29.888Z [INFO]: **** Tenant: tenancy_grifodennis ****
 2025-04-28T07:24:31.761Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
 2025-04-28T07:24:31.762Z [INFO]: Sincronización completada
+2025-04-29T15:33:58.383Z [INFO]: Iniciando sincronización
+2025-04-29T15:33:58.417Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:5432
+2025-04-29T15:34:16.269Z [INFO]: Iniciando sincronización
+2025-04-29T15:34:17.097Z [ERROR]: Error general: Table 'smart1.companies' doesn't exist
+2025-04-29T15:40:23.686Z [INFO]: Iniciando sincronización
+2025-04-29T15:40:28.789Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T15:40:31.697Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T15:40:31.698Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T15:40:34.191Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T15:40:34.192Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T15:40:34.192Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T15:40:34.193Z [WARN]: Directorio PDF no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf
+2025-04-29T15:40:34.194Z [WARN]: Directorio CDR no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr
+2025-04-29T15:40:34.194Z [WARN]: Directorio signed no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed
+2025-04-29T15:40:34.194Z [WARN]: Directorio unsigned no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/unsigned
+2025-04-29T15:40:34.748Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> write EPROTO 803C6B250C7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 112
+
+2025-04-29T15:40:34.750Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T15:40:37.126Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T15:40:37.127Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T15:40:39.510Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-04-29T15:40:39.511Z [INFO]: **** Tenant: tenancy_demo ****
+2025-04-29T15:40:41.887Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-04-29T15:40:41.888Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-04-29T15:40:41.888Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-04-29T15:40:42.148Z [ERROR]: (NEW) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> write EPROTO 803C6B250C7F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 112
+
+2025-04-29T15:40:42.149Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-04-29T15:40:44.512Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-04-29T15:40:44.514Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-04-29T15:40:46.895Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-04-29T15:40:46.896Z [INFO]: Sincronización completada
+2025-04-29T15:47:44.088Z [INFO]: Iniciando sincronización
+2025-04-29T15:47:48.478Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T15:47:50.831Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T15:47:50.831Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T15:47:53.196Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T15:47:53.197Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T15:47:53.198Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T15:47:53.200Z [WARN]: Directorio PDF no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf
+2025-04-29T15:47:53.201Z [WARN]: Directorio CDR no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr
+2025-04-29T15:47:53.201Z [WARN]: Directorio signed no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed
+2025-04-29T15:47:53.202Z [WARN]: Directorio unsigned no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/unsigned
+2025-04-29T15:47:53.558Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> write EPROTO 801CF9FEE87F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 112
+
+2025-04-29T15:47:53.559Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T15:47:55.914Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T15:47:55.916Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T15:47:58.279Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-04-29T15:47:58.280Z [INFO]: **** Tenant: tenancy_demo ****
+2025-04-29T15:48:00.647Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-04-29T15:48:00.648Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-04-29T15:48:00.648Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-04-29T15:48:00.892Z [ERROR]: (NEW) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> write EPROTO 801CF9FEE87F0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1605:SSL alert number 112
+
+2025-04-29T15:48:00.893Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-04-29T15:48:03.256Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-04-29T15:48:03.258Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-04-29T15:48:05.635Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-04-29T15:48:05.637Z [INFO]: Sincronización completada
+2025-04-29T21:11:46.126Z [INFO]: Iniciando sincronización
+2025-04-29T21:11:46.159Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-04-29T21:12:25.494Z [INFO]: Iniciando sincronización
+2025-04-29T21:12:30.004Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T21:12:32.483Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T21:12:32.484Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T21:12:34.955Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T21:12:34.956Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T21:12:34.957Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T21:12:34.965Z [WARN]: Directorio PDF no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf
+2025-04-29T21:12:34.965Z [WARN]: Directorio CDR no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr
+2025-04-29T21:12:34.966Z [WARN]: Directorio signed no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed
+2025-04-29T21:12:34.966Z [WARN]: Directorio unsigned no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/unsigned
+2025-04-29T21:12:35.081Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 400
+2025-04-29T21:12:35.082Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T21:12:37.572Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T21:12:37.573Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T21:12:40.118Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-04-29T21:12:40.119Z [INFO]: **** Tenant: tenancy_demo ****
+2025-04-29T21:13:10.459Z [INFO]: Iniciando sincronización
+2025-04-29T21:13:15.065Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T21:13:17.512Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T21:13:17.514Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T21:13:20.004Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T21:13:20.004Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T21:13:20.004Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T21:13:20.006Z [WARN]: Directorio PDF no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf
+2025-04-29T21:13:20.006Z [WARN]: Directorio CDR no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr
+2025-04-29T21:13:20.006Z [WARN]: Directorio signed no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed
+2025-04-29T21:13:20.006Z [WARN]: Directorio unsigned no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/unsigned
+2025-04-29T21:13:18.658Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 400
+2025-04-29T21:13:18.659Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T21:13:21.187Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T21:13:21.188Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T21:13:23.647Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-04-29T21:13:23.649Z [INFO]: **** Tenant: tenancy_demo ****
+2025-04-29T21:13:26.123Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-04-29T21:13:26.123Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-04-29T21:13:26.123Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-04-29T21:13:26.168Z [ERROR]: (NEW) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Request failed with status code 500
+2025-04-29T21:13:26.169Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-04-29T21:13:28.625Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-04-29T21:13:28.626Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-04-29T21:13:31.124Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-04-29T21:13:31.125Z [INFO]: Sincronización completada
+2025-04-29T21:23:09.793Z [INFO]: Iniciando sincronización
+2025-04-29T21:23:14.375Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T21:23:16.908Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T21:23:16.911Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T21:23:19.395Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T21:23:19.396Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T21:23:19.397Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T21:23:19.399Z [WARN]: Directorio PDF no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf
+2025-04-29T21:23:19.399Z [WARN]: Directorio CDR no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr
+2025-04-29T21:23:19.400Z [WARN]: Directorio signed no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed
+2025-04-29T21:23:19.400Z [WARN]: Directorio unsigned no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/unsigned
+2025-04-29T21:23:19.497Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 400
+2025-04-29T21:23:19.498Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T21:23:21.957Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T21:23:21.958Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T21:23:24.435Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-04-29T21:23:24.437Z [INFO]: **** Tenant: tenancy_demo ****
+2025-04-29T21:23:26.916Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-04-29T21:23:26.917Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-04-29T21:23:26.917Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-04-29T21:23:28.462Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-04-29T21:23:28.463Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-04-29T21:23:30.915Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-04-29T21:23:30.916Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-04-29T21:23:33.429Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-04-29T21:23:33.430Z [INFO]: Sincronización completada
+2025-04-29T21:24:03.270Z [INFO]: Iniciando sincronización
+2025-04-29T21:24:06.461Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T21:24:08.990Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T21:24:08.991Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T21:24:11.463Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T21:24:11.464Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T21:24:11.464Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T21:24:11.465Z [WARN]: Directorio PDF no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf
+2025-04-29T21:24:11.465Z [WARN]: Directorio CDR no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr
+2025-04-29T21:24:11.466Z [WARN]: Directorio signed no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed
+2025-04-29T21:24:11.466Z [WARN]: Directorio unsigned no existe: /root/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/unsigned
+2025-04-29T21:24:11.555Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 400
+2025-04-29T21:24:11.555Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T21:24:14.176Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T21:24:14.178Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T21:24:16.642Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-04-29T21:24:16.643Z [INFO]: **** Tenant: tenancy_demo ****
+2025-04-29T21:24:19.123Z [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+2025-04-29T21:24:19.124Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-04-29T22:38:26.759Z [INFO]: Iniciando sincronización
+2025-04-29T22:38:27.017Z [ERROR]: Error general: Connection lost: The server closed the connection.
+2025-04-29T22:38:44.981Z [INFO]: Iniciando sincronización
+2025-04-29T22:38:49.850Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T22:38:52.455Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T22:38:52.457Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T22:38:55.129Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T22:38:55.129Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T22:38:55.130Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T22:38:57.193Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-04-29T22:38:57.194Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T22:38:59.797Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T22:38:59.798Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T22:39:02.407Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-04-29T22:39:02.409Z [INFO]: **** Tenant: tenancy_demo ****
+2025-04-29T22:39:05.009Z [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+2025-04-29T22:39:05.010Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-04-29T22:39:06.181Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-04-29T22:39:06.182Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-04-29T22:39:08.775Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-04-29T22:39:08.776Z [INFO]: Sincronización completada
+2025-04-29T22:41:10.753Z [INFO]: Iniciando sincronización
+2025-04-29T22:41:15.565Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T22:41:18.161Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T22:41:18.162Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T22:41:20.774Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T22:41:20.774Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T22:41:20.774Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T22:41:21.918Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 500
+2025-04-29T22:41:21.919Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T22:41:24.509Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T22:41:24.511Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T22:42:29.476Z [INFO]: Iniciando sincronización
+2025-04-29T22:42:34.344Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T22:42:36.934Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T22:42:36.935Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T22:42:39.580Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T22:42:39.581Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T22:42:39.582Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T22:42:40.642Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 500
+2025-04-29T22:42:40.643Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T22:43:25.532Z [INFO]: Iniciando sincronización
+2025-04-29T22:43:30.342Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-04-29T22:43:32.935Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-04-29T22:43:32.937Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-04-29T22:43:35.598Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-04-29T22:43:35.599Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-04-29T22:43:35.599Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-04-29T22:43:37.147Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-04-29T22:43:37.148Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-04-29T22:43:39.731Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-04-29T22:43:39.732Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-04-29T22:43:42.313Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-04-29T22:43:42.315Z [INFO]: **** Tenant: tenancy_demo ****
+2025-04-29T22:43:43.539Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-04-29T22:43:43.539Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-04-29T22:43:43.539Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-04-29T22:43:45.064Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-04-29T22:43:45.065Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-04-29T22:43:47.659Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-04-29T22:43:47.661Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-04-29T22:43:50.261Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-04-29T22:43:50.262Z [INFO]: Sincronización completada
