@@ -1,6 +1,83 @@
-
 import { RowDataPacket } from 'mysql2';
+export enum Estado {
+    REGISTRADO = '01',
+    ENVIADO = '03',
+    ACEPTADO = '05',
+    OBSERVADO = '07',
+    RECHAZADO = '09',
+    ANULADO = '11',
+    POR_ANULAR = '13',
+    INTERNO = '55',
+}
+export const EstadoDescripcion: Record<string, string> = {
+    [Estado.ACEPTADO]: 'ACEPTADO',
+    [Estado.ANULADO]: 'BAJA',
+    [Estado.RECHAZADO]: 'RECHAZADO',
+    [Estado.REGISTRADO]: 'Registrado',
+    [Estado.ENVIADO]: 'Enviado',
+    [Estado.OBSERVADO]: 'ERROR',
+    [Estado.POR_ANULAR]: 'Por anular',
+    [Estado.INTERNO]: 'Interno',
+};
+export enum Tipo {
+    FACTURA = '01',
+    BOLETA = '03',
+    NOTA_CREDITO = '07',
+    NOTA_DEBITO = '08',
+    GUIA_REMISION = '09',
+    RESUMEN_DIARIO = '10',
+    COMPROBANTE_DE_PAGO_BOLIVIA = '11',
+    COMPROBANTE_DE_PAGO_CHILE = '12',
+    COMPROBANTE_DE_PAGO_COLOMBIA = '13'
+}
 
+interface Customer {
+    location: unknown | null;
+    identity_document_type_id: string;
+    bank_name: string | null;
+    bank_account_number: string | null;
+    identity_document_type: {
+        id: string;
+        description: string;
+    };
+    number: string;
+    name: string;
+    trade_name: string | null;
+    is_driver: boolean;
+    country_id: string;
+    country: {
+        id: string;
+        description: string;
+    };
+    department_id: string;
+    department: {
+        id: string;
+        description: string;
+    };
+    province_id: string;
+    province: {
+        id: string;
+        description: string;
+    };
+    district_id: string;
+    district: {
+        id: string;
+        description: string;
+    };
+    address: string;
+    email: string | null;
+    telephone: string | null;
+    perception_agent: boolean;
+    address_id: string | null;
+    internal_id: string | null;
+    internal_code: string | null;
+    address_type_id: string | null;
+    address_type: {
+        id: string | null;
+        description: string | null;
+    };
+    search_telephone: string | null;
+}
 export interface Document {
     id: number;
     website_id: number | null;
@@ -21,7 +98,7 @@ export interface Document {
     date_of_issue: string;       // ISO date
     time_of_issue: string;       // HH:mm:ss
     customer_id: number;
-    customer: string;
+    customer: Customer;
     currency_type_id: string;
     payment_condition_id: string | null;
     payment_method_type_id: string | null;

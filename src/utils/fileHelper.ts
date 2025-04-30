@@ -2,19 +2,69 @@ import fs from 'fs';
 import path from 'path';
 import { TENANCY_STORAGE_PATH } from '../config/paths';
 import { logger } from '../utils/logger';
-
+import { parseStringPromise } from 'xml2js';
+import unzipper from 'unzipper';
 export type FileStream = {
     key: string;
     stream: fs.ReadStream;
     filename: string;
 };
+/**
+ * @param xmlPath - Ruta al archivo XML del CDR
+ * @returns Objeto con las cuatro marcas temporales o null si no las encuentra.
+ */
+export async function extractCdrTimestampsFromXml(zipPath: string) {
+    try {
+        const directory = await unzipper.Open.file(zipPath);
+        const xmlEntry = directory.files.find(f => f.path.toLowerCase().endsWith('.xml'));
+        if (!xmlEntry) {
+            console.warn('No se encontró XML dentro del ZIP:', zipPath);
+            return null;
+        }
+        const xmlBuffer = await xmlEntry.buffer();
+        const xmlContent = xmlBuffer.toString('utf8');
+        const parsed = await parseStringPromise(xmlContent, {
+            explicitArray: false,
+            tagNameProcessors: [name => name.replace(/^.*:/, '')]
+        });
 
-export function getDocumentFileStreams(
+        const resp = parsed.ApplicationResponse;
+        if (!resp) return null;
+
+        const { IssueDate, IssueTime, ResponseDate, ResponseTime } = resp;
+        if (IssueDate && IssueTime && ResponseDate && ResponseTime) {
+            console.log({responseDate: ResponseDate, responseTime: ResponseTime});
+            return {
+                issueDate: IssueDate,
+                issueTime: IssueTime,
+                responseDate: new Date(ResponseDate),
+                responseTime: new Date(ResponseTime),
+            };
+        }
+        return null;
+    } catch (err) {
+        console.error('Error al extraer timestamps del CDR:', err);
+        return null;
+    }
+}
+
+
+export async function getDocumentFileStreams(
     schema: string,
     identifier: string,
-): FileStream[] {
+): Promise<{
+    streams: FileStream[]
+    urls: {
+        urlCrd: string,
+        urlPdf: string,
+        urlXmlSigned: string,
+    }
+}> {
     const baseDir = path.join(TENANCY_STORAGE_PATH, schema);
     const streams: FileStream[] = [];
+    let urlCrd = '';
+    let urlPdf = '';
+    let urlXmlSigned = '';
 
     // PDF files
     const pdfDir = path.join(baseDir, 'pdf');
@@ -26,12 +76,18 @@ export function getDocumentFileStreams(
         if (pdfFiles.length === 0) {
             logger.warn(`PDF no encontrado en ${pdfDir} para identificador ${identifier}`);
         }
-        pdfFiles.forEach(f =>
-            streams.push({
+
+        pdfFiles.forEach(f => {
+            if (f.startsWith(identifier) && f.endsWith('.pdf')) {
+                urlPdf = path.join(pdfDir, f);
+            }
+            return streams.push({
                 key: 'pdf',
                 stream: fs.createReadStream(path.join(pdfDir, f)),
                 filename: f,
-            }),
+            })
+        }
+
         );
     }
 
@@ -48,12 +104,18 @@ export function getDocumentFileStreams(
         if (cdrFiles.length === 0) {
             logger.warn(`CDR no encontrado en ${cdrDir} para identificador ${identifier}`);
         }
-        cdrFiles.forEach(f =>
-            streams.push({
+        console.log(await extractCdrTimestampsFromXml(path.join(cdrDir, cdrFiles[0])));
+        cdrFiles.forEach(f => {
+            if (f.startsWith(`R-${identifier}`) || f.startsWith(`RA-${identifier}`)) {
+                urlCrd = path.join(cdrDir, f);
+            }
+            return streams.push({
                 key: 'cdr',
                 stream: fs.createReadStream(path.join(cdrDir, f)),
                 filename: f,
-            }),
+            })
+        }
+
         );
     }
 
@@ -67,12 +129,17 @@ export function getDocumentFileStreams(
         if (signedFiles.length === 0) {
             logger.warn(`XML firmado no encontrado en ${signedDir} para identificador ${identifier}`);
         }
-        signedFiles.forEach(f =>
-            streams.push({
+        signedFiles.forEach(f => {
+            if (f.startsWith(identifier) && f.endsWith('.xml')) {
+                urlXmlSigned = path.join(signedDir, f);
+            }
+            return streams.push({
                 key: 'signed',
                 stream: fs.createReadStream(path.join(signedDir, f)),
                 filename: f,
-            }),
+            })
+        }
+
         );
     }
 
@@ -95,5 +162,12 @@ export function getDocumentFileStreams(
         );
     }
 
-    return streams;
+    return {
+        streams,
+        urls: {
+            urlCrd,
+            urlPdf,
+            urlXmlSigned,
+        }
+    };
 }

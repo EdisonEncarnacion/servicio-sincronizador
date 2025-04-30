@@ -1,5 +1,6 @@
-import { Document } from "../types/document.interface";
+import { Document, EstadoDescripcion } from "../types/document.interface";
 import { TenantInfo } from "../types/tenant.interface";
+import { extractCdrTimestampsFromXml } from "../utils/fileHelper";
 export interface UploadPayload {
     id: string;
     fechaPublicacion: Date;
@@ -22,13 +23,32 @@ export interface UploadPayload {
     codigoRespuesta: string;
     descripcionRespuesta: string;
     Sucursal: string;
+    // Totales
+    totalDescuentos: number;
+    totalOtrosCargos: number;
+    totalGravado: number;
+    totalExonerado: number;
+    totalInafecto: number;
+    totalGratuito: number;
+    totalICBPR: number;
+    totalIgv: number;
+    totalIsc: number;
+    totalOtrosTributos: number;
 }
-export function mapDocumentToUploadPayload(
+
+export async function mapDocumentToUploadPayload(
     doc: Document,
-    tenant: TenantInfo
-): UploadPayload {
+    tenant: TenantInfo,
+    urls: {
+        urlCrd: string;
+        urlPdf: string;
+        urlXmlSigned: string;
+    }
+): Promise<UploadPayload> {
+    const dataCdr = await extractCdrTimestampsFromXml(urls.urlCrd);
+
     return {
-        id: doc.external_id,
+        id: `${tenant.ruc}-${doc.document_type_id}-${doc.series}-${doc.number}`,
         fechaPublicacion: doc.created_at ? new Date(doc.created_at) : new Date(),
         fechaCpe: new Date(doc.date_of_issue),
         horaCpe: doc.time_of_issue,
@@ -38,14 +58,14 @@ export function mapDocumentToUploadPayload(
         serieCpe: doc.series,
         numeroCpe: String(doc.number),
         monedaCpe: doc.currency_type_id,
-        tipoDocReceptor: '6',
-        rucReceptor: String(doc.customer_id),
-        nombreReceptor: doc.customer,
+        tipoDocReceptor: doc.customer.identity_document_type_id ?? 'NO ENCONTRADO',
+        rucReceptor: doc.customer.number ?? 'NO ENCONTRADO',
+        nombreReceptor: doc.customer.name ?? JSON.stringify(doc.customer),
         totalCpe: parseFloat(doc.total) || 0,
-        estadoProccess: doc.shipping_status ?? '',
-        estadoCpe: doc.state_type_id,
-        fechaCdr: new Date().toISOString().slice(0, 10),
-        horaCdr: new Date().toTimeString().split(' ')[0],
+        estadoProccess: 'SUCCESS',//doc.shipping_status ?? '',
+        estadoCpe: EstadoDescripcion[doc.state_type_id] ?? '',
+        fechaCdr: dataCdr?.responseDate.toDateString() ?? 'NO ENCONTRADO',
+        horaCdr: dataCdr?.responseTime.toString() ?? 'NO ENCONTRADO',
         codigoRespuesta: doc.soap_shipping_response
             ? JSON.parse(doc.soap_shipping_response).code
             : '',
@@ -53,5 +73,15 @@ export function mapDocumentToUploadPayload(
             ? JSON.parse(doc.soap_shipping_response).description
             : '',
         Sucursal: tenant.name ?? '',
+        totalDescuentos: Number(doc.total_discount),
+        totalOtrosCargos: Number(doc.total_other_taxes),
+        totalGravado: Number(doc.total_taxed),
+        totalExonerado: Number(doc.total_exonerated),
+        totalInafecto: Number(doc.total_unaffected),
+        totalGratuito: Number(doc.total_free),
+        totalICBPR: Number(doc.total_plastic_bag_taxes),
+        totalIgv: Number(doc.total_igv),
+        totalIsc: Number(doc.total_isc),
+        totalOtrosTributos: 0
     };
 }

@@ -8,7 +8,11 @@ export async function fetchNewDocuments(
 ): Promise<DocRow[]> {
     const sql = `SELECT * FROM \`${schema}\`.documents ` // WHERE migrated = 0 | DESACTIVADO POR PRUEBAS;
     const [rows] = (await conn.execute(sql)) as [RowDataPacket[], any];
-    return rows as DocRow[];
+    const rowsFormarted = rows.map((row: any) => {
+        row.customer = JSON.parse(row.customer);
+        return row;
+    })
+    return rowsFormarted as DocRow[];
 }
 
 export async function fetchUpdatedDocuments(

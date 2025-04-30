@@ -52,3 +52,6 @@
 2025-04-29T22:38:27.017Z [ERROR]: Error general: Connection lost: The server closed the connection.
 2025-04-29T22:41:21.918Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 500
 2025-04-29T22:42:40.642Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 500
+2025-04-30T17:36:22.162Z [ERROR]: Error general: Connection lost: The server closed the connection.
+2025-04-30T20:04:56.129Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-04-30T23:02:33.662Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 500
