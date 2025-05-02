@@ -213,6 +213,8 @@ export interface Document {
     migrated: 0 | 1;
     migrated_at?: string | null;
     migrated_updated_at?: string | null;
+    migrated_status_code?: string | null;
+    migrated_document_id?: string | null;
 }
 
 export type DocRow = Document & RowDataPacket;

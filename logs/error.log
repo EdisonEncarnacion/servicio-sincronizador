@@ -55,3 +55,12 @@
 2025-04-30T17:36:22.162Z [ERROR]: Error general: Connection lost: The server closed the connection.
 2025-04-30T20:04:56.129Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
 2025-04-30T23:02:33.662Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Request failed with status code 500
+2025-05-02T17:00:55.650Z [ERROR]: Error general: Connection lost: The server closed the connection.
+2025-05-02T17:02:28.486Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T17:03:23.204Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T17:04:49.052Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T17:05:27.283Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T18:13:14.496Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Request failed with status code 404
+2025-05-02T18:15:13.665Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Request failed with status code 500
+2025-05-02T18:16:07.050Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T18:17:38.785Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null

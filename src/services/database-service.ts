@@ -1,7 +1,6 @@
 import { RowDataPacket } from "mysql2";
-
 import { createPrimaryConnection } from "../config/db";
-import { MIGRATION_COLUMNS } from "../config/columns";
+import { MIGRATION_COLUMNS, MigrationColumns } from "../config/columns";
 import { TenantInfo } from "../types/tenant.interface";
 import { DB_PRINCIPAL_DATABASE } from "../config/env";
 
@@ -21,12 +20,11 @@ export async function listTenants(): Promise<string[]> {
     await conn.end();
     return rows.map(r => r.SCHEMA_NAME as string);
 }
-
 export async function listTenantsData(): Promise<TenantInfo[]> {
     const schemas = await listTenants();
     const conn = await createPrimaryConnection();
     const result: TenantInfo[] = [];
-    
+
     for (const schema of schemas) {
         const sql = `
         SELECT
@@ -58,7 +56,6 @@ export async function listTenantsData(): Promise<TenantInfo[]> {
     await conn.end();
     return result;
 }
-
 async function ensureMigrationColumns(
     conn: any,
     schema: string
@@ -69,24 +66,38 @@ async function ensureMigrationColumns(
     );
     await Promise.all(stmts.map(sql => conn.execute(sql)));
 }
-
 async function markMigrated(
     conn: any,
     schema: string,
-    id: number
+    id: number,
+    statusCode: string,
+    type: 'migrated' | 'updated',
+    idDocumentMigrated?: string,
 ): Promise<void> {
+    const baseField = type === 'migrated'
+        ? MigrationColumns.MIGRATED_AT
+        : MigrationColumns.MIGRATED_UPDATED_AT;
+
+    const assignments = [
+        `${MigrationColumns.MIGRATED} = 1`,
+        `${baseField} = NOW()`,
+        `${MigrationColumns.MIGRATED_STATUS_CODE} = ?`
+    ];
+    const params: any[] = [statusCode];
+    if (idDocumentMigrated) {
+        assignments.push(`${MigrationColumns.MIGRATED_ID_DOCUMENT} = ?`);
+        params.push(idDocumentMigrated);
+    }
     const sql = `
-    UPDATE \`${schema}\`.documents
-    SET migrated = 1,
-        migrated_at = COALESCE(migrated_at, NOW()),
-        migrated_updated_at = NOW()
-    WHERE id = ?
-  `;
-    await conn.execute(sql, [id]);
+      UPDATE \`${schema}\`.documents
+      SET ${assignments.join(', ')}
+      WHERE id = ?
+    `;
+    params.push(id);
+    await conn.execute(sql, params);
 }
 
 export {
-
     ensureMigrationColumns,
     markMigrated
 }

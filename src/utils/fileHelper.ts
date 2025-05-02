@@ -33,12 +33,11 @@ export async function extractCdrTimestampsFromXml(zipPath: string) {
 
         const { IssueDate, IssueTime, ResponseDate, ResponseTime } = resp;
         if (IssueDate && IssueTime && ResponseDate && ResponseTime) {
-            console.log({responseDate: ResponseDate, responseTime: ResponseTime});
             return {
                 issueDate: IssueDate,
                 issueTime: IssueTime,
-                responseDate: new Date(ResponseDate),
-                responseTime: new Date(ResponseTime),
+                responseDate: ResponseDate,
+                responseTime: ResponseTime,
             };
         }
         return null;

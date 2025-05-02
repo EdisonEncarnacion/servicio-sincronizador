@@ -6,8 +6,7 @@ import {
     fetchUpdatedDocuments,
     logStateChange
 } from './document.service';
-import { sendToExternalApi } from './send-api.service';
-import { determineFinalState } from '../utils/stateHelper';
+import { updateSendToExternalApi, uploadSendToExternalApi } from './send-api.service';
 import { TenantInfo } from '../types/tenant.interface';
 
 async function processNewDocuments(conn: any, tenant: TenantInfo) {
@@ -15,17 +14,17 @@ async function processNewDocuments(conn: any, tenant: TenantInfo) {
     const docs = await fetchNewDocuments(conn, schema);
     logger.info(`Tenant ${schema}: ${docs.length} documentos nuevos`);
     for (const doc of docs) {
-        const state = determineFinalState(doc);
+        /* const state = determineFinalState(doc);
         logger.info(`(NEW) Tenant ${schema}: estado calculado = ${state}`);
         if (state === 'PENDIENTE') {
             logger.warn(`(NEW) Tenant ${schema}: documento ${doc.external_id} aún pendiente, se salta`);
             continue;
-        }
+        } */
         try {
             logStateChange(doc, schema);
-            const ok = await sendToExternalApi(doc, schema, tenant);
-            if (ok) {
-                await markMigrated(conn, schema, doc.id);
+            const { status, data } = await uploadSendToExternalApi(doc, schema, tenant);
+            if (status) {
+                await markMigrated(conn, schema, doc.id, doc.state_type_id, 'migrated', data.cpeId);
                 logger.info(`(NEW) Tenant ${schema}: sincronizado ${doc.external_id}`);
             } else {
                 logger.warn(`(NEW) Tenant ${schema}: API !=200 para ${doc.external_id}`);
@@ -40,19 +39,18 @@ async function processUpdatedDocuments(conn: any, tenant: TenantInfo) {
     const docs = await fetchUpdatedDocuments(conn, schema);
     logger.info(`Tenant ${schema}: ${docs.length} documentos actualizados`);
     for (const doc of docs) {
-        const state = determineFinalState(doc);
+        /* const state = determineFinalState(doc);
         logger.info(`(UPDATE) Tenant ${schema}: estado calculado = ${state}`);
         if (state === 'PENDIENTE') {
             logger.warn(`(UPDATE) Tenant ${schema}: documento ${doc.external_id} aún pendiente, se salta`);
             continue;
-        }
-
+        } */
         try {
             logStateChange(doc, schema);
-            const ok = await sendToExternalApi(doc, schema,tenant);
-            if (ok) {
-                await markMigrated(conn, schema, doc.id);
-                logger.info(`(UPDATE) Tenant ${schema}: sincronizado ${doc.external_id}`);
+            const { status, data } = await updateSendToExternalApi(doc)
+            if (status) {
+                await markMigrated(conn, schema, doc.id, doc.state_type_id,  'updated');
+                logger.info(`(NEW) Tenant ${schema}: sincronizado ${doc.external_id}`);
             } else {
                 logger.warn(`(UPDATE) Tenant ${schema}: API !=200 para ${doc.external_id}`);
             }
@@ -61,7 +59,6 @@ async function processUpdatedDocuments(conn: any, tenant: TenantInfo) {
         }
     }
 }
-
 export async function syncAllTenants() {
     const tenantsData = await listTenantsData();
     for (const tenant of tenantsData) {
@@ -72,8 +69,7 @@ export async function syncAllTenants() {
         try {
             await ensureMigrationColumns(conn, schemaName);
             await processNewDocuments(conn, tenant);
-            console.log('_'.repeat(100));
-            // await processUpdatedDocuments(conn, schema);
+            await processUpdatedDocuments(conn, tenant);
         } catch (prepErr: any) {
             logger.error(`Tenant ${schemaName}: error preparación -> ${prepErr.message}`);
         } finally {

@@ -46,7 +46,7 @@ export async function mapDocumentToUploadPayload(
     }
 ): Promise<UploadPayload> {
     const dataCdr = await extractCdrTimestampsFromXml(urls.urlCrd);
-
+    console.log(dataCdr)
     return {
         id: `${tenant.ruc}-${doc.document_type_id}-${doc.series}-${doc.number}`,
         fechaPublicacion: doc.created_at ? new Date(doc.created_at) : new Date(),
@@ -64,7 +64,7 @@ export async function mapDocumentToUploadPayload(
         totalCpe: parseFloat(doc.total) || 0,
         estadoProccess: 'SUCCESS',//doc.shipping_status ?? '',
         estadoCpe: EstadoDescripcion[doc.state_type_id] ?? '',
-        fechaCdr: dataCdr?.responseDate.toDateString() ?? 'NO ENCONTRADO',
+        fechaCdr: new Date(dataCdr?.responseDate).toISOString() ?? 'NO ENCONTRADO',
         horaCdr: dataCdr?.responseTime.toString() ?? 'NO ENCONTRADO',
         codigoRespuesta: doc.soap_shipping_response
             ? JSON.parse(doc.soap_shipping_response).code

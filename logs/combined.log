@@ -772,3 +772,825 @@
 2025-04-30T23:09:51.139Z [INFO]: **** Tenant: tenancy_grifodennis ****
 2025-04-30T23:09:53.712Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
 2025-04-30T23:09:53.713Z [INFO]: Sincronización completada
+2025-05-02T14:47:08.755Z [INFO]: Iniciando sincronización
+2025-05-02T14:47:13.225Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T14:47:16.017Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T14:47:16.018Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T14:47:18.802Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T14:47:18.803Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T14:47:18.803Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T14:47:19.347Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T14:47:19.348Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T14:47:22.153Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T14:47:22.154Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T14:47:24.952Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T14:47:24.954Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T14:47:27.743Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T14:47:27.743Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T14:47:27.744Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T14:47:28.297Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T14:47:28.298Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T14:47:31.080Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T14:47:31.081Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T14:47:33.861Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T14:47:33.862Z [INFO]: Sincronización completada
+2025-05-02T15:02:01.907Z [INFO]: Iniciando sincronización
+2025-05-02T15:02:06.294Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:02:09.118Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:02:09.130Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:02:11.899Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:02:11.900Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:02:11.900Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:02:12.381Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:02:12.382Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:02:15.179Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:02:15.180Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:02:17.948Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:02:17.949Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:02:20.735Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:02:20.735Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:02:20.736Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:02:21.172Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:02:21.173Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:02:23.963Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:02:23.964Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:02:26.761Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T15:02:26.761Z [INFO]: Sincronización completada
+2025-05-02T15:06:16.093Z [INFO]: Iniciando sincronización
+2025-05-02T15:06:20.583Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:06:23.347Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:06:23.348Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:06:26.119Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:06:26.120Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:06:26.120Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:06:26.650Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:06:26.651Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:06:29.463Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:06:29.464Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:06:32.237Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:06:32.238Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:06:35.004Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:06:35.004Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:06:35.004Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:06:35.497Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:06:35.498Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:06:38.317Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:06:38.318Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:06:41.102Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T15:06:41.103Z [INFO]: Sincronización completada
+2025-05-02T15:09:35.801Z [INFO]: Iniciando sincronización
+2025-05-02T15:09:40.208Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:09:42.980Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:09:42.981Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:09:45.784Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:09:45.785Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:09:45.785Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:09:46.260Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:09:46.261Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:09:49.023Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:09:49.024Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:09:51.797Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:09:51.798Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:09:54.567Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:09:54.568Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:09:54.568Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:09:55.007Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:09:55.008Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:09:57.776Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:09:57.777Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:10:00.548Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T15:10:00.549Z [INFO]: Sincronización completada
+2025-05-02T15:12:32.136Z [INFO]: Iniciando sincronización
+2025-05-02T15:12:37.803Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:12:40.714Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:12:40.715Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:12:43.498Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:12:43.499Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:12:43.499Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:12:43.999Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:12:44.000Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:12:46.798Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:12:46.799Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:12:49.619Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:12:49.620Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:12:52.567Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:12:52.567Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:12:52.568Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:12:53.011Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:12:53.012Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:12:55.787Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:12:55.788Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:12:58.561Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T15:12:58.562Z [INFO]: Sincronización completada
+2025-05-02T15:14:17.823Z [INFO]: Iniciando sincronización
+2025-05-02T15:14:22.549Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:14:25.319Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:14:25.320Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:14:28.122Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:14:28.123Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:14:28.123Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:14:28.602Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:14:28.603Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:14:31.376Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:14:31.377Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:14:34.157Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:14:34.159Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:14:37.182Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:14:37.182Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:14:37.183Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:14:37.618Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:14:37.619Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:14:40.652Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:14:40.653Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:14:43.432Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T15:14:43.433Z [INFO]: Sincronización completada
+2025-05-02T15:16:19.034Z [INFO]: Iniciando sincronización
+2025-05-02T15:16:23.949Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:16:27.073Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:16:27.074Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:16:29.852Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:16:29.852Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:16:29.853Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:16:30.323Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:16:30.325Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:16:33.109Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:16:33.110Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:16:36.493Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:16:36.494Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:16:39.259Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:16:39.260Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:16:39.260Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:16:39.692Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:16:39.693Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:16:44.499Z [INFO]: Iniciando sincronización
+2025-05-02T15:16:48.962Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:16:51.806Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:16:51.807Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:16:54.593Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:16:54.594Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:16:54.595Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:16:55.058Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:16:55.058Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:16:57.961Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:16:57.962Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:18:21.681Z [INFO]: Iniciando sincronización
+2025-05-02T15:18:26.179Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:18:28.950Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:18:28.952Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:18:31.727Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:18:31.727Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:18:31.728Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:18:32.204Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:18:32.205Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:18:34.976Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:18:34.977Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:18:37.752Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:18:37.753Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:18:40.592Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:18:40.592Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:18:40.593Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:18:41.028Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:18:41.028Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:18:43.805Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:18:43.805Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:18:59.530Z [INFO]: Iniciando sincronización
+2025-05-02T15:19:03.991Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:19:06.787Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:19:06.788Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:19:09.786Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:19:09.787Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:19:09.787Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:19:10.253Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:19:10.254Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:19:13.040Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:19:13.041Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:19:15.811Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:19:15.811Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:19:18.592Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:19:18.592Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:19:18.592Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:22:24.134Z [INFO]: Iniciando sincronización
+2025-05-02T15:22:28.924Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:22:31.710Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:22:31.712Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:22:34.615Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:22:34.615Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:22:34.616Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:22:35.096Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:22:35.097Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:23:58.963Z [INFO]: Iniciando sincronización
+2025-05-02T15:24:03.415Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:24:06.211Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:24:06.212Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:24:08.981Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:24:08.982Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:24:08.982Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:24:09.487Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:24:09.489Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:24:12.252Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:24:12.253Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:24:15.097Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:24:15.098Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:24:17.876Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:24:17.876Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:24:17.876Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:24:18.310Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:24:18.311Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:24:21.107Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:24:21.108Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:26:50.276Z [INFO]: Iniciando sincronización
+2025-05-02T15:26:54.735Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:26:57.664Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:26:57.665Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:27:00.440Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:27:00.441Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:27:00.441Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:27:01.058Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:27:01.059Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:27:03.819Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:27:03.820Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:27:06.578Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:27:06.579Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:27:09.469Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:27:09.470Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:27:09.470Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:27:09.948Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:27:09.949Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:27:13.064Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:27:13.065Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:27:15.852Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T15:27:15.853Z [INFO]: Sincronización completada
+2025-05-02T15:31:07.432Z [INFO]: Iniciando sincronización
+2025-05-02T15:31:11.833Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T15:31:14.604Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T15:31:14.605Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T15:31:17.435Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T15:31:17.435Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T15:31:17.435Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T15:31:17.999Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T15:31:18.001Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T15:31:20.811Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T15:31:20.812Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T15:31:23.591Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T15:31:23.592Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T15:31:26.370Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T15:31:26.370Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T15:31:26.370Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T15:31:26.804Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T15:31:26.805Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T15:31:29.579Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T15:31:29.580Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T15:31:32.357Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T15:31:32.357Z [INFO]: Sincronización completada
+2025-05-02T17:00:55.416Z [INFO]: Iniciando sincronización
+2025-05-02T17:00:55.650Z [ERROR]: Error general: Connection lost: The server closed the connection.
+2025-05-02T17:02:17.405Z [INFO]: Iniciando sincronización
+2025-05-02T17:02:21.847Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:02:25.057Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:02:25.059Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:02:28.277Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:02:28.277Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:02:28.277Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:02:28.486Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T17:02:28.488Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:02:31.694Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:02:31.695Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:02:34.889Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:02:34.890Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:03:10.530Z [INFO]: Iniciando sincronización
+2025-05-02T17:03:14.994Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:03:19.918Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:03:19.920Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:03:23.117Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:03:23.117Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:03:23.117Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:03:23.204Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T17:03:23.204Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:04:36.882Z [INFO]: Iniciando sincronización
+2025-05-02T17:04:42.468Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:04:45.763Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:04:45.764Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:04:48.978Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:04:48.978Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:04:48.979Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:04:49.052Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T17:04:49.054Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:05:15.597Z [INFO]: Iniciando sincronización
+2025-05-02T17:05:20.563Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:05:23.734Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:05:23.735Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:05:27.196Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:05:27.197Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:05:27.198Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:05:27.283Z [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error bc8c13ff-9470-4643-9905-2ca68c59e155 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T17:05:27.285Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:06:35.057Z [INFO]: Iniciando sincronización
+2025-05-02T17:06:44.243Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:06:47.474Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:06:47.475Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:06:50.762Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:06:50.762Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:06:50.762Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:06:51.249Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:06:51.251Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:06:54.462Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:06:54.464Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:06:57.687Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:06:57.687Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:07:00.974Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:07:00.974Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:07:00.974Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:07:01.445Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:07:01.445Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:07:04.711Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:07:04.711Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:07:07.901Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:07:07.902Z [INFO]: Sincronización completada
+2025-05-02T17:07:15.945Z [INFO]: Iniciando sincronización
+2025-05-02T17:07:20.452Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:07:25.445Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:07:25.447Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:07:28.937Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:07:28.938Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:07:28.939Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:07:29.404Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:07:29.405Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:07:32.581Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:07:32.582Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:07:35.760Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:07:35.762Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:07:38.939Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:07:38.939Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:07:38.939Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:07:39.372Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:07:39.373Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:07:42.698Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:07:42.700Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:07:46.041Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:07:46.042Z [INFO]: Sincronización completada
+2025-05-02T17:08:08.809Z [INFO]: Iniciando sincronización
+2025-05-02T17:08:14.189Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:08:17.407Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:08:17.408Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:08:20.881Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:08:20.883Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:08:20.884Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:08:21.460Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:08:21.461Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:08:24.650Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:08:24.652Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:08:28.091Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:08:28.092Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:08:31.275Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:08:31.276Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:08:31.276Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:08:31.723Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:08:31.724Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:08:34.932Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:08:34.933Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:08:38.111Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:08:38.112Z [INFO]: Sincronización completada
+2025-05-02T17:09:36.540Z [INFO]: Iniciando sincronización
+2025-05-02T17:09:46.035Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:09:49.250Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:09:49.252Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:09:52.923Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:09:52.924Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:09:52.925Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:09:53.407Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:09:53.408Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:09:55.261Z [INFO]: Iniciando sincronización
+2025-05-02T17:09:59.591Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:10:02.769Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:10:02.770Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:10:06.131Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:10:06.132Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:10:06.133Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:10:06.596Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:10:06.598Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:10:10.073Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:10:10.074Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:10:13.514Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:10:13.515Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:10:16.796Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:10:16.797Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:10:16.797Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:10:17.234Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:10:17.235Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:10:20.564Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:10:20.566Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:10:23.875Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:10:23.875Z [INFO]: Sincronización completada
+2025-05-02T17:11:47.784Z [INFO]: Iniciando sincronización
+2025-05-02T17:11:52.217Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:11:55.406Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:11:55.408Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:11:59.425Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:11:59.426Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:11:59.426Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:11:59.919Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:11:59.920Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:12:03.226Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:12:03.227Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:12:08.919Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:12:08.921Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:12:13.137Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:12:13.137Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:12:13.137Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:12:13.590Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:12:13.590Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:12:16.830Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:12:16.831Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:12:20.020Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:12:20.023Z [INFO]: Sincronización completada
+2025-05-02T17:12:29.631Z [INFO]: Iniciando sincronización
+2025-05-02T17:12:34.295Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:12:38.491Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:12:38.493Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:12:41.854Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:12:41.855Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:12:41.855Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:12:42.867Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:12:42.868Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:12:48.509Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:12:48.510Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:12:52.098Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:12:52.100Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:12:55.311Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:12:55.312Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:12:55.312Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:12:55.745Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:12:55.746Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:12:59.089Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:12:59.091Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:13:02.093Z [INFO]: Iniciando sincronización
+2025-05-02T17:13:08.518Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:13:11.704Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:13:11.706Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:13:14.953Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:13:14.954Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:13:14.954Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:13:15.414Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:13:15.415Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:13:19.411Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:13:19.413Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:13:22.706Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:13:22.707Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:13:25.907Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:13:25.907Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:13:25.907Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:13:26.344Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:13:26.346Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:13:29.520Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:13:29.521Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:13:32.748Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:13:32.749Z [INFO]: Sincronización completada
+2025-05-02T17:13:41.123Z [INFO]: Iniciando sincronización
+2025-05-02T17:13:45.563Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:13:49.464Z [INFO]: Iniciando sincronización
+2025-05-02T17:13:54.667Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:13:57.870Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:13:57.872Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:14:01.066Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:14:01.067Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:14:01.068Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:14:01.530Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:14:01.531Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:14:04.846Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:14:04.847Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:14:08.230Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:14:08.231Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:14:11.504Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:14:11.505Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:14:11.505Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:14:11.934Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:14:11.935Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:14:15.188Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:14:15.189Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:14:18.364Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:14:18.365Z [INFO]: Sincronización completada
+2025-05-02T17:16:27.877Z [INFO]: Iniciando sincronización
+2025-05-02T17:16:33.130Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:16:35.363Z [INFO]: Iniciando sincronización
+2025-05-02T17:16:41.569Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:16:44.761Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:16:44.762Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:16:48.629Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:16:48.629Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:16:48.630Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:16:49.089Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:16:49.091Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:16:52.357Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:16:52.358Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:16:55.596Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:16:55.596Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:16:58.814Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:16:58.814Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:16:58.815Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:16:59.246Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:16:59.247Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:17:02.466Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:17:02.469Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:17:05.777Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:17:05.777Z [INFO]: Sincronización completada
+2025-05-02T17:17:12.596Z [INFO]: Iniciando sincronización
+2025-05-02T17:17:17.057Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:17:20.570Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:17:20.572Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:17:23.761Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:17:23.761Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:17:23.762Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:17:24.225Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:17:24.226Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:17:27.417Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:17:27.419Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:17:30.677Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:17:30.677Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:17:33.880Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:17:33.880Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:17:33.880Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:17:34.310Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:17:34.311Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:17:37.494Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:17:37.496Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:17:40.695Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:17:40.696Z [INFO]: Sincronización completada
+2025-05-02T17:17:51.035Z [INFO]: Iniciando sincronización
+2025-05-02T17:17:55.526Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:17:58.779Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:17:58.780Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:18:02.026Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:18:02.026Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:18:02.027Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:18:02.553Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:18:02.554Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:18:05.741Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:18:05.742Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:18:08.982Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:18:08.983Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:18:12.174Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:18:12.174Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:18:12.174Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:18:12.604Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:18:12.605Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:18:15.788Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:18:15.790Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:18:18.981Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:18:18.982Z [INFO]: Sincronización completada
+2025-05-02T17:20:12.534Z [INFO]: Iniciando sincronización
+2025-05-02T17:20:16.968Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:20:20.306Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:20:20.308Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:20:23.575Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:20:23.576Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:20:23.577Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:20:24.052Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:20:24.053Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:20:24.804Z [INFO]: Iniciando sincronización
+2025-05-02T17:20:31.267Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:20:34.589Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:20:34.590Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:20:37.996Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:20:37.997Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:20:37.997Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:20:38.462Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:20:38.464Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:20:41.679Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:20:41.681Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:20:44.969Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:20:44.971Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:20:48.164Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:20:48.164Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:20:48.164Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:20:48.597Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:20:48.598Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:20:52.214Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:20:52.215Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:21:03.231Z [INFO]: Iniciando sincronización
+2025-05-02T17:21:07.756Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:21:10.929Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:21:10.930Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:21:14.141Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:21:14.142Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:21:14.142Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:21:14.603Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:21:14.605Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:21:17.783Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:21:17.784Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:21:20.993Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:21:20.995Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:21:24.166Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:21:24.166Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:21:24.166Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:21:24.605Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:21:24.607Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:21:27.781Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:21:27.782Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:21:31.187Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:21:31.188Z [INFO]: Sincronización completada
+2025-05-02T17:49:54.372Z [INFO]: Iniciando sincronización
+2025-05-02T17:50:13.272Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T17:50:18.608Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T17:50:18.609Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T17:50:28.813Z [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+2025-05-02T17:50:28.813Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: estado calculado = ACEPTADO
+2025-05-02T17:50:28.814Z [INFO]: Tenant tenancy_inversionesyservicios34: doc bc8c13ff-9470-4643-9905-2ca68c59e155 estado SOAP -> code=0 desc="La Factura numero F701-1, ha sido aceptada"
+2025-05-02T17:50:30.956Z [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado bc8c13ff-9470-4643-9905-2ca68c59e155
+2025-05-02T17:50:30.958Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T17:50:36.995Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T17:50:36.996Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T17:50:46.062Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T17:50:46.064Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T17:50:52.964Z [INFO]: Tenant tenancy_demo: 1 documentos nuevos
+2025-05-02T17:50:52.964Z [INFO]: (NEW) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T17:50:52.964Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T17:50:53.472Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T17:50:53.473Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T17:50:57.618Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T17:50:57.619Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T17:51:07.759Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T17:51:07.760Z [INFO]: Sincronización completada
+2025-05-02T18:10:16.223Z [INFO]: Iniciando sincronización
+2025-05-02T18:10:24.049Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:10:29.586Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:10:29.588Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:10:35.238Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:10:35.239Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:10:40.929Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:10:40.931Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:10:46.587Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:10:46.588Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:10:52.197Z [INFO]: Tenant tenancy_demo: 0 documentos actualizados
+2025-05-02T18:10:52.198Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:12:38.028Z [INFO]: Iniciando sincronización
+2025-05-02T18:12:45.647Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:12:51.471Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:12:51.472Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:12:57.608Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:12:57.610Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:13:03.237Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:13:03.238Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:13:08.787Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:13:08.787Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:13:14.332Z [INFO]: Tenant tenancy_demo: 1 documentos actualizados
+2025-05-02T18:13:14.332Z [INFO]: (UPDATE) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T18:13:14.332Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T18:13:14.496Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Request failed with status code 404
+2025-05-02T18:13:14.497Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:14:52.912Z [INFO]: Iniciando sincronización
+2025-05-02T18:14:57.373Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:15:00.575Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:15:00.577Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:15:03.806Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:15:03.808Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:15:06.998Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:15:06.999Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:15:10.201Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:15:10.202Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:15:13.508Z [INFO]: Tenant tenancy_demo: 1 documentos actualizados
+2025-05-02T18:15:13.509Z [INFO]: (UPDATE) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T18:15:13.509Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T18:15:13.665Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Request failed with status code 500
+2025-05-02T18:15:13.666Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:15:45.713Z [INFO]: Iniciando sincronización
+2025-05-02T18:15:50.183Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:15:53.858Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:15:53.860Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:15:57.333Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:15:57.333Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:16:00.548Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:16:00.549Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:16:03.776Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:16:03.777Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:16:06.981Z [INFO]: Tenant tenancy_demo: 1 documentos actualizados
+2025-05-02T18:16:06.981Z [INFO]: (UPDATE) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T18:16:06.982Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T18:16:07.050Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T18:16:07.051Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:16:10.252Z [INFO]: Tenant tenancy_escorpio: 0 documentos actualizados
+2025-05-02T18:16:10.253Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T18:17:17.775Z [INFO]: Iniciando sincronización
+2025-05-02T18:17:22.243Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:17:25.441Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:17:25.442Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:17:28.631Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:17:28.632Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:17:32.214Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:17:32.216Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:17:35.422Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:17:35.423Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:17:38.753Z [INFO]: Tenant tenancy_demo: 1 documentos actualizados
+2025-05-02T18:17:38.753Z [INFO]: (UPDATE) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T18:17:38.754Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T18:17:38.785Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-02T18:17:38.786Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:22:07.749Z [INFO]: Iniciando sincronización
+2025-05-02T18:22:12.265Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:22:15.474Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:22:15.475Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:22:18.676Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:22:18.677Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:22:21.860Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:22:21.861Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:22:25.060Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:22:25.062Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:22:28.246Z [INFO]: Tenant tenancy_demo: 1 documentos actualizados
+2025-05-02T18:22:28.246Z [INFO]: (UPDATE) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T18:22:28.246Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T18:22:28.676Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T18:22:28.678Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:22:31.867Z [INFO]: Tenant tenancy_escorpio: 0 documentos actualizados
+2025-05-02T18:22:31.869Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T18:22:35.060Z [INFO]: Tenant tenancy_grifodennis: 0 documentos actualizados
+2025-05-02T18:22:35.061Z [INFO]: Sincronización completada
+2025-05-02T18:23:49.084Z [INFO]: Iniciando sincronización
+2025-05-02T18:23:53.518Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:23:56.765Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:23:56.767Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:24:00.043Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:24:00.044Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:24:03.235Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:24:03.237Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:24:06.431Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:24:06.432Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:24:09.604Z [INFO]: Tenant tenancy_demo: 0 documentos actualizados
+2025-05-02T18:24:09.605Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:24:12.784Z [INFO]: Tenant tenancy_escorpio: 0 documentos actualizados
+2025-05-02T18:24:12.785Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T18:24:16.010Z [INFO]: Tenant tenancy_grifodennis: 0 documentos actualizados
+2025-05-02T18:24:16.011Z [INFO]: Sincronización completada
+2025-05-02T18:28:26.582Z [INFO]: Iniciando sincronización
+2025-05-02T18:33:49.235Z [INFO]: Iniciando sincronización
+2025-05-02T18:33:53.711Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:33:56.986Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:33:56.988Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:34:00.188Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:34:00.189Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:34:03.392Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:34:03.394Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:34:06.719Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:34:06.721Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:34:09.917Z [INFO]: Tenant tenancy_demo: 1 documentos actualizados
+2025-05-02T18:34:09.917Z [INFO]: (UPDATE) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T18:34:09.917Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T18:34:10.401Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T18:34:10.402Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:34:13.591Z [INFO]: Tenant tenancy_escorpio: 0 documentos actualizados
+2025-05-02T18:34:13.593Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T18:35:00.092Z [INFO]: Iniciando sincronización
+2025-05-02T18:35:04.510Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T18:35:07.692Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T18:35:07.694Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T18:35:10.915Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T18:35:10.917Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T18:35:14.121Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T18:35:14.122Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T18:35:17.339Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T18:35:17.341Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T18:35:20.521Z [INFO]: Tenant tenancy_demo: 1 documentos actualizados
+2025-05-02T18:35:20.522Z [INFO]: (UPDATE) Tenant tenancy_demo: estado calculado = ACEPTADO
+2025-05-02T18:35:20.522Z [INFO]: Tenant tenancy_demo: doc 090c63c1-6189-4de1-af0f-977021e844e0 estado SOAP -> code=0 desc="La Factura numero FTR1-1, ha sido aceptada"
+2025-05-02T18:35:20.945Z [INFO]: (NEW) Tenant tenancy_demo: sincronizado 090c63c1-6189-4de1-af0f-977021e844e0
+2025-05-02T18:35:20.946Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T18:35:24.116Z [INFO]: Tenant tenancy_escorpio: 0 documentos actualizados
+2025-05-02T18:35:24.117Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T19:41:17.227Z [INFO]: Iniciando sincronización
+2025-05-02T20:11:00.013Z [INFO]: Iniciando sincronización
+2025-05-02T20:11:04.459Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T20:11:07.652Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T20:11:07.653Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T20:11:10.834Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T20:11:10.835Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T20:11:14.019Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T20:11:14.021Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T20:11:17.196Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T20:11:17.197Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T20:11:20.372Z [INFO]: Tenant tenancy_demo: 0 documentos actualizados
+2025-05-02T20:11:20.373Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T20:11:23.556Z [INFO]: Tenant tenancy_escorpio: 0 documentos actualizados
+2025-05-02T20:11:23.557Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T20:11:26.726Z [INFO]: Tenant tenancy_grifodennis: 0 documentos actualizados
+2025-05-02T20:11:26.727Z [INFO]: Sincronización completada
+2025-05-02T20:12:00.028Z [INFO]: Iniciando sincronización
+2025-05-02T20:12:04.445Z [INFO]: **** Tenant: tenancy_jperezcuellar ****
+2025-05-02T20:12:07.623Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+2025-05-02T20:12:08.029Z [INFO]: Tenant tenancy_jperezcuellar: 0 documentos actualizados
+2025-05-02T20:12:08.031Z [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+2025-05-02T20:12:11.201Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos nuevos
+2025-05-02T20:12:11.603Z [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos actualizados
+2025-05-02T20:12:11.605Z [INFO]: **** Tenant: tenancy_fesanrolurin ****
+2025-05-02T20:12:14.823Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+2025-05-02T20:12:15.221Z [INFO]: Tenant tenancy_fesanrolurin: 0 documentos actualizados
+2025-05-02T20:12:15.222Z [INFO]: **** Tenant: tenancy_servicioschasqui ****
+2025-05-02T20:12:18.395Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+2025-05-02T20:12:18.795Z [INFO]: Tenant tenancy_servicioschasqui: 0 documentos actualizados
+2025-05-02T20:12:18.796Z [INFO]: **** Tenant: tenancy_demo ****
+2025-05-02T20:12:22.102Z [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+2025-05-02T20:12:22.500Z [INFO]: Tenant tenancy_demo: 0 documentos actualizados
+2025-05-02T20:12:22.501Z [INFO]: **** Tenant: tenancy_escorpio ****
+2025-05-02T20:12:25.668Z [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+2025-05-02T20:12:26.065Z [INFO]: Tenant tenancy_escorpio: 0 documentos actualizados
+2025-05-02T20:12:26.065Z [INFO]: **** Tenant: tenancy_grifodennis ****
+2025-05-02T20:12:29.267Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+2025-05-02T20:12:29.664Z [INFO]: Tenant tenancy_grifodennis: 0 documentos actualizados
+2025-05-02T20:12:29.665Z [INFO]: Sincronización completada

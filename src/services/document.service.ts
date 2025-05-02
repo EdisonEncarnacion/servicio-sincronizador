@@ -1,12 +1,13 @@
 import { RowDataPacket } from 'mysql2';
 import { DocRow } from '../types/document.interface';
 import { logger } from '../utils/logger';
+import { MigrationColumns } from '../config/columns';
 
 export async function fetchNewDocuments(
     conn: any,
     schema: string
 ): Promise<DocRow[]> {
-    const sql = `SELECT * FROM \`${schema}\`.documents ` // WHERE migrated = 0 | DESACTIVADO POR PRUEBAS;
+    const sql = `SELECT * FROM \`${schema}\`.documents WHERE ${MigrationColumns.MIGRATED} = 0 ` // WHERE ${MigrationColumns.MIGRATED} = 0 | DESACTIVADO POR PRUEBAS;
     const [rows] = (await conn.execute(sql)) as [RowDataPacket[], any];
     const rowsFormarted = rows.map((row: any) => {
         row.customer = JSON.parse(row.customer);
@@ -14,20 +15,22 @@ export async function fetchNewDocuments(
     })
     return rowsFormarted as DocRow[];
 }
-
 export async function fetchUpdatedDocuments(
     conn: any,
     schema: string
 ): Promise<DocRow[]> {
     const sql = `
-    SELECT * FROM \`${schema}\`.documents
-    WHERE migrated = 1
-      AND updated_at > migrated_updated_at
-  `;
+      SELECT *
+      FROM \`${schema}\`.documents
+      WHERE ${MigrationColumns.MIGRATED} = 1
+        AND (
+          updated_at > ${MigrationColumns.MIGRATED_UPDATED_AT}
+          OR state_type_id <> ${MigrationColumns.MIGRATED_STATUS_CODE}
+        )
+    `;
     const [rows] = (await conn.execute(sql)) as [RowDataPacket[], any];
     return rows as DocRow[];
 }
-
 export function logStateChange(doc: DocRow, schema: string) {
     if (!doc.soap_shipping_response) return;
     try {
