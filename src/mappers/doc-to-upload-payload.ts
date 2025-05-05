@@ -34,6 +34,7 @@ export interface UploadPayload {
     totalIgv: number;
     totalIsc: number;
     totalOtrosTributos: number;
+    indValido: 1
 }
 
 export async function mapDocumentToUploadPayload(
@@ -46,7 +47,6 @@ export async function mapDocumentToUploadPayload(
     }
 ): Promise<UploadPayload> {
     const dataCdr = await extractCdrTimestampsFromXml(urls.urlCrd);
-    console.log(dataCdr)
     return {
         id: `${tenant.ruc}-${doc.document_type_id}-${doc.series}-${doc.number}`,
         fechaPublicacion: doc.created_at ? new Date(doc.created_at) : new Date(),
@@ -82,6 +82,8 @@ export async function mapDocumentToUploadPayload(
         totalICBPR: Number(doc.total_plastic_bag_taxes),
         totalIgv: Number(doc.total_igv),
         totalIsc: Number(doc.total_isc),
-        totalOtrosTributos: 0
+        totalOtrosTributos: 0,
+        indValido: 1
+
     };
 }

@@ -31,6 +31,7 @@ export async function uploadSendToExternalApi(
     const resp = await axios.post(UPLOAD_ENDPOINT, form, {
         headers: form.getHeaders(),
     });
+    console.log(resp.data);
     return {
         status: resp.status === 200,
         data: resp.data.data
@@ -52,6 +53,7 @@ export async function updateSendToExternalApi(
             'Content-Type': 'application/json',
         },
     });
+    console.log(resp.data);
     return {
         status: resp.status === 200,
         data: resp.data.data,
