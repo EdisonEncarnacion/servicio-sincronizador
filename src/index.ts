@@ -1,7 +1,7 @@
 import { CronJob } from 'cron';
 
 import { logger } from './utils/logger';
-import { SYNC_INTERVAL_CRON } from './config/env';
+import { NODE_ENV, SYNC_INTERVAL_CRON } from './config/env';
 import { syncAllTenants } from './services/sync.service';
 
 
@@ -29,6 +29,7 @@ const job = new CronJob(
     true,
     'America/Lima'
 );
+console.log(`iniciando en modo: ${NODE_ENV}`)
 job.start();
 
 /* async function start() {

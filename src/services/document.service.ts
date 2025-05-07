@@ -3,18 +3,28 @@ import { DocRow } from '../types/document.interface';
 import { logger } from '../utils/logger';
 import { MigrationColumns } from '../config/columns';
 
+export type DocRowCustom = DocRow & { descripcionEstablecimiento: string };
 export async function fetchNewDocuments(
     conn: any,
     schema: string
-): Promise<DocRow[]> {
-    const sql = `SELECT * FROM \`${schema}\`.documents WHERE ${MigrationColumns.MIGRATED} = 0 ` // WHERE ${MigrationColumns.MIGRATED} = 0 | DESACTIVADO POR PRUEBAS;
+): Promise<DocRowCustom[]> {
+    const sql = `
+    SELECT
+      d.*,
+      e.description AS descripcionEstablecimiento
+    FROM \`${schema}\`.documents AS d
+    JOIN \`${schema}\`.establishments AS e
+      ON d.establishment_id = e.id
+    WHERE d.${MigrationColumns.MIGRATED} = 0
+  `;
     const [rows] = (await conn.execute(sql)) as [RowDataPacket[], any];
-    const rowsFormarted = rows.map((row: any) => {
+    const rowsFormatted = rows.map((row: any) => {
         row.customer = JSON.parse(row.customer);
-        return row;
-    })
-    return rowsFormarted as DocRow[];
+        return row as DocRowCustom;
+    });
+    return rowsFormatted;
 }
+
 export async function fetchUpdatedDocuments(
     conn: any,
     schema: string

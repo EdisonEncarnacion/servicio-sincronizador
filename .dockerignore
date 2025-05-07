@@ -1,0 +1,28 @@
+node_modules
+
+# env que terminen
+*.env
+#env en medio
+*.env.*
+# Ignora logs y archivos temporales
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+logs
+*.log
+# Ignora cobertura de tests
+coverage
+.vscode
+.idea
+
+# Ignora Git y Docker propios
+.git
+.gitignore
+Dockerfile*
+docker-compose*.yml
+
+
+dist/
+
+.cache

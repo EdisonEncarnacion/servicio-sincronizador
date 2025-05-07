@@ -66,7 +66,6 @@ async function ensureMigrationColumns(
     );
     await Promise.all(stmts.map(sql => conn.execute(sql)));
 }
-
 async function markMigrated(
     conn: any,
     schema: string,
@@ -101,7 +100,6 @@ async function markMigrated(
     params.push(id);
     await conn.execute(sql, params);
 }
-
 export {
     ensureMigrationColumns,
     markMigrated

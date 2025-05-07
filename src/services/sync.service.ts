@@ -8,6 +8,7 @@ import {
 } from './document.service';
 import { updateSendToExternalApi, uploadSendToExternalApi } from './send-api.service';
 import { TenantInfo } from '../types/tenant.interface';
+import { formatError } from '../utils/error-utils';
 
 async function processNewDocuments(conn: any, tenant: TenantInfo) {
     const schema = tenant.schemaName;
@@ -16,7 +17,7 @@ async function processNewDocuments(conn: any, tenant: TenantInfo) {
     for (const doc of docs) {
         const documentNumber = doc.series + '-' + doc.number;
         try {
-            logStateChange(doc, schema);
+            // logStateChange(doc, schema);
             const { status, data
                 , uploadFiles
             } = await uploadSendToExternalApi(doc, schema, tenant);
@@ -27,8 +28,7 @@ async function processNewDocuments(conn: any, tenant: TenantInfo) {
                 logger.warn(`(NEW) Tenant ${schema}: API !=200 para ${documentNumber}`);
             }
         } catch (err: any) {
-            logger.error(`(NEW) Tenant ${schema}: error ${documentNumber} -> ${err.message}`);
-            console.log(err);
+            logger.error(`(NEW) Tenant ${schema}: error ${documentNumber} -> ${err.message ? '' : err}`);
         }
     }
 }
@@ -39,7 +39,7 @@ async function processUpdatedDocuments(conn: any, tenant: TenantInfo) {
     for (const doc of docs) {
         const documentNumber = doc.series + '-' + doc.number;
         try {
-            logStateChange(doc, schema);
+            // logStateChange(doc, schema);
             const { status, data, uploadFiles } = await updateSendToExternalApi(doc, !doc.migrated_files, schema, tenant);
             if (status) {
                 await markMigrated(conn, schema, doc.id, doc.state_type_id, 'updated', uploadFiles);
@@ -48,8 +48,8 @@ async function processUpdatedDocuments(conn: any, tenant: TenantInfo) {
                 logger.warn(`(UPDATE) Tenant ${schema}: API !=200 para ${documentNumber}`);
             }
         } catch (err: any) {
-            logger.error(`(UPDATE) Tenant ${schema}: error ${documentNumber} -> ${err.message}`);
-            console.log(err);
+            const str = formatError(err, { schema, documentNumber, module: 'migrator' });
+            logger.error(str);
         }
     }
 }

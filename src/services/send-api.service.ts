@@ -6,6 +6,7 @@ import { appendDocumentAttachments } from "../utils/formHelper";
 import { TenantInfo } from "../types/tenant.interface";
 import { mapDocumentToUploadPayload } from "../mappers/doc-to-upload-payload";
 import { UPDATE_ENDPOINT, UPLOAD_ENDPOINT } from "../config/endpoints";
+import { DocRowCustom } from "./document.service";
 
 interface ResponseExternalApi {
     cpeId: string,
@@ -14,7 +15,7 @@ interface ResponseExternalApi {
     urlCdr: string
 }
 export async function uploadSendToExternalApi(
-    doc: DocRow,
+    doc: DocRowCustom,
     schema: string,
     tenant: TenantInfo
 ): Promise<
@@ -40,7 +41,9 @@ export async function uploadSendToExternalApi(
             uploadFiles: true
         };
     }
-    const resp = await axios.post(UPLOAD_ENDPOINT, payload, {
+    const resp = await axios.post(UPLOAD_ENDPOINT, {
+        data: payload
+    }, {
         headers: {
             'Content-Type': 'application/json',
         },
@@ -52,7 +55,6 @@ export async function uploadSendToExternalApi(
         uploadFiles: false
     }
 }
-
 export async function updateSendToExternalApi(
     doc: DocRow,
     migrateFiles: boolean,
@@ -84,7 +86,9 @@ export async function updateSendToExternalApi(
             };
         }
     }
-    const resp = await axios.post(UPDATE_ENDPOINT, payload, {
+    const resp = await axios.post(UPDATE_ENDPOINT, {
+        data: payload
+    }, {
         headers: {
             'Content-Type': 'application/json',
         },

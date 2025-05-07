@@ -4,6 +4,7 @@ import { TENANCY_STORAGE_PATH } from '../config/paths';
 import { logger } from '../utils/logger';
 import { parseStringPromise } from 'xml2js';
 import unzipper from 'unzipper';
+import { isNonEmpty } from './global-helper';
 export type FileStream = {
     key: string;
     stream: fs.ReadStream;

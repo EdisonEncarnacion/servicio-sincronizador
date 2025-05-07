@@ -1594,3 +1594,11 @@
 2025-05-02T20:12:29.267Z [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
 2025-05-02T20:12:29.664Z [INFO]: Tenant tenancy_grifodennis: 0 documentos actualizados
 2025-05-02T20:12:29.665Z [INFO]: Sincronización completada
+2025-05-07T16:28:00.012Z [INFO]: Iniciando sincronización
+2025-05-07T16:28:00.236Z [ERROR]: Error general: Connection lost: The server closed the connection.
+2025-05-07T16:30:00.018Z [INFO]: Iniciando sincronización
+2025-05-07T16:30:00.044Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-05-07T16:31:00.056Z [INFO]: Iniciando sincronización
+2025-05-07T16:31:00.061Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-05-07T16:32:00.054Z [INFO]: Iniciando sincronización
+2025-05-07T16:32:00.056Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307

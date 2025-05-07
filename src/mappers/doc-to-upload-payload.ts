@@ -1,3 +1,4 @@
+import { DocRowCustom } from "../services/document.service";
 import { Document, EstadoDescripcion } from "../types/document.interface";
 import { TenantInfo } from "../types/tenant.interface";
 import { extractCdrTimestampsFromXml } from "../utils/fileHelper";
@@ -36,9 +37,8 @@ export interface UploadPayload {
     totalOtrosTributos: number;
     indValido: 1
 }
-
 export async function mapDocumentToUploadPayload(
-    doc: Document,
+    doc: DocRowCustom,
     tenant: TenantInfo,
     existsFiles: boolean,
     urls: {
@@ -68,15 +68,15 @@ export async function mapDocumentToUploadPayload(
         totalCpe: parseFloat(doc.total) || 0,
         estadoProccess: 'SUCCESS',//doc.shipping_status ?? '',
         estadoCpe: EstadoDescripcion[doc.state_type_id] ?? '',
-        fechaCdr: dataCdr ? new Date(dataCdr?.responseDate).toISOString() ?? 'NO ENCONTRADO' : 'NO ENCONTRADO',
-        horaCdr: dataCdr ? dataCdr?.responseTime ?? 'NO ENCONTRADO' : 'NO ENCONTRADO',
+        fechaCdr: dataCdr ? new Date(dataCdr?.responseDate).toISOString() : '',
+        horaCdr: dataCdr ? dataCdr?.responseTime : '',
         codigoRespuesta: doc.soap_shipping_response
             ? JSON.parse(doc.soap_shipping_response).code
             : '',
         descripcionRespuesta: doc.soap_shipping_response
             ? JSON.parse(doc.soap_shipping_response).description
             : '',
-        Sucursal: tenant.name ?? '',
+        Sucursal: doc.descripcionEstablecimiento ?? tenant.name ,
         totalDescuentos: Number(doc.total_discount),
         totalOtrosCargos: Number(doc.total_other_taxes),
         totalGravado: Number(doc.total_taxed),

@@ -64,3 +64,7 @@
 2025-05-02T18:15:13.665Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Request failed with status code 500
 2025-05-02T18:16:07.050Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
 2025-05-02T18:17:38.785Z [ERROR]: (UPDATE) Tenant tenancy_demo: error 090c63c1-6189-4de1-af0f-977021e844e0 -> Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2025-05-07T16:28:00.236Z [ERROR]: Error general: Connection lost: The server closed the connection.
+2025-05-07T16:30:00.044Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-05-07T16:31:00.061Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-05-07T16:32:00.056Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
