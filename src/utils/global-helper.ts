@@ -1,0 +1,1 @@
+const isNonEmpty = (s?: string) => typeof s === 'string' && s.trim().length > 0;

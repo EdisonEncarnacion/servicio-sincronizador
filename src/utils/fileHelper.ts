@@ -46,12 +46,11 @@ export async function extractCdrTimestampsFromXml(zipPath: string) {
         return null;
     }
 }
-
-
 export async function getDocumentFileStreams(
     schema: string,
     identifier: string,
 ): Promise<{
+    existsFiles: boolean,
     streams: FileStream[]
     urls: {
         urlCrd: string,
@@ -61,10 +60,10 @@ export async function getDocumentFileStreams(
 }> {
     const baseDir = path.join(TENANCY_STORAGE_PATH, schema);
     const streams: FileStream[] = [];
+    let existsFiles = false;
     let urlCrd = '';
     let urlPdf = '';
     let urlXmlSigned = '';
-
     // PDF files
     const pdfDir = path.join(baseDir, 'pdf');
     if (!fs.existsSync(pdfDir)) {
@@ -89,7 +88,6 @@ export async function getDocumentFileStreams(
 
         );
     }
-
     // CDR files
     const cdrDir = path.join(baseDir, 'cdr');
     if (!fs.existsSync(cdrDir)) {
@@ -103,7 +101,7 @@ export async function getDocumentFileStreams(
         if (cdrFiles.length === 0) {
             logger.warn(`CDR no encontrado en ${cdrDir} para identificador ${identifier}`);
         }
-        console.log(await extractCdrTimestampsFromXml(path.join(cdrDir, cdrFiles[0])));
+
         cdrFiles.forEach(f => {
             if (f.startsWith(`R-${identifier}`) || f.startsWith(`RA-${identifier}`)) {
                 urlCrd = path.join(cdrDir, f);
@@ -117,7 +115,6 @@ export async function getDocumentFileStreams(
 
         );
     }
-
     // Signed XML files
     const signedDir = path.join(baseDir, 'signed');
     if (!fs.existsSync(signedDir)) {
@@ -141,7 +138,6 @@ export async function getDocumentFileStreams(
 
         );
     }
-
     // Unsigned XML files
     const unsignedDir = path.join(baseDir, 'unsigned');
     if (!fs.existsSync(unsignedDir)) {
@@ -160,8 +156,10 @@ export async function getDocumentFileStreams(
             }),
         );
     }
+    existsFiles = [urlCrd, urlPdf, urlXmlSigned].every(isNonEmpty) && streams.length > 0;
 
     return {
+        existsFiles,
         streams,
         urls: {
             urlCrd,

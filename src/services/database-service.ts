@@ -66,12 +66,14 @@ async function ensureMigrationColumns(
     );
     await Promise.all(stmts.map(sql => conn.execute(sql)));
 }
+
 async function markMigrated(
     conn: any,
     schema: string,
     id: number,
     statusCode: string,
     type: 'migrated' | 'updated',
+    migratedFile: boolean,
     idDocumentMigrated?: string,
 ): Promise<void> {
     const baseField = type === 'migrated'
@@ -87,6 +89,9 @@ async function markMigrated(
     if (idDocumentMigrated) {
         assignments.push(`${MigrationColumns.MIGRATED_ID_DOCUMENT} = ?`);
         params.push(idDocumentMigrated);
+    }
+    if (migratedFile) {
+        assignments.push(`${MigrationColumns.MIGRATED_FILE} = 1`);
     }
     const sql = `
       UPDATE \`${schema}\`.documents

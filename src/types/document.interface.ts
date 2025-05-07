@@ -210,6 +210,7 @@ export interface Document {
     state_validate: string | null;
     date_validate: string | null;
     validate_attemps: number;
+    migrated_file: 0 | 1;
     migrated: 0 | 1;
     migrated_at?: string | null;
     migrated_updated_at?: string | null;

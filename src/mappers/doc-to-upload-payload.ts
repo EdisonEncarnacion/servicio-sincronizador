@@ -40,13 +40,17 @@ export interface UploadPayload {
 export async function mapDocumentToUploadPayload(
     doc: Document,
     tenant: TenantInfo,
+    existsFiles: boolean,
     urls: {
         urlCrd: string;
         urlPdf: string;
         urlXmlSigned: string;
     }
 ): Promise<UploadPayload> {
-    const dataCdr = await extractCdrTimestampsFromXml(urls.urlCrd);
+    let dataCdr = null
+    if (existsFiles) {
+        dataCdr = await extractCdrTimestampsFromXml(urls.urlCrd);
+    }
     return {
         id: `${tenant.ruc}-${doc.document_type_id}-${doc.series}-${doc.number}`,
         fechaPublicacion: doc.created_at ? new Date(doc.created_at) : new Date(),
@@ -64,8 +68,8 @@ export async function mapDocumentToUploadPayload(
         totalCpe: parseFloat(doc.total) || 0,
         estadoProccess: 'SUCCESS',//doc.shipping_status ?? '',
         estadoCpe: EstadoDescripcion[doc.state_type_id] ?? '',
-        fechaCdr: new Date(dataCdr?.responseDate).toISOString() ?? 'NO ENCONTRADO',
-        horaCdr: dataCdr?.responseTime.toString() ?? 'NO ENCONTRADO',
+        fechaCdr: dataCdr ? new Date(dataCdr?.responseDate).toISOString() ?? 'NO ENCONTRADO' : 'NO ENCONTRADO',
+        horaCdr: dataCdr ? dataCdr?.responseTime ?? 'NO ENCONTRADO' : 'NO ENCONTRADO',
         codigoRespuesta: doc.soap_shipping_response
             ? JSON.parse(doc.soap_shipping_response).code
             : '',

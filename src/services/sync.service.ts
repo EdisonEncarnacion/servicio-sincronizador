@@ -14,23 +14,21 @@ async function processNewDocuments(conn: any, tenant: TenantInfo) {
     const docs = await fetchNewDocuments(conn, schema);
     logger.info(`Tenant ${schema}: ${docs.length} documentos nuevos`);
     for (const doc of docs) {
-        /* const state = determineFinalState(doc);
-        logger.info(`(NEW) Tenant ${schema}: estado calculado = ${state}`);
-        if (state === 'PENDIENTE') {
-            logger.warn(`(NEW) Tenant ${schema}: documento ${doc.external_id} aún pendiente, se salta`);
-            continue;
-        } */
+        const documentNumber = doc.series + '-' + doc.number;
         try {
             logStateChange(doc, schema);
-            const { status, data } = await uploadSendToExternalApi(doc, schema, tenant);
+            const { status, data
+                , uploadFiles
+            } = await uploadSendToExternalApi(doc, schema, tenant);
             if (status) {
-                await markMigrated(conn, schema, doc.id, doc.state_type_id, 'migrated', data.cpeId);
-                logger.info(`(NEW) Tenant ${schema}: sincronizado ${doc.external_id}`);
+                await markMigrated(conn, schema, doc.id, doc.state_type_id, 'migrated', uploadFiles, data.cpeId);
+                logger.info(`(NEW) Tenant ${schema}: sincronizado ${documentNumber}`);
             } else {
-                logger.warn(`(NEW) Tenant ${schema}: API !=200 para ${doc.external_id}`);
+                logger.warn(`(NEW) Tenant ${schema}: API !=200 para ${documentNumber}`);
             }
         } catch (err: any) {
-            logger.error(`(NEW) Tenant ${schema}: error ${doc.external_id} -> ${err.message}`);
+            logger.error(`(NEW) Tenant ${schema}: error ${documentNumber} -> ${err.message}`);
+            console.log(err);
         }
     }
 }
@@ -39,23 +37,19 @@ async function processUpdatedDocuments(conn: any, tenant: TenantInfo) {
     const docs = await fetchUpdatedDocuments(conn, schema);
     logger.info(`Tenant ${schema}: ${docs.length} documentos actualizados`);
     for (const doc of docs) {
-        /* const state = determineFinalState(doc);
-        logger.info(`(UPDATE) Tenant ${schema}: estado calculado = ${state}`);
-        if (state === 'PENDIENTE') {
-            logger.warn(`(UPDATE) Tenant ${schema}: documento ${doc.external_id} aún pendiente, se salta`);
-            continue;
-        } */
+        const documentNumber = doc.series + '-' + doc.number;
         try {
             logStateChange(doc, schema);
-            const { status, data } = await updateSendToExternalApi(doc)
+            const { status, data, uploadFiles } = await updateSendToExternalApi(doc, !doc.migrated_files, schema, tenant);
             if (status) {
-                await markMigrated(conn, schema, doc.id, doc.state_type_id,  'updated');
-                logger.info(`(NEW) Tenant ${schema}: sincronizado ${doc.external_id}`);
+                await markMigrated(conn, schema, doc.id, doc.state_type_id, 'updated', uploadFiles);
+                logger.info(`(UPDATE) Tenant ${schema}: sincronizado ${documentNumber}`);
             } else {
-                logger.warn(`(UPDATE) Tenant ${schema}: API !=200 para ${doc.external_id}`);
+                logger.warn(`(UPDATE) Tenant ${schema}: API !=200 para ${documentNumber}`);
             }
         } catch (err: any) {
-            logger.error(`(UPDATE) Tenant ${schema}: error ${doc.external_id} -> ${err.message}`);
+            logger.error(`(UPDATE) Tenant ${schema}: error ${documentNumber} -> ${err.message}`);
+            console.log(err);
         }
     }
 }

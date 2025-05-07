@@ -20,34 +20,70 @@ export async function uploadSendToExternalApi(
 ): Promise<
     {
         status: boolean,
-        data: ResponseExternalApi
+        data: ResponseExternalApi,
+        uploadFiles: boolean
     }> {
     const identifier = doc.unique_filename ?? doc.external_id;
     const form = new FormData();
-    const { streams, urls } = await getDocumentFileStreams(schema, identifier);
-    const payload = await mapDocumentToUploadPayload(doc, tenant, urls);
-    form.append('data', JSON.stringify(payload));
-    appendDocumentAttachments(form, streams);
-    const resp = await axios.post(UPLOAD_ENDPOINT, form, {
-        headers: form.getHeaders(),
+    const { existsFiles, streams, urls } = await getDocumentFileStreams(schema, identifier);
+    const payload = await mapDocumentToUploadPayload(doc, tenant, existsFiles, urls);
+    if (existsFiles) {
+        form.append('data', JSON.stringify(payload));
+        appendDocumentAttachments(form, streams);
+        const resp = await axios.post(UPLOAD_ENDPOINT, form, {
+            headers: form.getHeaders(),
+        });
+        console.log(resp.data);
+        return {
+            status: resp.status === 200,
+            data: resp.data.data,
+            uploadFiles: true
+        };
+    }
+    const resp = await axios.post(UPLOAD_ENDPOINT, payload, {
+        headers: {
+            'Content-Type': 'application/json',
+        },
     });
     console.log(resp.data);
     return {
         status: resp.status === 200,
-        data: resp.data.data
-    };
+        data: resp.data.data,
+        uploadFiles: false
+    }
 }
 
 export async function updateSendToExternalApi(
     doc: DocRow,
+    migrateFiles: boolean,
+    schema: string,
+    tenant: TenantInfo
 ): Promise<{
     status: boolean;
     data: ResponseExternalApi;
+    uploadFiles: boolean;
 }> {
     const payload = {
         id: doc.migrated_document_id,
         estado: EstadoDescripcion[doc.state_type_id],
     };
+    if (migrateFiles) {
+        const identifier = doc.unique_filename ?? doc.external_id;
+        const form = new FormData();
+        const { existsFiles, streams, urls } = await getDocumentFileStreams(schema, identifier);
+        if (existsFiles) {
+            form.append('data', JSON.stringify(payload));
+            appendDocumentAttachments(form, streams);
+            const resp = await axios.post(UPDATE_ENDPOINT, form, {
+                headers: form.getHeaders(),
+            });
+            return {
+                status: resp.status === 200,
+                data: resp.data.data,
+                uploadFiles: true
+            };
+        }
+    }
     const resp = await axios.post(UPDATE_ENDPOINT, payload, {
         headers: {
             'Content-Type': 'application/json',
@@ -57,5 +93,6 @@ export async function updateSendToExternalApi(
     return {
         status: resp.status === 200,
         data: resp.data.data,
+        uploadFiles: false
     };
 }
