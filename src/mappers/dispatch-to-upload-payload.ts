@@ -4,7 +4,7 @@ import { UploadPayload } from './doc-to-upload-payload';
 import { DispatchItemRow } from '../services/dispatch-items.service';
 import { extractCdrTimestampsFromXml } from '../utils/fileHelper';
 import { DispatchRowCustom } from '../services/dispatch.service';
-import { Estado } from '../types/document.interface';
+import { Estado, EstadoDescripcion } from '../types/document.interface';
 
 export async function mapDispatchToUploadPayload(
     dispatch: DispatchRowCustom,
@@ -37,7 +37,7 @@ export async function mapDispatchToUploadPayload(
         nombreReceptor: dispatch.customer.name,
         totalCpe: 0,//Number(dispatch.total_weight),
         estadoProccess: 'SUCCESS',
-        estadoCpe: dispatch.state_type_id.toString(),
+        estadoCpe: EstadoDescripcion[dispatch.state_type_id] ?? '',
         fechaCdr: dataCdr ? new Date(dataCdr?.responseDate).toISOString() : '',
         horaCdr: dataCdr ? dataCdr?.responseTime : '',
         codigoRespuesta: dispatch.soap_shipping_response

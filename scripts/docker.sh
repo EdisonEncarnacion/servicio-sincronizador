@@ -6,7 +6,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 # Fichero .env en la carpeta del proyecto
-ENV_FILE="$PROJECT_ROOT/.env.production"
+ENV_FILE="$PROJECT_ROOT/.env.test"
 
 IMAGE="sincronizador-facturador"
 CONTAINER="sync-facturador"

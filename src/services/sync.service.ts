@@ -15,7 +15,8 @@ async function processNewDocuments(conn: any, tenant: TenantInfo) {
     const schema = tenant.schemaName;
     const docs = await fetchNewDocuments(conn, schema);
     if (docs.length > 0) {
-        logger.info(tenant)
+        logger.info(JSON.stringify(tenant, null, 2));
+
         logger.info(`Tenant ${schema}: ${docs.length} documentos nuevos`);
     }
     for (const doc of docs) {
@@ -39,7 +40,7 @@ async function processUpdatedDocuments(conn: any, tenant: TenantInfo) {
     const schema = tenant.schemaName;
     const docs = await fetchUpdatedDocuments(conn, schema);
     if (docs.length > 0) {
-        logger.info(tenant)
+        logger.info(JSON.stringify(tenant, null, 2));
         logger.info(`Tenant ${schema}: ${docs.length} documentos actualizados`);
     }
     for (const doc of docs) {
@@ -63,7 +64,7 @@ async function processNewDispatches(conn: any, tenant: TenantInfo) {
     const schema = tenant.schemaName;
     const disp = await fetchNewDispatches(conn, schema);
     if (disp.length > 0) {
-        logger.info(tenant)
+        logger.info(JSON.stringify(tenant, null, 2));
         logger.info(`Tenant ${schema}: ${disp.length} guías nuevas`);
     }
     for (const d of disp) {
@@ -85,7 +86,7 @@ async function processUpdatedDispatches(conn: any, tenant: TenantInfo) {
     const schema = tenant.schemaName;
     const disp = await fetchUpdatedDispatches(conn, schema);
     if (disp.length > 0) {
-        logger.info(tenant)
+        logger.info(JSON.stringify(tenant, null, 2));
         logger.info(`Tenant ${schema}: ${disp.length} guías actualizadas`);
     }
     for (const d of disp) {
