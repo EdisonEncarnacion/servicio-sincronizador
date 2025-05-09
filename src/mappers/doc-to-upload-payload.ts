@@ -1,5 +1,5 @@
 import { DocRowCustom } from "../services/document.service";
-import { Document, EstadoDescripcion } from "../types/document.interface";
+import { Document, Estado, EstadoDescripcion } from "../types/document.interface";
 import { TenantInfo } from "../types/tenant.interface";
 import { extractCdrTimestampsFromXml } from "../utils/fileHelper";
 export interface UploadPayload {
@@ -35,7 +35,8 @@ export interface UploadPayload {
     totalIgv: number;
     totalIsc: number;
     totalOtrosTributos: number;
-    indValido: 1
+    indValido: number;
+    rawData?: string;
 }
 export async function mapDocumentToUploadPayload(
     doc: DocRowCustom,
@@ -76,7 +77,7 @@ export async function mapDocumentToUploadPayload(
         descripcionRespuesta: doc.soap_shipping_response
             ? JSON.parse(doc.soap_shipping_response).description
             : '',
-        Sucursal: doc.descripcionEstablecimiento ?? tenant.name ,
+        Sucursal: doc.descripcionEstablecimiento ?? tenant.name,
         totalDescuentos: Number(doc.total_discount),
         totalOtrosCargos: Number(doc.total_other_taxes),
         totalGravado: Number(doc.total_taxed),
@@ -87,7 +88,6 @@ export async function mapDocumentToUploadPayload(
         totalIgv: Number(doc.total_igv),
         totalIsc: Number(doc.total_isc),
         totalOtrosTributos: 0,
-        indValido: 1
-
+        indValido: doc.state_type_id !== Estado.RECHAZADO ? 1 : 0,
     };
 }

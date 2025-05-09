@@ -68,3 +68,98 @@
 2025-05-07T16:30:00.044Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
 2025-05-07T16:31:00.061Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
 2025-05-07T16:32:00.056Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-05-09T00:29:23.906Z [ERROR]: Error general: Connection lost: The server closed the connection.
+08/05/2025, 19:31:44 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:44 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:44 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-7 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-8 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:46 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-9 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:34:20 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:34:20 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:34:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:34:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:33 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:33 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:34 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:34 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:34 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:34 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:41:54 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:41:54 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:41:54 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:41:55 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:41:55 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:46:40 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:46:40 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:46:40 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:46:40 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:46:41 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:49:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 19:49:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 19:49:22 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 19:51:03 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 19:51:03 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:01:14 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:01:15 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:07:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:21:38 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:21:38 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:21:38 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:21:38 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:52:47 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:52:48 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:52:48 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 21:22:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 21:22:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 21:22:22 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 22:17:58 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-7 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-8 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-9 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-10 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-11 -> Request failed with status code 404
+08/05/2025, 22:18:01 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-12 -> Request failed with status code 404
+08/05/2025, 22:18:01 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-13 -> Request failed with status code 404
+08/05/2025, 22:18:01 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-14 -> Request failed with status code 404
+08/05/2025, 22:19:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-7 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-8 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-9 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-10 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-11 -> Request failed with status code 404
+08/05/2025, 22:19:12 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-12 -> Request failed with status code 404
+08/05/2025, 22:19:12 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-13 -> Request failed with status code 404
+08/05/2025, 22:19:12 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-14 -> Request failed with status code 404
+08/05/2025, 22:22:08 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Request failed with status code 404
+08/05/2025, 22:22:08 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Request failed with status code 404
+08/05/2025, 22:22:08 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Request failed with status code 404
+08/05/2025, 22:22:08 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-7 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-8 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-9 -> Request failed with status code 404
+08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-10 -> Request failed with status code 404
+08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-11 -> Request failed with status code 404
+08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-12 -> Request failed with status code 404
+08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-13 -> Request failed with status code 404
+08/05/2025, 22:34:38 [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error F112-1 -> 

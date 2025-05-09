@@ -10,20 +10,27 @@ export type FileStream = {
     stream: fs.ReadStream;
     filename: string;
 };
-/**
- * @param xmlPath - Ruta al archivo XML del CDR
- * @returns Objeto con las cuatro marcas temporales o null si no las encuentra.
- */
-export async function extractCdrTimestampsFromXml(zipPath: string) {
+
+
+export async function extractCdrTimestampsFromXml(filePath: string) {
     try {
-        const directory = await unzipper.Open.file(zipPath);
-        const xmlEntry = directory.files.find(f => f.path.toLowerCase().endsWith('.xml'));
-        if (!xmlEntry) {
-            console.warn('No se encontró XML dentro del ZIP:', zipPath);
-            return null;
+        let xmlContent: string = '';
+
+        if (filePath.toLowerCase().endsWith('.zip')) {
+            const directory = await unzipper.Open.file(filePath);
+            const xmlEntry = directory.files.find(f => f.path.toLowerCase().endsWith('.xml'));
+            if (!xmlEntry) {
+                console.warn('No se encontró XML dentro del ZIP:', filePath);
+                return null;
+            }
+            const xmlBuffer = await xmlEntry.buffer();
+            xmlContent = xmlBuffer.toString('utf8');
         }
-        const xmlBuffer = await xmlEntry.buffer();
-        const xmlContent = xmlBuffer.toString('utf8');
+
+        if (!xmlContent) {
+            xmlContent = fs.readFileSync(filePath, 'utf8');
+        }
+
         const parsed = await parseStringPromise(xmlContent, {
             explicitArray: false,
             tagNameProcessors: [name => name.replace(/^.*:/, '')]
@@ -41,12 +48,14 @@ export async function extractCdrTimestampsFromXml(zipPath: string) {
                 responseTime: ResponseTime,
             };
         }
+
         return null;
     } catch (err) {
         console.error('Error al extraer timestamps del CDR:', err);
         return null;
     }
 }
+
 export async function getDocumentFileStreams(
     schema: string,
     identifier: string,
@@ -97,7 +106,7 @@ export async function getDocumentFileStreams(
         const cdrFiles = fs.readdirSync(cdrDir)
             .filter(f =>
                 (f.startsWith(`R-${identifier}`) || f.startsWith(`RA-${identifier}`)) &&
-                f.endsWith('.zip')
+                (f.endsWith('.zip') || f.endsWith('.xml'))
             );
         if (cdrFiles.length === 0) {
             logger.warn(`CDR no encontrado en ${cdrDir} para identificador ${identifier}`);

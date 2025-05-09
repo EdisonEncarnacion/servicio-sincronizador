@@ -5,7 +5,7 @@ import { NODE_ENV, SYNC_INTERVAL_CRON } from './config/env';
 import { syncAllTenants } from './services/sync.service';
 
 
-let isRunning = false;
+/* let isRunning = false;
 
 const job = new CronJob(
     SYNC_INTERVAL_CRON,
@@ -29,10 +29,10 @@ const job = new CronJob(
     true,
     'America/Lima'
 );
+job.start(); */
 console.log(`iniciando en modo: ${NODE_ENV}`)
-job.start();
 
-/* async function start() {
+async function start() {
     logger.info('Iniciando sincronización');
 
     try {
@@ -43,4 +43,3 @@ job.start();
     }
 }
 start()
- */

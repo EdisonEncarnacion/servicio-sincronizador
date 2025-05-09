@@ -1602,3 +1602,631 @@
 2025-05-07T16:31:00.061Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
 2025-05-07T16:32:00.054Z [INFO]: Iniciando sincronización
 2025-05-07T16:32:00.056Z [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3307
+2025-05-09T00:29:23.699Z [INFO]: Iniciando sincronización
+2025-05-09T00:29:23.906Z [ERROR]: Error general: Connection lost: The server closed the connection.
+08/05/2025, 19:31:23 [INFO]: Iniciando sincronización
+08/05/2025, 19:31:27 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 19:31:33 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 19:31:33 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 19:31:38 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 19:31:38 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 19:31:44 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 19:31:44 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:44 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:44 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-7 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:45 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-8 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:31:46 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-9 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:34:00 [INFO]: Iniciando sincronización
+08/05/2025, 19:34:03 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 19:34:09 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 19:34:09 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 19:34:14 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 19:34:14 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 19:34:20 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 19:34:20 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:34:20 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:34:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:34:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:12 [INFO]: Iniciando sincronización
+08/05/2025, 19:36:16 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 19:36:21 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 19:36:21 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 19:36:27 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 19:36:27 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 19:36:33 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 19:36:33 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:33 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:34 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:34 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:34 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:36:34 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:41:33 [INFO]: Iniciando sincronización
+08/05/2025, 19:41:37 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 19:41:42 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 19:41:42 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 19:41:48 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 19:41:48 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 19:41:54 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 19:41:54 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:41:54 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:41:54 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:41:55 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:41:55 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Cannot read properties of undefined (reading 'slice')
+08/05/2025, 19:46:19 [INFO]: Iniciando sincronización
+08/05/2025, 19:46:23 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 19:46:28 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 19:46:28 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 19:46:34 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 19:46:34 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 19:46:39 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 19:46:40 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-1
+08/05/2025, 19:46:40 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:46:40 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-2
+08/05/2025, 19:46:40 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:46:40 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-3
+08/05/2025, 19:46:40 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:46:40 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-4
+08/05/2025, 19:46:40 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:46:41 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-5
+08/05/2025, 19:46:41 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Cannot read properties of undefined (reading 'toString')
+08/05/2025, 19:48:59 [INFO]: Iniciando sincronización
+08/05/2025, 19:49:03 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 19:49:08 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 19:49:08 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 19:49:14 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 19:49:14 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 19:49:21 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 19:49:21 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-1
+08/05/2025, 19:49:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 19:49:21 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-2
+08/05/2025, 19:49:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 19:49:22 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-3
+08/05/2025, 19:49:22 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 19:50:40 [INFO]: Iniciando sincronización
+08/05/2025, 19:50:44 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 19:50:51 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 19:50:51 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 19:50:56 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 19:50:56 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 19:51:02 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 19:51:03 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-1
+08/05/2025, 19:51:03 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 19:51:03 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_fesanrolurin/cdr para identificador 20508970791-09-TT02-2
+08/05/2025, 19:51:03 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:00:54 [INFO]: Iniciando sincronización
+08/05/2025, 20:00:58 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 20:01:03 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 20:01:03 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 20:01:08 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 20:01:08 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 20:01:14 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 20:01:14 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:01:15 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:06:47 [INFO]: Iniciando sincronización
+08/05/2025, 20:06:51 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 20:06:57 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 20:06:57 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 20:07:04 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 20:07:04 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 20:07:10 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 20:07:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:16:48 [INFO]: Iniciando sincronización
+08/05/2025, 20:16:52 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 20:16:58 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 20:16:58 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 20:17:04 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 20:17:04 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 20:17:10 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 20:17:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:17:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:21:16 [INFO]: Iniciando sincronización
+08/05/2025, 20:21:20 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 20:21:26 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 20:21:26 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 20:21:32 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 20:21:32 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 20:21:37 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 20:21:38 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:21:38 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:21:38 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:21:38 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:52:24 [INFO]: Iniciando sincronización
+08/05/2025, 20:52:28 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 20:52:34 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 20:52:34 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 20:52:40 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 20:52:40 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 20:52:47 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 20:52:47 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:52:48 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 20:52:48 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 21:21:59 [INFO]: Iniciando sincronización
+08/05/2025, 21:22:03 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 21:22:09 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 21:22:09 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 21:22:15 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 21:22:15 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 21:22:20 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 21:22:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 21:22:21 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 21:22:22 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> getaddrinfo ENOTFOUND tu-api-externa.com
+08/05/2025, 22:17:37 [INFO]: Iniciando sincronización
+08/05/2025, 22:17:41 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:17:47 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 22:17:47 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:17:52 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 22:17:52 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:17:58 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 22:17:58 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Request failed with status code 404
+08/05/2025, 22:17:59 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-7 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-8 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-9 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-10 -> Request failed with status code 404
+08/05/2025, 22:18:00 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-11 -> Request failed with status code 404
+08/05/2025, 22:18:01 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-12 -> Request failed with status code 404
+08/05/2025, 22:18:01 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-13 -> Request failed with status code 404
+08/05/2025, 22:18:01 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-14 -> Request failed with status code 404
+08/05/2025, 22:18:01 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:18:49 [INFO]: Iniciando sincronización
+08/05/2025, 22:18:52 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:18:58 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 22:18:58 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:19:03 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 22:19:03 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:19:09 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 22:19:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Request failed with status code 404
+08/05/2025, 22:19:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-7 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-8 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-9 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-10 -> Request failed with status code 404
+08/05/2025, 22:19:11 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-11 -> Request failed with status code 404
+08/05/2025, 22:19:12 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-12 -> Request failed with status code 404
+08/05/2025, 22:19:12 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-13 -> Request failed with status code 404
+08/05/2025, 22:19:12 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-14 -> Request failed with status code 404
+08/05/2025, 22:19:12 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:21:47 [INFO]: Iniciando sincronización
+08/05/2025, 22:21:51 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:21:57 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 22:21:57 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:22:02 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 22:22:02 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:22:07 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 22:22:08 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-1 -> Request failed with status code 404
+08/05/2025, 22:22:08 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-2 -> Request failed with status code 404
+08/05/2025, 22:22:08 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-3 -> Request failed with status code 404
+08/05/2025, 22:22:08 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-4 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-5 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-6 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-7 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-8 -> Request failed with status code 404
+08/05/2025, 22:22:09 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-9 -> Request failed with status code 404
+08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-10 -> Request failed with status code 404
+08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-11 -> Request failed with status code 404
+08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-12 -> Request failed with status code 404
+08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-13 -> Request failed with status code 404
+08/05/2025, 22:22:45 [INFO]: Iniciando sincronización
+08/05/2025, 22:22:49 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:22:54 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 22:22:54 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:23:00 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 22:23:00 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:23:06 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 22:23:08 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-1
+08/05/2025, 22:23:10 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-2
+08/05/2025, 22:23:12 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-3
+08/05/2025, 22:23:13 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-4
+08/05/2025, 22:23:15 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-5
+08/05/2025, 22:23:17 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-6
+08/05/2025, 22:23:18 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-7
+08/05/2025, 22:23:20 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-8
+08/05/2025, 22:23:22 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-9
+08/05/2025, 22:23:24 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-10
+08/05/2025, 22:23:25 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-11
+08/05/2025, 22:23:27 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-12
+08/05/2025, 22:23:29 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-13
+08/05/2025, 22:23:30 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-14
+08/05/2025, 22:23:30 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:23:36 [INFO]: Tenant tenancy_servicioschasqui: 4 guías nuevas
+08/05/2025, 22:23:38 [INFO]: (NEW DISP) Tenant tenancy_servicioschasqui: sincronizado 20452499216-09-TR02-1
+08/05/2025, 22:23:40 [INFO]: (NEW DISP) Tenant tenancy_servicioschasqui: sincronizado 20452499216-09-TR02-2
+08/05/2025, 22:23:41 [INFO]: (NEW DISP) Tenant tenancy_servicioschasqui: sincronizado 20452499216-09-TR02-3
+08/05/2025, 22:23:43 [INFO]: (NEW DISP) Tenant tenancy_servicioschasqui: sincronizado 20452499216-09-TR02-4
+08/05/2025, 22:23:43 [INFO]: **** Tenant: tenancy_demo ****
+08/05/2025, 22:23:49 [INFO]: Tenant tenancy_demo: 0 guías nuevas
+08/05/2025, 22:23:49 [INFO]: **** Tenant: tenancy_escorpio ****
+08/05/2025, 22:23:54 [INFO]: Tenant tenancy_escorpio: 0 guías nuevas
+08/05/2025, 22:23:54 [INFO]: **** Tenant: tenancy_grifodennis ****
+08/05/2025, 22:25:13 [INFO]: Iniciando sincronización
+08/05/2025, 22:25:17 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:25:22 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:25:22 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:25:28 [INFO]: Tenant tenancy_inversionesyservicios34: 4 documentos nuevos
+08/05/2025, 22:25:29 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-30
+08/05/2025, 22:25:31 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-31
+08/05/2025, 22:25:32 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-32
+08/05/2025, 22:25:34 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-33
+08/05/2025, 22:25:34 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:25:39 [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+08/05/2025, 22:25:39 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:25:44 [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+08/05/2025, 22:25:44 [INFO]: **** Tenant: tenancy_demo ****
+08/05/2025, 22:25:50 [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+08/05/2025, 22:25:50 [INFO]: **** Tenant: tenancy_escorpio ****
+08/05/2025, 22:25:55 [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+08/05/2025, 22:25:55 [INFO]: **** Tenant: tenancy_grifodennis ****
+08/05/2025, 22:28:44 [INFO]: Iniciando sincronización
+08/05/2025, 22:28:48 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:28:53 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:28:53 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:28:59 [INFO]: Tenant tenancy_inversionesyservicios34: 37 documentos nuevos
+08/05/2025, 22:29:00 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-1
+08/05/2025, 22:29:02 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-1
+08/05/2025, 22:29:03 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-2
+08/05/2025, 22:29:04 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-3
+08/05/2025, 22:29:05 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-5
+08/05/2025, 22:29:06 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B901-1
+08/05/2025, 22:29:08 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-6
+08/05/2025, 22:29:09 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-7
+08/05/2025, 22:30:34 [INFO]: Iniciando sincronización
+08/05/2025, 22:30:38 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:30:43 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:30:43 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:30:49 [INFO]: Tenant tenancy_inversionesyservicios34: 29 documentos nuevos
+08/05/2025, 22:30:50 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-8
+08/05/2025, 22:30:52 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-9
+08/05/2025, 22:30:53 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-10
+08/05/2025, 22:30:55 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-11
+08/05/2025, 22:30:56 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-12
+08/05/2025, 22:30:57 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-13
+08/05/2025, 22:30:59 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-14
+08/05/2025, 22:31:00 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-15
+08/05/2025, 22:31:01 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-16
+08/05/2025, 22:31:02 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-17
+08/05/2025, 22:31:05 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-18
+08/05/2025, 22:31:06 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-19
+08/05/2025, 22:31:07 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-20
+08/05/2025, 22:31:08 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-21
+08/05/2025, 22:31:09 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-22
+08/05/2025, 22:31:10 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-23
+08/05/2025, 22:31:11 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-24
+08/05/2025, 22:31:13 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-25
+08/05/2025, 22:31:14 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-26
+08/05/2025, 22:31:15 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-27
+08/05/2025, 22:31:16 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-28
+08/05/2025, 22:31:18 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-29
+08/05/2025, 22:31:19 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-1
+08/05/2025, 22:31:20 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-2
+08/05/2025, 22:31:22 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-2
+08/05/2025, 22:31:23 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-30
+08/05/2025, 22:31:24 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-31
+08/05/2025, 22:31:25 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-32
+08/05/2025, 22:31:27 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-33
+08/05/2025, 22:31:27 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:31:33 [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+08/05/2025, 22:31:33 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:31:39 [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+08/05/2025, 22:31:39 [INFO]: **** Tenant: tenancy_demo ****
+08/05/2025, 22:31:44 [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+08/05/2025, 22:31:44 [INFO]: **** Tenant: tenancy_escorpio ****
+08/05/2025, 22:31:50 [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+08/05/2025, 22:31:50 [INFO]: **** Tenant: tenancy_grifodennis ****
+08/05/2025, 22:31:56 [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+08/05/2025, 22:31:56 [INFO]: Sincronización completada
+08/05/2025, 22:33:42 [INFO]: Iniciando sincronización
+08/05/2025, 22:33:46 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:33:52 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:33:52 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:33:59 [INFO]: Tenant tenancy_inversionesyservicios34: 37 documentos nuevos
+08/05/2025, 22:34:00 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-1
+08/05/2025, 22:34:02 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-1
+08/05/2025, 22:34:03 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-2
+08/05/2025, 22:34:05 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-3
+08/05/2025, 22:34:07 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-5
+08/05/2025, 22:34:08 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B901-1
+08/05/2025, 22:34:09 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-6
+08/05/2025, 22:34:11 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-7
+08/05/2025, 22:34:12 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-8
+08/05/2025, 22:34:13 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-9
+08/05/2025, 22:34:15 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-10
+08/05/2025, 22:34:16 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-11
+08/05/2025, 22:34:17 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-12
+08/05/2025, 22:34:18 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-13
+08/05/2025, 22:34:20 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-14
+08/05/2025, 22:34:21 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-15
+08/05/2025, 22:34:22 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-16
+08/05/2025, 22:34:23 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-17
+08/05/2025, 22:34:25 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-18
+08/05/2025, 22:34:26 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-19
+08/05/2025, 22:34:27 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-20
+08/05/2025, 22:34:28 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-21
+08/05/2025, 22:34:30 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-22
+08/05/2025, 22:34:31 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-23
+08/05/2025, 22:34:32 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-24
+08/05/2025, 22:34:34 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-25
+08/05/2025, 22:34:35 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-26
+08/05/2025, 22:34:36 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-27
+08/05/2025, 22:34:37 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-28
+08/05/2025, 22:34:38 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-29
+08/05/2025, 22:34:38 [WARN]: PDF no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf para identificador 20613266713-01-F112-1
+08/05/2025, 22:34:38 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr para identificador 20613266713-01-F112-1
+08/05/2025, 22:34:38 [WARN]: XML firmado no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed para identificador 20613266713-01-F112-1
+08/05/2025, 22:34:38 [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error F112-1 -> 
+08/05/2025, 22:34:40 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-2
+08/05/2025, 22:34:42 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-2
+08/05/2025, 22:34:43 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-30
+08/05/2025, 22:35:25 [INFO]: Iniciando sincronización
+08/05/2025, 22:35:29 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:35:34 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:35:34 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:35:40 [INFO]: Tenant tenancy_inversionesyservicios34: 4 documentos nuevos
+08/05/2025, 22:35:40 [WARN]: PDF no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf para identificador 20613266713-01-F112-1
+08/05/2025, 22:35:40 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr para identificador 20613266713-01-F112-1
+08/05/2025, 22:35:40 [WARN]: XML firmado no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed para identificador 20613266713-01-F112-1
+08/05/2025, 22:35:41 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-1
+08/05/2025, 22:35:42 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-31
+08/05/2025, 22:35:44 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-32
+08/05/2025, 22:35:45 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-33
+08/05/2025, 22:35:45 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:35:51 [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+08/05/2025, 22:35:51 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:35:57 [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+08/05/2025, 22:35:57 [INFO]: **** Tenant: tenancy_demo ****
+08/05/2025, 22:36:03 [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+08/05/2025, 22:36:03 [INFO]: **** Tenant: tenancy_escorpio ****
+08/05/2025, 22:36:08 [INFO]: Iniciando sincronización
+08/05/2025, 22:36:12 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:36:18 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:36:18 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:36:24 [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos nuevos
+08/05/2025, 22:36:24 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:36:30 [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+08/05/2025, 22:36:30 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:36:36 [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+08/05/2025, 22:36:36 [INFO]: **** Tenant: tenancy_demo ****
+08/05/2025, 22:36:41 [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+08/05/2025, 22:36:41 [INFO]: **** Tenant: tenancy_escorpio ****
+08/05/2025, 22:42:12 [INFO]: Iniciando sincronización
+08/05/2025, 22:42:16 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:42:22 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:42:22 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:42:28 [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos nuevos
+08/05/2025, 22:42:28 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:42:54 [INFO]: Iniciando sincronización
+08/05/2025, 22:42:58 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:43:05 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:43:05 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:43:11 [INFO]: Tenant tenancy_inversionesyservicios34: 1 documentos nuevos
+08/05/2025, 22:43:11 [WARN]: PDF no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf para identificador 20613266713-01-F112-1
+08/05/2025, 22:43:11 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr para identificador 20613266713-01-F112-1
+08/05/2025, 22:43:11 [WARN]: XML firmado no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed para identificador 20613266713-01-F112-1
+08/05/2025, 22:43:11 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-1
+08/05/2025, 22:43:11 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:44:01 [INFO]: Iniciando sincronización
+08/05/2025, 22:44:05 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:44:11 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:44:11 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:44:17 [INFO]: Tenant tenancy_inversionesyservicios34: 37 documentos nuevos
+08/05/2025, 22:44:19 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-1
+08/05/2025, 22:44:20 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-1
+08/05/2025, 22:44:23 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-2
+08/05/2025, 22:44:25 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-3
+08/05/2025, 22:44:27 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-5
+08/05/2025, 22:44:28 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B901-1
+08/05/2025, 22:44:29 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-6
+08/05/2025, 22:44:31 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-7
+08/05/2025, 22:44:32 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-8
+08/05/2025, 22:44:34 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-9
+08/05/2025, 22:44:35 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-10
+08/05/2025, 22:44:36 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-11
+08/05/2025, 22:44:38 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-12
+08/05/2025, 22:44:39 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-13
+08/05/2025, 22:44:40 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-14
+08/05/2025, 22:44:41 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-15
+08/05/2025, 22:44:43 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-16
+08/05/2025, 22:44:44 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-17
+08/05/2025, 22:44:45 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-18
+08/05/2025, 22:44:46 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-19
+08/05/2025, 22:44:48 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-20
+08/05/2025, 22:44:49 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-21
+08/05/2025, 22:44:50 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-22
+08/05/2025, 22:44:51 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-23
+08/05/2025, 22:44:53 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-24
+08/05/2025, 22:44:54 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-25
+08/05/2025, 22:44:56 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-26
+08/05/2025, 22:44:57 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-27
+08/05/2025, 22:44:59 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-28
+08/05/2025, 22:45:00 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-29
+08/05/2025, 22:45:00 [WARN]: PDF no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf para identificador 20613266713-01-F112-1
+08/05/2025, 22:45:00 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr para identificador 20613266713-01-F112-1
+08/05/2025, 22:45:00 [WARN]: XML firmado no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed para identificador 20613266713-01-F112-1
+08/05/2025, 22:45:00 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-1
+08/05/2025, 22:45:02 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-2
+08/05/2025, 22:45:03 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-2
+08/05/2025, 22:45:04 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-30
+08/05/2025, 22:45:06 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-31
+08/05/2025, 22:45:07 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-32
+08/05/2025, 22:45:08 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-33
+08/05/2025, 22:45:08 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:45:14 [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+08/05/2025, 22:45:14 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:51:36 [INFO]: Iniciando sincronización
+08/05/2025, 22:51:40 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:52:02 [INFO]: Iniciando sincronización
+08/05/2025, 22:52:07 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 22:52:13 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 22:52:13 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 22:52:13 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 22:52:19 [INFO]: Tenant tenancy_inversionesyservicios34: 37 documentos nuevos
+08/05/2025, 22:52:21 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-1
+08/05/2025, 22:52:22 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-1
+08/05/2025, 22:52:24 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-2
+08/05/2025, 22:52:25 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-3
+08/05/2025, 22:52:26 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-5
+08/05/2025, 22:52:28 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B901-1
+08/05/2025, 22:52:29 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-6
+08/05/2025, 22:52:30 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-7
+08/05/2025, 22:52:31 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-8
+08/05/2025, 22:52:33 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-9
+08/05/2025, 22:52:34 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-10
+08/05/2025, 22:52:35 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-11
+08/05/2025, 22:52:37 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-12
+08/05/2025, 22:52:38 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-13
+08/05/2025, 22:52:39 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-14
+08/05/2025, 22:52:40 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-15
+08/05/2025, 22:52:41 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-16
+08/05/2025, 22:52:42 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-17
+08/05/2025, 22:52:44 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-18
+08/05/2025, 22:52:45 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-19
+08/05/2025, 22:52:46 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-20
+08/05/2025, 22:52:48 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-21
+08/05/2025, 22:52:49 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-22
+08/05/2025, 22:52:50 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-23
+08/05/2025, 22:52:52 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-24
+08/05/2025, 22:52:53 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-25
+08/05/2025, 22:52:54 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-26
+08/05/2025, 22:52:55 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-27
+08/05/2025, 22:52:57 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-28
+08/05/2025, 22:52:59 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-29
+08/05/2025, 22:52:59 [WARN]: PDF no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf para identificador 20613266713-01-F112-1
+08/05/2025, 22:52:59 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr para identificador 20613266713-01-F112-1
+08/05/2025, 22:52:59 [WARN]: XML firmado no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed para identificador 20613266713-01-F112-1
+08/05/2025, 22:52:59 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-1
+08/05/2025, 22:53:00 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-2
+08/05/2025, 22:53:02 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-2
+08/05/2025, 22:53:04 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-30
+08/05/2025, 22:53:06 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-31
+08/05/2025, 22:53:07 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-32
+08/05/2025, 22:53:09 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-33
+08/05/2025, 22:53:09 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 22:53:09 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 22:53:17 [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+08/05/2025, 22:53:17 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 22:53:21 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-1
+08/05/2025, 22:53:23 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-2
+08/05/2025, 22:53:24 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-3
+08/05/2025, 22:53:29 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-4
+08/05/2025, 22:53:31 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-5
+08/05/2025, 22:53:32 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-6
+08/05/2025, 22:53:34 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-7
+08/05/2025, 22:53:35 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-8
+08/05/2025, 22:53:37 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-9
+08/05/2025, 22:53:39 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-10
+08/05/2025, 22:53:41 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-11
+08/05/2025, 22:53:42 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-12
+08/05/2025, 22:53:44 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-13
+08/05/2025, 22:53:45 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-14
+08/05/2025, 22:53:45 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 22:53:51 [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+08/05/2025, 22:53:51 [INFO]: Tenant tenancy_servicioschasqui: 0 guías nuevas
+08/05/2025, 22:53:51 [INFO]: **** Tenant: tenancy_demo ****
+08/05/2025, 22:53:57 [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+08/05/2025, 22:53:58 [INFO]: Tenant tenancy_demo: 0 guías nuevas
+08/05/2025, 22:53:58 [INFO]: **** Tenant: tenancy_escorpio ****
+08/05/2025, 22:54:03 [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+08/05/2025, 22:54:04 [INFO]: Tenant tenancy_escorpio: 0 guías nuevas
+08/05/2025, 22:54:04 [INFO]: **** Tenant: tenancy_grifodennis ****
+08/05/2025, 22:54:09 [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+08/05/2025, 23:03:37 [INFO]: Iniciando sincronización
+08/05/2025, 23:03:40 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 23:03:46 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 23:03:46 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 23:03:46 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 23:03:52 [INFO]: Tenant tenancy_inversionesyservicios34: 0 documentos nuevos
+08/05/2025, 23:03:52 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 23:03:52 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 23:03:57 [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+08/05/2025, 23:03:58 [INFO]: Tenant tenancy_fesanrolurin: 14 guías nuevas
+08/05/2025, 23:04:00 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-1
+08/05/2025, 23:04:14 [INFO]: Iniciando sincronización
+08/05/2025, 23:04:17 [INFO]: **** Tenant: tenancy_jperezcuellar ****
+08/05/2025, 23:04:22 [INFO]: Tenant tenancy_jperezcuellar: 0 documentos nuevos
+08/05/2025, 23:04:23 [INFO]: Tenant tenancy_jperezcuellar: 0 guías nuevas
+08/05/2025, 23:04:23 [INFO]: **** Tenant: tenancy_inversionesyservicios34 ****
+08/05/2025, 23:04:28 [INFO]: Tenant tenancy_inversionesyservicios34: 37 documentos nuevos
+08/05/2025, 23:04:30 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-1
+08/05/2025, 23:04:31 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-1
+08/05/2025, 23:04:32 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-2
+08/05/2025, 23:04:34 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-3
+08/05/2025, 23:04:35 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-5
+08/05/2025, 23:04:36 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B901-1
+08/05/2025, 23:04:37 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-6
+08/05/2025, 23:04:38 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-7
+08/05/2025, 23:04:40 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-8
+08/05/2025, 23:04:41 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-9
+08/05/2025, 23:04:42 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-10
+08/05/2025, 23:04:43 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-11
+08/05/2025, 23:04:44 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-12
+08/05/2025, 23:04:45 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-13
+08/05/2025, 23:04:46 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-14
+08/05/2025, 23:04:47 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-15
+08/05/2025, 23:04:49 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-16
+08/05/2025, 23:04:50 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-17
+08/05/2025, 23:04:51 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-18
+08/05/2025, 23:04:52 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-19
+08/05/2025, 23:04:53 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-20
+08/05/2025, 23:04:54 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-21
+08/05/2025, 23:04:55 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-22
+08/05/2025, 23:04:56 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-23
+08/05/2025, 23:04:57 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-24
+08/05/2025, 23:04:58 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-25
+08/05/2025, 23:04:59 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-26
+08/05/2025, 23:05:00 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-27
+08/05/2025, 23:05:02 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-28
+08/05/2025, 23:05:03 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-29
+08/05/2025, 23:05:03 [WARN]: PDF no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/pdf para identificador 20613266713-01-F112-1
+08/05/2025, 23:05:03 [WARN]: CDR no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/cdr para identificador 20613266713-01-F112-1
+08/05/2025, 23:05:03 [WARN]: XML firmado no encontrado en /home/rafael/proyects/smart1/storage/app/tenancy/tenants/tenancy_inversionesyservicios34/signed para identificador 20613266713-01-F112-1
+08/05/2025, 23:05:04 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-1
+08/05/2025, 23:05:05 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F112-2
+08/05/2025, 23:05:06 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado F701-2
+08/05/2025, 23:05:07 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-30
+08/05/2025, 23:05:09 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-31
+08/05/2025, 23:05:10 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-32
+08/05/2025, 23:05:11 [INFO]: (NEW) Tenant tenancy_inversionesyservicios34: sincronizado B701-33
+08/05/2025, 23:05:12 [INFO]: Tenant tenancy_inversionesyservicios34: 0 guías nuevas
+08/05/2025, 23:05:12 [INFO]: **** Tenant: tenancy_fesanrolurin ****
+08/05/2025, 23:05:17 [INFO]: Tenant tenancy_fesanrolurin: 0 documentos nuevos
+08/05/2025, 23:05:18 [INFO]: Tenant tenancy_fesanrolurin: 13 guías nuevas
+08/05/2025, 23:05:19 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-2
+08/05/2025, 23:05:21 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-3
+08/05/2025, 23:05:22 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-4
+08/05/2025, 23:05:24 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-5
+08/05/2025, 23:05:25 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-6
+08/05/2025, 23:05:27 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-7
+08/05/2025, 23:05:28 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-8
+08/05/2025, 23:05:29 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-9
+08/05/2025, 23:05:31 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-10
+08/05/2025, 23:05:33 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-11
+08/05/2025, 23:05:34 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-12
+08/05/2025, 23:05:35 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-13
+08/05/2025, 23:05:37 [INFO]: (NEW DISP) Tenant tenancy_fesanrolurin: sincronizado 20508970791-09-TT02-14
+08/05/2025, 23:05:37 [INFO]: **** Tenant: tenancy_servicioschasqui ****
+08/05/2025, 23:05:42 [INFO]: Tenant tenancy_servicioschasqui: 0 documentos nuevos
+08/05/2025, 23:05:42 [INFO]: Tenant tenancy_servicioschasqui: 0 guías nuevas
+08/05/2025, 23:05:42 [INFO]: **** Tenant: tenancy_demo ****
+08/05/2025, 23:05:47 [INFO]: Tenant tenancy_demo: 0 documentos nuevos
+08/05/2025, 23:05:48 [INFO]: Tenant tenancy_demo: 0 guías nuevas
+08/05/2025, 23:05:48 [INFO]: **** Tenant: tenancy_escorpio ****
+08/05/2025, 23:05:53 [INFO]: Tenant tenancy_escorpio: 0 documentos nuevos
+08/05/2025, 23:05:53 [INFO]: Tenant tenancy_escorpio: 0 guías nuevas
+08/05/2025, 23:05:53 [INFO]: **** Tenant: tenancy_grifodennis ****
+08/05/2025, 23:05:59 [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
+08/05/2025, 23:05:59 [INFO]: Tenant tenancy_grifodennis: 0 guías nuevas
+08/05/2025, 23:05:59 [INFO]: Sincronización completada

@@ -58,44 +58,49 @@ export async function listTenantsData(): Promise<TenantInfo[]> {
 }
 async function ensureMigrationColumns(
     conn: any,
-    schema: string
+    schema: string,
+    tableName: string
 ): Promise<void> {
-    const table = `\`${schema}\`.documents`;
+    const table = `\`${schema}\`.\`${tableName}\``;
     const stmts = Object.entries(MIGRATION_COLUMNS).map(
-        ([col, def]) => `ALTER TABLE ${table} ADD COLUMN IF NOT EXISTS ${col} ${def}`
+        ([col, def]) => `ALTER TABLE ${table} ADD COLUMN IF NOT EXISTS \`${col}\` ${def}`
     );
     await Promise.all(stmts.map(sql => conn.execute(sql)));
 }
-async function markMigrated(
-    conn: any,
-    schema: string,
-    id: number,
-    statusCode: string,
-    type: 'migrated' | 'updated',
-    migratedFile: boolean,
-    idDocumentMigrated?: string,
-): Promise<void> {
+async function markMigrated
+    (
+        conn: any,
+        schema: string,
+        tableName: string,
+        id: number,
+        statusCode: string,
+        type: 'migrated' | 'updated',
+        migratedFile: boolean,
+        migratedId?: string
+    ): Promise<void> {
     const baseField = type === 'migrated'
         ? MigrationColumns.MIGRATED_AT
         : MigrationColumns.MIGRATED_UPDATED_AT;
 
     const assignments = [
-        `${MigrationColumns.MIGRATED} = 1`,
-        `${baseField} = NOW()`,
-        `${MigrationColumns.MIGRATED_STATUS_CODE} = ?`
+        `\`${MigrationColumns.MIGRATED}\` = 1`,
+        `\`${baseField}\` = NOW()`,
+        `\`${MigrationColumns.MIGRATED_STATUS_CODE}\` = ?`
     ];
     const params: any[] = [statusCode];
-    if (idDocumentMigrated) {
-        assignments.push(`${MigrationColumns.MIGRATED_ID_DOCUMENT} = ?`);
-        params.push(idDocumentMigrated);
+
+    if (migratedId) {
+        assignments.push(`\`${MigrationColumns.MIGRATED_ID_DOCUMENT}\` = ?`);
+        params.push(migratedId);
     }
     if (migratedFile) {
-        assignments.push(`${MigrationColumns.MIGRATED_FILE} = 1`);
+        assignments.push(`\`${MigrationColumns.MIGRATED_FILE}\` = 1`);
     }
+
     const sql = `
-      UPDATE \`${schema}\`.documents
-      SET ${assignments.join(', ')}
-      WHERE id = ?
+      UPDATE \`${schema}\`.\`${tableName}\`
+         SET ${assignments.join(', ')}
+       WHERE id = ?
     `;
     params.push(id);
     await conn.execute(sql, params);

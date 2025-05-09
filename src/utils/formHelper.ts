@@ -15,22 +15,22 @@ export function appendDocumentAttachments(
     }
     // CDR (puede haber varios: R- y/o RA-)
     const cdrs = streams.filter(s => s.key === 'cdr');
-   /*  if (cdrs.length > 0) {
-        console.log(`Appending ${cdrs.length} CDR file(s):`, cdrs.map(c => c.filename));
-    } else {
-        console.log('No CDR files to append.');
-    }
-    cdrs.forEach((cdr, idx) => {
-        form.append(`cdr${idx + 1}`, cdr.stream, { filename: cdr.filename });
-    }); */
+    /*  if (cdrs.length > 0) {
+         console.log(`Appending ${cdrs.length} CDR file(s):`, cdrs.map(c => c.filename));
+     } else {
+         console.log('No CDR files to append.');
+     }
+     cdrs.forEach((cdr, idx) => {
+         form.append(`cdr${idx + 1}`, cdr.stream, { filename: cdr.filename });
+     }); */
 
     if (cdrs.length > 0) {
         const unicoCdr = cdrs[0];
         console.log(`Appending single CDR: ${unicoCdr.filename}`);
         form.append('cdr', unicoCdr.stream, { filename: unicoCdr.filename });
-      } else {
+    } else {
         console.log('No CDR files to append.');
-      }
+    }
 
     // XML firmado
     const signed = streams.find(s => s.key === 'signed');
@@ -40,13 +40,13 @@ export function appendDocumentAttachments(
     } else {
         console.log('No signed XML to append.');
     }
-/* 
-    // XML sin firmar
-    const unsigned = streams.find(s => s.key === 'unsigned');
-    if (unsigned) {
-        console.log(`Appending unsigned XML: ${unsigned.filename}`);
-        form.append('unsigned', unsigned.stream, { filename: unsigned.filename });
-    } else {
-        console.log('No unsigned XML to append.');
-    } */
+    /* 
+        // XML sin firmar
+        const unsigned = streams.find(s => s.key === 'unsigned');
+        if (unsigned) {
+            console.log(`Appending unsigned XML: ${unsigned.filename}`);
+            form.append('unsigned', unsigned.stream, { filename: unsigned.filename });
+        } else {
+            console.log('No unsigned XML to append.');
+        } */
 }

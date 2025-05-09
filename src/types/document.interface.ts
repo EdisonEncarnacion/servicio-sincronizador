@@ -31,7 +31,7 @@ export enum Tipo {
     COMPROBANTE_DE_PAGO_COLOMBIA = '13'
 }
 
-interface Customer {
+export interface Customer {
     location: unknown | null;
     identity_document_type_id: string;
     bank_name: string | null;
