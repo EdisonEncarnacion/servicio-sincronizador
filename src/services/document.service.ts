@@ -1,7 +1,7 @@
 import { RowDataPacket } from 'mysql2';
 import { DocRow } from '../types/document.interface';
 import { logger } from '../utils/logger';
-import { MigrationColumns } from '../config/columns';
+import { MigrationColumnsDocumentCanchas } from '../config/columns';
 import { TableName } from '../config/table-names';
 
 export type DocRowCustom = DocRow & { descripcionEstablecimiento: string };
@@ -16,7 +16,7 @@ export async function fetchNewDocuments(
     FROM \`${schema}\`.${TableName.DOCUMENTS} AS d
     JOIN \`${schema}\`.establishments AS e
       ON d.establishment_id = e.id
-    WHERE d.${MigrationColumns.MIGRATED} = 0
+    WHERE d.${MigrationColumnsDocumentCanchas.MIGRATED} = 0
   `;
     const [rows] = (await conn.execute(sql)) as [RowDataPacket[], any];
     const rowsFormatted = rows.map((row: any) => {
@@ -33,10 +33,10 @@ export async function fetchUpdatedDocuments(
     const sql = `
       SELECT *
       FROM \`${schema}\`.${TableName.DOCUMENTS}
-      WHERE ${MigrationColumns.MIGRATED} = 1
+      WHERE ${MigrationColumnsDocumentCanchas.MIGRATED} = 1
         AND (
-          updated_at > ${MigrationColumns.MIGRATED_UPDATED_AT}
-          OR state_type_id <> ${MigrationColumns.MIGRATED_STATUS_CODE}
+          updated_at > ${MigrationColumnsDocumentCanchas.MIGRATED_UPDATED_AT}
+          OR state_type_id <> ${MigrationColumnsDocumentCanchas.MIGRATED_STATUS_CODE}
         )
     `;
     const [rows] = (await conn.execute(sql)) as [RowDataPacket[], any];

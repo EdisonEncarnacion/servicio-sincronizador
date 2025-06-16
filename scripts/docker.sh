@@ -4,12 +4,11 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Proyecto = padre de scripts/
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-
 # Fichero .env en la carpeta del proyecto
 ENV_FILE="$PROJECT_ROOT/.env.test"
 
-IMAGE="sincronizador-facturador"
-CONTAINER="sync-facturador"
+IMAGE="sincronizador-facturador-canchas"
+CONTAINER="sync-facturador-canchas"
 NETWORK="proxynet"
 PORT="3000:3000"
 VOLUME="/root/smart1/storage/app/tenancy:/root/smart1/storage/app/tenancy:ro"

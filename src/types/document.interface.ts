@@ -30,7 +30,6 @@ export enum Tipo {
     COMPROBANTE_DE_PAGO_CHILE = '12',
     COMPROBANTE_DE_PAGO_COLOMBIA = '13'
 }
-
 export interface Customer {
     location: unknown | null;
     identity_document_type_id: string;
@@ -217,5 +216,4 @@ export interface Document {
     migrated_status_code?: string | null;
     migrated_document_id?: string | null;
 }
-
 export type DocRow = Document & RowDataPacket;

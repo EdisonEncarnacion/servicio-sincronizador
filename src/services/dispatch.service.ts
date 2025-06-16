@@ -1,5 +1,5 @@
 import { RowDataPacket } from 'mysql2';
-import { MigrationColumns } from '../config/columns';
+import { MigrationColumnsDocumentCanchas } from '../config/columns';
 import { DispatchRow } from '../types/dispatch.interface';
 import { TableName } from '../config/table-names';
 
@@ -15,7 +15,7 @@ export async function fetchNewDispatches(
     FROM \`${schema}\`.${TableName.DISPATCHES} AS d
     JOIN \`${schema}\`.establishments AS e
       ON d.establishment_id = e.id
-    WHERE d.${MigrationColumns.MIGRATED} = 0
+    WHERE d.${MigrationColumnsDocumentCanchas.MIGRATED} = 0
   `;
   const [rows] = await conn.execute(sql);
   const rowsFormatted = rows.map((row: any) => {
@@ -31,10 +31,10 @@ export async function fetchUpdatedDispatches(
   const sql = `
     SELECT *
       FROM \`${schema}\`.${TableName.DISPATCHES}
-     WHERE ${MigrationColumns.MIGRATED} = 1
+     WHERE ${MigrationColumnsDocumentCanchas.MIGRATED} = 1
        AND (
-         updated_at > ${MigrationColumns.MIGRATED_UPDATED_AT}
-         OR state_type_id <> ${MigrationColumns.MIGRATED_STATUS_CODE}
+         updated_at > ${MigrationColumnsDocumentCanchas.MIGRATED_UPDATED_AT}
+         OR state_type_id <> ${MigrationColumnsDocumentCanchas.MIGRATED_STATUS_CODE}
        )
   `;
   const [rows] = await conn.execute(sql);

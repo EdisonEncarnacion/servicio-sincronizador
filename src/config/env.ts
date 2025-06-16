@@ -10,12 +10,26 @@ if (env !== 'production') {
     dotenv.config({ path: envPath });
   }
 }
-export const NODE_ENV = env;
-export const DB_HOST = process.env.DB_HOST!;
-export const DB_PORT = Number(process.env.DB_PORT!);
-export const DB_USER = process.env.DB_USER!;
-export const DB_PASSWORD = process.env.DB_PASSWORD!;
-export const DB_PRINCIPAL_DATABASE = process.env.DB_PRINCIPAL_DATABASE!;
-export const PROJECT_BASE_PATH = process.env.PROJECT_BASE_PATH || process.cwd();
-export const SYNC_INTERVAL_CRON = process.env.SYNC_INTERVAL_CRON!;
-export const EXTERNAL_API_URL = process.env.EXTERNAL_API_URL!;
+const NODE_ENV = env;
+const DB_HOST = process.env.DB_HOST!;
+const DB_PORT = Number(process.env.DB_PORT!);
+const DB_USER = process.env.DB_USER!;
+const DB_PASSWORD = process.env.DB_PASSWORD!;
+const DB_PRINCIPAL_DATABASE = process.env.DB_PRINCIPAL_DATABASE!;
+const PROJECT_BASE_PATH = process.env.PROJECT_BASE_PATH || process.cwd();
+const SYNC_INTERVAL_CRON = process.env.SYNC_INTERVAL_CRON!;
+const EXTERNAL_API_URL = process.env.EXTERNAL_API_URL!;
+
+export const config = {
+  NODE_ENV,
+  DB_HOST,
+  DB_PORT,
+  DB_USER,
+  DB_PASSWORD,
+  DB_PRINCIPAL_DATABASE,
+  PROJECT_BASE_PATH,
+  SYNC_INTERVAL_CRON,
+  EXTERNAL_API_URL
+}
+
+

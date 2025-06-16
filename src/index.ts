@@ -3,10 +3,7 @@ import { CronJob } from 'cron';
 import { logger } from './utils/logger';
 import { NODE_ENV, SYNC_INTERVAL_CRON } from './config/env';
 import { syncAllTenants } from './services/sync.service';
-
-
 let isRunning = false;
-
 const job = new CronJob(
     SYNC_INTERVAL_CRON,
     async () => {

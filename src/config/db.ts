@@ -1,28 +1,15 @@
 import mysql from 'mysql2/promise';
-import {
-    DB_HOST,
-    DB_PORT,
-    DB_USER,
-    DB_PASSWORD,
-    DB_PRINCIPAL_DATABASE,
-} from './env';
+import { config } from './env';
 
-const COMMON_OPTIONS = {
-    host: DB_HOST,
-    port: DB_PORT,
-    user: DB_USER,
-    password: DB_PASSWORD,
+const COMMON_OPTIONS: mysql.PoolOptions = {
+    host: config.DB_HOST,
+    port: config.DB_PORT,
+    user: config.DB_USER,
+    password: config.DB_PASSWORD,
 };
-export async function createPrimaryConnection() {
+export async function createDatabaseConnection() {
     return mysql.createConnection({
         ...COMMON_OPTIONS,
-        database: DB_PRINCIPAL_DATABASE,
-    });
-}
-
-export async function createTenantConnection(database: string) {
-    return mysql.createConnection({
-        ...COMMON_OPTIONS,
-        database,
+        database: config.DB_PRINCIPAL_DATABASE,
     });
 }

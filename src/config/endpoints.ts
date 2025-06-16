@@ -1,4 +1,4 @@
-import { EXTERNAL_API_URL } from "./env";
+import { config } from "./env"
 
-export const UPLOAD_ENDPOINT = `${EXTERNAL_API_URL}/uploadcpe`
-export const UPDATE_ENDPOINT = `${EXTERNAL_API_URL}/estado`
+export const UPLOAD_ENDPOINT = `${config.EXTERNAL_API_URL}/uploadcpe`
+export const UPDATE_ENDPOINT = `${config.EXTERNAL_API_URL}/estado`
