@@ -1,0 +1,38 @@
+export interface Sucursal {
+    id: number;
+    description: string;
+    country_id: string;
+    department_id: string;
+    province_id: string;
+    district_id: string;
+    address: string;
+    email: string | null;
+    telephone: string | null;
+    code: string;
+    aditional_information: string | null;
+    web_address: string | null;
+    trade_address: string | null;
+    customer_id: number;
+    logo: string | null;
+    template_pdf: string | null;
+    has_igv_31556: number;
+    template_ticket_pdf: string | null;
+    created_at: string | null;
+    updated_at: string | null;
+    printer: string | null;
+    yape_owner: string | null;
+    yape_number: string | null;
+    yape_logo: string | null;
+    plin_owner: string | null;
+    plin_number: string | null;
+    plin_logo: string | null;
+    print_format: string | null;
+    template_documents: string | null;
+    template_sale_notes: string | null;
+    template_dispatches: string | null;
+    template_quotations: string | null;
+    template_documents_ticket: string | null;
+    template_sale_notes_ticket: string | null;
+    template_dispatches_ticket: string | null;
+    template_quotations_ticket: string | null;
+}

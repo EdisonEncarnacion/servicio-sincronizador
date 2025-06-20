@@ -7,7 +7,6 @@ export interface Department {
     id: string;
     description: string;
 }
-
 export interface Province {
     id: string;
     description: string;
@@ -17,9 +16,7 @@ export interface District {
     id: string;
     description: string;
 }
-
 /* ────────── Establecimiento ────────── */
-
 export interface Establishment {
     country_id: string;
     country: Country;
@@ -79,7 +76,7 @@ export interface Customer {
     search_telephone: string | null;
 }
 /* ────────── Registro principal ────────── */
-export interface SaleDocument {
+export interface SaleNoteDocument {
     /* IDs y relaciones */
     id: number;
     website_id: number | null;
@@ -193,6 +190,13 @@ export interface SaleDocument {
     box: string | null;
     dispatcher_id: number | null;
     shipping_address: string | null;
+    //news columns
+    from_canchas: boolean | null;
+    migrated_canchas_at: string | null;
+    migrated_canchas_status_code: string | null;
+    migrated_canchas_updated_at: string | null;
+    migrated_canchas_id_document: string | null;
+
 }
 
 

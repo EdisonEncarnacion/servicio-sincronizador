@@ -1,11 +1,12 @@
 import { CronJob } from 'cron';
-
 import { logger } from './utils/logger';
-import { NODE_ENV, SYNC_INTERVAL_CRON } from './config/env';
 import { syncAllTenants } from './services/sync.service';
+import { config } from './config/env';
+
 let isRunning = false;
+
 const job = new CronJob(
-    SYNC_INTERVAL_CRON,
+    config.SYNC_INTERVAL_CRON,
     async () => {
         if (isRunning) {
             logger.warn('Sincronización previa en curso, salto este ciclo');
@@ -27,7 +28,7 @@ const job = new CronJob(
     'America/Lima'
 );
 job.start();
-console.log(`iniciando en modo: ${NODE_ENV}`)
+console.log(`iniciando en modo: ${config.NODE_ENV}`)
 
 /* async function start() {
     logger.info('Iniciando sincronización');

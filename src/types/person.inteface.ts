@@ -1,0 +1,56 @@
+export interface Contact {
+    full_name: string | null;
+    phone: string | null;
+}
+export interface Person {
+    id: number;
+    type: 'customers' | 'suppliers';
+    identity_document_type_id: string;
+    number: string;
+    name: string;
+    trade_name: string | null;
+    internal_code: string | null;
+    qualification_client: string | null;
+    barcode: string | null;
+    country_id: string | null;
+    nationality_id: string | null;
+    department_id: string | null;
+    province_id: string | null;
+    district_id: string | null;
+    address_type_id: string | null;
+    address: string | null;
+    condition: string | null;
+    state: string | null;
+    email: string | null;
+    telephone: string | null;
+    accumulated_points: number;
+    perception_agent: number;
+    person_type_id: string | null;
+    contact: Contact | null;
+    comment: string | null;
+    percentage_perception: number | null;
+    enabled: number;
+    website: string | null;
+    zone: string | null;
+    observation: string | null;
+    created_at: string;
+    updated_at: string;
+    status: number;
+    credit_days: number;
+    optional_email: string | null;
+    parent_id: number;
+    zone_id: number | null;
+    seller_id: number | null;
+    has_discount: number;
+    discount_type: string | null;
+    discount_amount: number;
+    photo_filename: string | null;
+    color: string | null;
+    person_date: string | null;
+    is_driver: number;
+    location: string | null;
+    auto_retention: number;
+    person_reg_id: string | null;
+    bank_name: string | null;
+    bank_account_number: string | null;
+}
