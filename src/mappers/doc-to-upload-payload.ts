@@ -1,6 +1,6 @@
 import { DocRowCustom } from "../services/document.service";
-import { Document, Estado, EstadoDescripcion } from "../types/document.interface";
-import { TenantInfo } from "../types/tenant.interface";
+import { Document, Estado, EstadoDescripcion } from "../interfaces/database/document.interface";
+import { TenantInfo } from "../interfaces/tenant.interface";
 import { extractCdrTimestampsFromXml } from "../utils/fileHelper";
 export interface UploadPayload {
     id: string;

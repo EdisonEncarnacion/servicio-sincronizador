@@ -1,3 +1,5 @@
+import { Sucursal } from "./sucursal.interface";
+
 export interface Country {
     id: string;
     description: string;
@@ -16,26 +18,7 @@ export interface District {
     id: string;
     description: string;
 }
-/* ────────── Establecimiento ────────── */
-export interface Establishment {
-    country_id: string;
-    country: Country;
-    department_id: string;
-    department: Department;
-    province_id: string;
-    province: Province;
-    district_id: string;
-    district: District;
-    urbanization: string | null;
-    address: string;
-    email: string;
-    telephone: string;
-    code: string;
-    trade_address: string | null;
-    web_address: string | null;
-    aditional_information: string | null;
-    logo: string | null;
-}
+
 
 /* ────────── Cliente ────────── */
 export interface IdentityDocumentType {
@@ -85,7 +68,7 @@ export interface SaleNoteDocument {
     external_id: string;
     establishment_id: number;
     orden_id: number | null;
-    establishment: Establishment;
+    establishment: Sucursal;
     /* Cabecera */
     soap_type_id: string;
     state_type_id: string;

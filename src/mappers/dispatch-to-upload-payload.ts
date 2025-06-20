@@ -1,10 +1,10 @@
-import { TenantInfo } from '../types/tenant.interface';
-import { DispatchRow } from '../types/dispatch.interface';
+import { TenantInfo } from '../interfaces/tenant.interface';
+import { DispatchRow } from '../interfaces/dispatch.interface';
 import { UploadPayload } from './doc-to-upload-payload';
 import { DispatchItemRow } from '../services/dispatch-items.service';
 import { extractCdrTimestampsFromXml } from '../utils/fileHelper';
 import { DispatchRowCustom } from '../services/dispatch.service';
-import { Estado, EstadoDescripcion } from '../types/document.interface';
+import { Estado, EstadoDescripcion } from '../interfaces/database/document.interface';
 
 export async function mapDispatchToUploadPayload(
     dispatch: DispatchRowCustom,

@@ -2230,3 +2230,154 @@
 08/05/2025, 23:05:59 [INFO]: Tenant tenancy_grifodennis: 0 documentos nuevos
 08/05/2025, 23:05:59 [INFO]: Tenant tenancy_grifodennis: 0 guías nuevas
 08/05/2025, 23:05:59 [INFO]: Sincronización completada
+20/06/2025, 11:24:43 [INFO]: Iniciando sincronización
+20/06/2025, 11:24:43 [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3311
+20/06/2025, 11:27:37 [INFO]: Iniciando sincronización
+20/06/2025, 11:27:37 [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3311
+20/06/2025, 11:28:04 [INFO]: Iniciando sincronización
+20/06/2025, 11:28:04 [INFO]: Sincronización completada
+20/06/2025, 11:28:57 [INFO]: Iniciando sincronización
+20/06/2025, 11:28:58 [INFO]: Sincronización completada
+20/06/2025, 11:29:41 [INFO]: Iniciando sincronización
+20/06/2025, 11:29:42 [INFO]: Conexión a la base de datos smart1 establecida correctamente
+20/06/2025, 11:29:42 [INFO]: Sincronización completada
+20/06/2025, 11:32:40 [INFO]: Iniciando sincronización
+20/06/2025, 11:32:41 [INFO]: Conexión a la base de datos tenancy_inversionesyservicios34 establecida correctamente
+20/06/2025, 11:32:41 [INFO]: Sincronización completada
+20/06/2025, 11:35:23 [INFO]: Iniciando sincronización
+20/06/2025, 11:35:24 [INFO]: Conexión a la base de datos tenancy_inversionesyservicios34 establecida correctamente
+20/06/2025, 11:35:24 [ERROR]: error preparación -> Table 'tenancy_inversionesyservicios34.customers' doesn't exist
+20/06/2025, 11:35:24 [INFO]: Sincronización completada
+20/06/2025, 11:35:51 [INFO]: Iniciando sincronización
+20/06/2025, 11:35:52 [INFO]: Conexión a la base de datos tenancy_inversionesyservicios34 establecida correctamente
+20/06/2025, 11:35:52 [ERROR]: error preparación -> Unknown column 'sn.sucursal_id' in 'field list'
+20/06/2025, 11:35:52 [INFO]: Sincronización completada
+20/06/2025, 11:36:23 [INFO]: Iniciando sincronización
+20/06/2025, 11:36:24 [INFO]: Conexión a la base de datos tenancy_inversionesyservicios34 establecida correctamente
+20/06/2025, 11:36:24 [ERROR]: error preparación -> Unknown column 'sn.igv' in 'field list'
+20/06/2025, 11:36:24 [INFO]: Sincronización completada
+20/06/2025, 11:36:40 [INFO]: Iniciando sincronización
+20/06/2025, 11:36:40 [INFO]: Conexión a la base de datos tenancy_inversionesyservicios34 establecida correctamente
+20/06/2025, 11:36:40 [ERROR]: error preparación -> Unknown column 'sn.exchange_rate' in 'field list'
+20/06/2025, 11:36:40 [INFO]: Sincronización completada
+20/06/2025, 11:36:48 [INFO]: Iniciando sincronización
+20/06/2025, 11:36:48 [INFO]: Conexión a la base de datos tenancy_inversionesyservicios34 establecida correctamente
+20/06/2025, 11:36:49 [INFO]: Sincronización completada
+20/06/2025, 11:37:02 [INFO]: Iniciando sincronización
+20/06/2025, 11:37:02 [INFO]: Conexión a la base de datos tenancy_inversionesyservicios34 establecida correctamente
+20/06/2025, 11:37:03 [INFO]: Sincronización completada
+20/06/2025, 11:37:54 [INFO]: Iniciando sincronización
+20/06/2025, 11:37:55 [ERROR]: Error general: Unknown database 'demo'
+20/06/2025, 11:38:26 [INFO]: Iniciando sincronización
+20/06/2025, 11:38:26 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:38:27 [INFO]: Sincronización completada
+20/06/2025, 11:39:55 [INFO]: Iniciando sincronización
+20/06/2025, 11:39:56 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:39:56 [ERROR]: error preparación -> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM sale_notes AS sn
+        ORDER BY sn.created_at DESC' at line 5
+20/06/2025, 11:39:56 [INFO]: Sincronización completada
+20/06/2025, 11:40:01 [INFO]: Iniciando sincronización
+20/06/2025, 11:40:02 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:40:02 [INFO]: Sincronización completada
+20/06/2025, 11:41:24 [INFO]: Iniciando sincronización
+20/06/2025, 11:41:25 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:41:25 [ERROR]: error preparación -> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM sale_notes AS sn
+        INNER JOIN sale_notes_items AS sni ON sn.id = s...' at line 6
+20/06/2025, 11:41:25 [INFO]: Sincronización completada
+20/06/2025, 11:41:34 [INFO]: Iniciando sincronización
+20/06/2025, 11:41:34 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:41:35 [ERROR]: error preparación -> Table 'tenancy_demo.sale_notes_items' doesn't exist
+20/06/2025, 11:41:35 [INFO]: Sincronización completada
+20/06/2025, 11:41:46 [INFO]: Iniciando sincronización
+20/06/2025, 11:41:47 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:41:47 [INFO]: Sincronización completada
+20/06/2025, 11:42:56 [INFO]: Iniciando sincronización
+20/06/2025, 11:42:57 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:42:58 [INFO]: Sincronización completada
+20/06/2025, 11:44:22 [INFO]: Iniciando sincronización
+20/06/2025, 11:44:23 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:44:23 [INFO]: Sincronización completada
+20/06/2025, 11:57:20 [INFO]: Iniciando sincronización
+20/06/2025, 11:57:21 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:57:21 [INFO]: Sincronización completada
+20/06/2025, 11:58:03 [INFO]: Iniciando sincronización
+20/06/2025, 11:58:04 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:58:04 [ERROR]: error preparación -> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM persons AS c
+        ORDER BY c.created_at DESC' at line 4
+20/06/2025, 11:58:04 [INFO]: Sincronización completada
+20/06/2025, 11:58:08 [INFO]: Iniciando sincronización
+20/06/2025, 11:58:09 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:58:09 [INFO]: Sincronización completada
+20/06/2025, 11:59:24 [INFO]: Iniciando sincronización
+20/06/2025, 11:59:25 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:59:25 [ERROR]: error preparación -> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM persons AS c
+        ORDER BY c.created_at DESC' at line 5
+20/06/2025, 11:59:25 [INFO]: Sincronización completada
+20/06/2025, 11:59:28 [INFO]: Iniciando sincronización
+20/06/2025, 11:59:29 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 11:59:29 [INFO]: Sincronización completada
+20/06/2025, 12:00:18 [INFO]: Iniciando sincronización
+20/06/2025, 12:00:18 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:00:19 [ERROR]: error preparación -> Unknown column 'c.phone' in 'field list'
+20/06/2025, 12:00:19 [INFO]: Sincronización completada
+20/06/2025, 12:00:33 [INFO]: Iniciando sincronización
+20/06/2025, 12:00:33 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:00:34 [INFO]: Sincronización completada
+20/06/2025, 12:10:08 [INFO]: Iniciando sincronización
+20/06/2025, 12:10:08 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:10:08 [ERROR]: error preparación -> Unknown column 'p.code' in 'field list'
+20/06/2025, 12:10:08 [INFO]: Sincronización completada
+20/06/2025, 12:10:48 [INFO]: Iniciando sincronización
+20/06/2025, 12:10:49 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:10:49 [ERROR]: error preparación -> Unknown column 'p.unit_value' in 'field list'
+20/06/2025, 12:10:49 [INFO]: Sincronización completada
+20/06/2025, 12:11:03 [INFO]: Iniciando sincronización
+20/06/2025, 12:11:04 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:11:04 [INFO]: Sincronización completada
+20/06/2025, 12:11:29 [INFO]: Iniciando sincronización
+20/06/2025, 12:11:30 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:11:30 [INFO]: Sincronización completada
+20/06/2025, 12:12:29 [INFO]: Iniciando sincronización
+20/06/2025, 12:12:30 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:12:30 [INFO]: Sincronización completada
+20/06/2025, 12:38:51 [INFO]: Iniciando sincronización
+20/06/2025, 12:39:01 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:39:06 [INFO]: Sincronización completada
+20/06/2025, 12:46:43 [INFO]: Iniciando sincronización
+20/06/2025, 12:46:44 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 12:46:44 [INFO]: Sincronización completada
+20/06/2025, 13:12:36 [INFO]: Iniciando sincronización
+20/06/2025, 13:12:51 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 13:12:52 [ERROR]: error preparación -> connect ECONNREFUSED 127.0.0.1:8087
+20/06/2025, 13:12:52 [INFO]: Sincronización completada
+20/06/2025, 15:17:27 [INFO]: Iniciando sincronización
+20/06/2025, 15:17:27 [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3011
+20/06/2025, 15:18:05 [INFO]: Iniciando sincronización
+20/06/2025, 15:18:06 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 15:18:06 [ERROR]: error preparación -> Request failed with status code 401
+20/06/2025, 15:18:06 [INFO]: Sincronización completada
+20/06/2025, 15:18:53 [INFO]: Iniciando sincronización
+20/06/2025, 15:19:01 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 15:19:01 [ERROR]: error preparación -> Request failed with status code 401
+20/06/2025, 15:19:01 [INFO]: Sincronización completada
+20/06/2025, 15:19:42 [INFO]: Iniciando sincronización
+20/06/2025, 15:19:42 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 15:19:42 [ERROR]: error preparación -> Request failed with status code 401
+20/06/2025, 15:19:42 [INFO]: Sincronización completada
+20/06/2025, 15:22:43 [INFO]: Iniciando sincronización
+20/06/2025, 15:22:43 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 15:22:44 [INFO]: Sincronización completada
+20/06/2025, 15:24:12 [INFO]: Iniciando sincronización
+20/06/2025, 15:24:25 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 15:24:25 [INFO]: Sincronización completada
+20/06/2025, 15:56:29 [INFO]: Iniciando sincronización
+20/06/2025, 15:56:30 [ERROR]: Error general: Connection lost: The server closed the connection.
+20/06/2025, 15:56:57 [INFO]: Iniciando sincronización
+20/06/2025, 15:56:58 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 15:56:58 [INFO]: Sincronización completada
+20/06/2025, 15:57:21 [INFO]: Iniciando sincronización
+20/06/2025, 15:57:28 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 15:57:28 [INFO]: Sincronización completada
+20/06/2025, 15:58:01 [INFO]: Iniciando sincronización
+20/06/2025, 15:58:02 [INFO]: Conexión a la base de datos tenancy_demo establecida correctamente
+20/06/2025, 15:58:02 [INFO]: Sincronización completada

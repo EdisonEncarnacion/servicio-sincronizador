@@ -1,5 +1,5 @@
 import { RowDataPacket } from 'mysql2';
-import { DocRow } from '../types/document.interface';
+import { DocRow } from '../interfaces/database/document.interface';
 import { logger } from '../utils/logger';
 import { MigrationColumnsDocumentCanchas } from '../config/columns';
 import { TableName } from '../config/table-names';

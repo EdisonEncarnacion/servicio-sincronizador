@@ -1,9 +1,9 @@
 import { CronJob } from 'cron';
 import { logger } from './utils/logger';
-import { syncAllTenants } from './services/sync.service';
 import { config } from './config/env';
+import { sync } from './services/sync.service';
 
-let isRunning = false;
+/* let isRunning = false;
 
 const job = new CronJob(
     config.SYNC_INTERVAL_CRON,
@@ -15,7 +15,7 @@ const job = new CronJob(
         isRunning = true;
         logger.info('Iniciando sincronización');
         try {
-            await syncAllTenants();
+            await sync();
             logger.info('Sincronización completada');
         } catch (e: any) {
             logger.error(`Error general: ${e.message}`);
@@ -27,18 +27,17 @@ const job = new CronJob(
     true,
     'America/Lima'
 );
-job.start();
+job.start(); */
 console.log(`iniciando en modo: ${config.NODE_ENV}`)
 
-/* async function start() {
+ async function start() {
     logger.info('Iniciando sincronización');
 
     try {
-        await syncAllTenants();
+        await sync();
         logger.info('Sincronización completada');
     } catch (e: any) {
         logger.error(`Error general: ${e.message}`);
     }
 }
 start()
- */

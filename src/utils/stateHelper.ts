@@ -1,5 +1,5 @@
 
-import { DocRow } from '../types/document.interface';
+import { DocRow } from '../interfaces/database/document.interface';
 
 export type FinalState =
     | 'ACEPTADO'

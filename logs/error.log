@@ -163,3 +163,28 @@
 08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-12 -> Request failed with status code 404
 08/05/2025, 22:22:10 [ERROR]: (NEW DISP) Tenant tenancy_fesanrolurin: error 20508970791-09-TT02-13 -> Request failed with status code 404
 08/05/2025, 22:34:38 [ERROR]: (NEW) Tenant tenancy_inversionesyservicios34: error F112-1 -> 
+20/06/2025, 11:24:43 [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3311
+20/06/2025, 11:27:37 [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3311
+20/06/2025, 11:35:24 [ERROR]: error preparación -> Table 'tenancy_inversionesyservicios34.customers' doesn't exist
+20/06/2025, 11:35:52 [ERROR]: error preparación -> Unknown column 'sn.sucursal_id' in 'field list'
+20/06/2025, 11:36:24 [ERROR]: error preparación -> Unknown column 'sn.igv' in 'field list'
+20/06/2025, 11:36:40 [ERROR]: error preparación -> Unknown column 'sn.exchange_rate' in 'field list'
+20/06/2025, 11:37:55 [ERROR]: Error general: Unknown database 'demo'
+20/06/2025, 11:39:56 [ERROR]: error preparación -> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM sale_notes AS sn
+        ORDER BY sn.created_at DESC' at line 5
+20/06/2025, 11:41:25 [ERROR]: error preparación -> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM sale_notes AS sn
+        INNER JOIN sale_notes_items AS sni ON sn.id = s...' at line 6
+20/06/2025, 11:41:35 [ERROR]: error preparación -> Table 'tenancy_demo.sale_notes_items' doesn't exist
+20/06/2025, 11:58:04 [ERROR]: error preparación -> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM persons AS c
+        ORDER BY c.created_at DESC' at line 4
+20/06/2025, 11:59:25 [ERROR]: error preparación -> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM persons AS c
+        ORDER BY c.created_at DESC' at line 5
+20/06/2025, 12:00:19 [ERROR]: error preparación -> Unknown column 'c.phone' in 'field list'
+20/06/2025, 12:10:08 [ERROR]: error preparación -> Unknown column 'p.code' in 'field list'
+20/06/2025, 12:10:49 [ERROR]: error preparación -> Unknown column 'p.unit_value' in 'field list'
+20/06/2025, 13:12:52 [ERROR]: error preparación -> connect ECONNREFUSED 127.0.0.1:8087
+20/06/2025, 15:17:27 [ERROR]: Error general: connect ECONNREFUSED 127.0.0.1:3011
+20/06/2025, 15:18:06 [ERROR]: error preparación -> Request failed with status code 401
+20/06/2025, 15:19:01 [ERROR]: error preparación -> Request failed with status code 401
+20/06/2025, 15:19:42 [ERROR]: error preparación -> Request failed with status code 401
+20/06/2025, 15:56:30 [ERROR]: Error general: Connection lost: The server closed the connection.
