@@ -1,8 +1,8 @@
-import { Connection} from "mysql2";
+import mysql from 'mysql2/promise';
 import { MIGRATION_COLUMNS_DOCUMENT, MigrationColumnsDocumentCanchas } from "../config/columns";
 
 async function ensureMigrationColumns(
-    conn: Connection,
+    conn: mysql.Connection,
     schema: string,
     tableName: string,
     columns: Record<string, string> = MIGRATION_COLUMNS_DOCUMENT
@@ -28,7 +28,7 @@ async function markMigrated
         : MigrationColumnsDocumentCanchas.MIGRATED_UPDATED_AT;
 
     const assignments = [
-        `\`${MigrationColumnsDocumentCanchas.MIGRATED}\` = 1`,
+        `\`${MigrationColumnsDocumentCanchas.FROM_CANCHAS}\` = 1`,
         `\`${baseField}\` = NOW()`,
         `\`${MigrationColumnsDocumentCanchas.MIGRATED_STATUS_CODE}\` = ?`
     ];
@@ -38,9 +38,9 @@ async function markMigrated
         assignments.push(`\`${MigrationColumnsDocumentCanchas.MIGRATED_ID_DOCUMENT}\` = ?`);
         params.push(migratedId);
     }
- /*    if (migratedFile) {
-        assignments.push(`\`${MigrationColumnsDocumentCanchas.MIGRATED_FILE}\` = 1`);
-    } */
+    /*    if (migratedFile) {
+           assignments.push(`\`${MigrationColumnsDocumentCanchas.MIGRATED_FILE}\` = 1`);
+       } */
 
     const sql = `
       UPDATE \`${schema}\`.\`${tableName}\`

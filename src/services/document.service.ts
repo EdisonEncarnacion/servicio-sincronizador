@@ -16,7 +16,7 @@ export async function fetchNewDocuments(
     FROM \`${schema}\`.${TableName.DOCUMENTS} AS d
     JOIN \`${schema}\`.establishments AS e
       ON d.establishment_id = e.id
-    WHERE d.${MigrationColumnsDocumentCanchas.MIGRATED} = 0
+    WHERE d.${MigrationColumnsDocumentCanchas.FROM_CANCHAS} = 0
   `;
     const [rows] = (await conn.execute(sql)) as [RowDataPacket[], any];
     const rowsFormatted = rows.map((row: any) => {
@@ -33,7 +33,7 @@ export async function fetchUpdatedDocuments(
     const sql = `
       SELECT *
       FROM \`${schema}\`.${TableName.DOCUMENTS}
-      WHERE ${MigrationColumnsDocumentCanchas.MIGRATED} = 1
+      WHERE ${MigrationColumnsDocumentCanchas.FROM_CANCHAS} = 1
         AND (
           updated_at > ${MigrationColumnsDocumentCanchas.MIGRATED_UPDATED_AT}
           OR state_type_id <> ${MigrationColumnsDocumentCanchas.MIGRATED_STATUS_CODE}

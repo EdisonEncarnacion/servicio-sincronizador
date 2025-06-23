@@ -173,6 +173,7 @@ export interface SaleNoteDocument {
     box: string | null;
     dispatcher_id: number | null;
     shipping_address: string | null;
+
     //news columns
     from_canchas: boolean | null;
     migrated_canchas_at: string | null;

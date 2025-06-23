@@ -1,6 +1,7 @@
 import { TableName } from "../../config/table-names";
 import mysql from 'mysql2/promise';
 import { Person } from "../../interfaces/database/person.inteface";
+import { Customer } from "../../interfaces/database/sale-note.interface";
 
 
 
@@ -32,15 +33,21 @@ const getClientByDocumentNumber = async (db: mysql.Connection, documentNumber: s
     const [rows] = (await db.execute(query, [documentNumber]) as unknown) as [Person[], any];
     return rows[0] || null;
 }
- const upsertCustomerByDocument = async (
+const upsertCustomerByDocument = async (
     db: mysql.Connection,
     number: string,
     name: string | null,
     address: string | null,
-): Promise<number> => {
+): Promise<Person> => {
     const found = await getClientByDocumentNumber(db, number);
-    if (found) return found.id;
-    return await saveClient(db, number, name, address);  
+    if (found) return found;
+    await saveClient(db, number, name, address);
+    const client = await getClientByDocumentNumber(db, number);
+    if (!client) {
+        throw new Error(`Cliente con número de documento ${number} no encontrado después de guardar.`);
+    }
+    return client;
+
 };
 
 export const saveClient = async (
@@ -48,13 +55,13 @@ export const saveClient = async (
     number: string,
     name: string | null,
     address: string | null,
-): Promise<number> => {
+): Promise<Person> => {
     const sql = `
-    INSERT INTO ${TableName.CUSTOMERS} (number, name, address, created_at)
-    VALUES (?, ?, ?, NOW());
+    INSERT INTO ${TableName.CUSTOMERS} (number, name, address,identity_document_type_id,country_id)
+    VALUES (?, ?, ?, 1,'PE');
   `;
     const [r] = await db.execute<mysql.ResultSetHeader>(sql, [number, name, address]);
-    return r.insertId;
+    return r as unknown as Person;
 };
 
 export const CustomerDatasource = {

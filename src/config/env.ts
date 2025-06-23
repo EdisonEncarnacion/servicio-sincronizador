@@ -15,10 +15,11 @@ const DB_PORT = Number(process.env.DB_PORT!);
 const DB_USER = process.env.DB_USER!;
 const DB_PASSWORD = process.env.DB_PASSWORD!;
 const DB_PRINCIPAL_DATABASE = process.env.DB_PRINCIPAL_DATABASE!;
-const DB_SYNC= process.env.DB_SYNC
+const DB_SYNC = process.env.DB_SYNC
 const PROJECT_BASE_PATH = process.env.PROJECT_BASE_PATH || process.cwd();
 const SYNC_INTERVAL_CRON = process.env.SYNC_INTERVAL_CRON!;
 const EXTERNAL_API_URL = process.env.EXTERNAL_API_URL!;
+const DOCUMENT_SERIE = process.env.DOCUMENT_SERIE;
 
 export const config = {
   NODE_ENV,
@@ -30,7 +31,8 @@ export const config = {
   DB_SYNC,
   PROJECT_BASE_PATH,
   SYNC_INTERVAL_CRON,
-  EXTERNAL_API_URL
+  EXTERNAL_API_URL,
+  DOCUMENT_SERIE
 }
 
 
