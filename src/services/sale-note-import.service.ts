@@ -1,13 +1,12 @@
 import mysql from 'mysql2/promise';
 import { PendingReservation } from '../interfaces/api/api-reservas-response.interface';
-
 import { SucursalDatasource } from '../datasource/db/sucursal-datasource';
 import { CustomerDatasource } from '../datasource/db/client-datasource';
 import { mapPendingToSaleNote } from '../interfaces/mappers/pending-to-sale-note.mapper';
-import { insertSaleNote } from '../datasource/db/sale-note.datasource';
 import { ReservationDatasource } from '../datasource/api/reservation-datasource';
 import { productDatasource } from '../datasource/db/product-datasouce';
 import { Product } from '../interfaces/database/product.interface';
+import { insertSaleNoteTx } from '../datasource/db/sale-note.datasource';
 
 export async function importReservation(
     db: mysql.Connection,
@@ -19,7 +18,6 @@ export async function importReservation(
         pending.idSede,
         pending.nombreSede, 
     ); */
-    console.log({ establishmentId })
     /* ── 2. Cliente (o “genérico”) ─────────────── */
     if (!pending.factura) {
         throw new Error('La factura de la reserva pendiente es nula');
@@ -39,18 +37,24 @@ export async function importReservation(
             d.campo.nombre,
             Number(d.precio),
         );
-        console.log({ productId })
         productIdMap[d.campo.idCampo] = productId;
     }
-    /* ── 4. Mapper → cabecera + ítems (con IDs reales) ───────────── */
+    try {
+           /* ── 4. Mapper → cabecera + ítems (con IDs reales) ───────────── */
     const payload = await mapPendingToSaleNote(
         pending,
         customerId,
         establishmentId ?? 1,
         productIdMap,          // ← nuevo parámetro
     );
-    /* ── 5. Insert transaccional en BD ────────────────────────────── */
-    await insertSaleNote(db, payload);
-    /* ── 6. Confirmar migración en la API externa ───────────────── */
-    await ReservationDatasource.confirmReservationMigration(pending.idReserva);
+        await db.beginTransaction();  
+        await insertSaleNoteTx(db, payload);             
+        await ReservationDatasource.confirmReservationMigration(
+            pending.idReserva,
+        );                                                 
+        await db.commit();                                
+    } catch (err) {
+        await db.rollback();                               
+        throw err;                             
+    }
 }

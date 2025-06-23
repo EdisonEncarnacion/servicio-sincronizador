@@ -52,8 +52,6 @@ export function mapPendingToSaleNote(
         warehouse_id: 1,
         name_product_pdf: d.campo.nombre,
         modify_sale_unit_price: 0,
-
-
     }));
     const total = items.reduce((sum, i) => sum + i.total, 0);
     return {
@@ -116,7 +114,7 @@ export function mapPendingToSaleNote(
                 search_telephone: null,
             }) as any,
             series: config.DOCUMENT_SERIE,
-            number: Math.floor(Math.random() * 10000) + 1,
+            number: Math.floor(Math.random() * 10000000) + 1,
             date_of_issue: p.fechaCreacion.split('T')[0],
             time_of_issue: p.fechaCreacion.slice(11, 19),
             currency_type_id: 'PEN',
@@ -141,6 +139,7 @@ export function mapPendingToSaleNote(
             discounts: [],
             seller_id: 1,
             cash_id: 1,
+            paid:1
 
 
         },

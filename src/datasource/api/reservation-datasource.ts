@@ -24,14 +24,26 @@ const addBankDocNumber = async (
     data: { bankDocNumber },
   });
 
-const addDocumentNumber = async (
+const addDocumentNumber = (
   idReserva: string,
-  numero: string | number,
-): Promise<void> =>
+  numeroDocumento: string,
+  estadoDocumento: string,
+) =>
   request<void>({
     method: 'POST',
     url: `/reservas/${idReserva}/agregar-numero-documento`,
-    data: { numeroDocumento: numero },
+    data: { numeroDocumento, estadoDocumento },
+  });
+
+
+const updateDocumentState = (
+  idReserva: string,
+  estadoDocumento: string,
+) =>
+  request<void>({
+    method: 'PATCH',
+    url: `/reservas/${idReserva}/actualizar-estado-documento`,
+    data: { estadoDocumento },
   });
 
 export const ReservationDatasource = {
@@ -39,4 +51,5 @@ export const ReservationDatasource = {
   confirmReservationMigration,
   addBankDocNumber,
   addDocumentNumber,
+  updateDocumentState,
 };

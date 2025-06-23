@@ -1,10 +1,6 @@
 import { TableName } from "../../config/table-names";
 import mysql from 'mysql2/promise';
 import { Person } from "../../interfaces/database/person.inteface";
-import { Customer } from "../../interfaces/database/sale-note.interface";
-
-
-
 const getClients = async (db: mysql.Connection) => {
     const query = `
         SELECT
@@ -49,7 +45,6 @@ const upsertCustomerByDocument = async (
     return client;
 
 };
-
 export const saveClient = async (
     db: mysql.Connection,
     number: string,
@@ -58,12 +53,11 @@ export const saveClient = async (
 ): Promise<Person> => {
     const sql = `
     INSERT INTO ${TableName.CUSTOMERS} (number, name, address,identity_document_type_id,country_id)
-    VALUES (?, ?, ?, 1,'PE');
+    VALUES (?, ?, ?, 6,'PE');
   `;
     const [r] = await db.execute<mysql.ResultSetHeader>(sql, [number, name, address]);
     return r as unknown as Person;
 };
-
 export const CustomerDatasource = {
     getClients,
     saveClient,

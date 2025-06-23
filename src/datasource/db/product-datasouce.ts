@@ -33,7 +33,6 @@ const upsertProductCampo = async (
     return product;
 };
 const getProductByCode = async (db: mysql.Connection, code: string): Promise<Product | null> => {
-    console.log('==')
     const query = `
         SELECT  
             p.id,

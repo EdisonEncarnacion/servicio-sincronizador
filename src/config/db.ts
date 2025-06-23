@@ -1,6 +1,6 @@
 import mysql from 'mysql2/promise';
 import { config } from './env';
-import { logger } from '../utils/logger';
+import { logger } from '../logger';
 
 const COMMON_OPTIONS: mysql.PoolOptions = {
     host: config.DB_HOST,
@@ -14,7 +14,7 @@ export async function createDatabaseConnection() {
         database: config.DB_SYNC,
     });
     if (conexion) {
-       logger.info(`Conexión a la base de datos ${config.DB_SYNC} establecida correctamente`);
+       logger.log(`Conexión a la base de datos ${config.DB_SYNC} establecida correctamente`);
     }
     return conexion;
 }

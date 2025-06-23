@@ -1,25 +1,19 @@
-import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
+import axios, { AxiosHeaders, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { config } from '../../config/env';
-
 const http: AxiosInstance = axios.create({
   baseURL: config.EXTERNAL_API_URL, 
   timeout: 10_000,
 });
-/* http.interceptors.request.use((config) => {
-  // Ejemplo: inyectar JWT si existe
-  if (env.RESERVATION_JWT) {
-    config.headers.Authorization = `Bearer ${env.RESERVATION_JWT}`;
+http.interceptors.request.use((cfg) => {
+  if (!cfg.headers || !(cfg.headers instanceof AxiosHeaders)) {
+    cfg.headers = new AxiosHeaders(cfg.headers || {});
   }
-  return config;
+  (cfg.headers as AxiosHeaders).set(
+    'api-key-sincronizador',
+    config.SYNC_API_KEY ?? '',
+  );
+  return cfg;
 });
- */
-http.interceptors.response.use(
-  (res: AxiosResponse) => res,
-  (err) => {
-    console.log(err.response?.data);
-    return Promise.reject(err);
-  },
-);
 export async function request<T = unknown>(
   config: AxiosRequestConfig,
 ): Promise<T> {

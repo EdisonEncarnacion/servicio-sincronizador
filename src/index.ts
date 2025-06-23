@@ -1,43 +1,50 @@
 import { CronJob } from 'cron';
-import { logger } from './utils/logger';
+import { createDatabaseConnection } from './config/db';
+import { logger } from './logger';
 import { config } from './config/env';
 import { sync } from './services/sync.service';
+import { ensureMigrationColumns } from './services/database-service';
+import { TableName } from './config/table-names';
+import { MIGRATION_COLUMNS_DOCUMENT } from './config/columns';
 
-/* let isRunning = false;
-
-const job = new CronJob(
-    config.SYNC_INTERVAL_CRON,
-    async () => {
-        if (isRunning) {
-            logger.warn('Sincronización previa en curso, salto este ciclo');
-            return;
-        }
-        isRunning = true;
-        logger.info('Iniciando sincronización');
+(async () => {
+    const conn = await createDatabaseConnection();
+    await ensureMigrationColumns(conn, config.DB_SYNC, TableName.SALE_NOTES, MIGRATION_COLUMNS_DOCUMENT);
+    const runSync = async () => {
         try {
-            await sync();
-            logger.info('Sincronización completada');
-        } catch (e: any) {
-            logger.error(`Error general: ${e.message}`);
-        } finally {
-            isRunning = false;
+            logger.log('⏳ Iniciando sincronización', 'Sync');
+            await sync(conn);
+            logger.log('✅ Sincronización completada', 'Sync');
+        } catch (err: any) {
+            logger.error(`❌ Error general: ${err.message}`, err.stack, 'Sync');
         }
-    },
-    null,
-    true,
-    'America/Lima'
-);
-job.start(); */
-console.log(`iniciando en modo: ${config.NODE_ENV}`)
-
- async function start() {
-    logger.info('Iniciando sincronización');
-
-    try {
-        await sync();
-        logger.info('Sincronización completada');
-    } catch (e: any) {
-        logger.error(`Error general: ${e.message}`);
+    };
+    if (config.NODE_ENV === 'development') {
+        logger.warn('Modo development');
+        await runSync();
+        process.exit(0);
     }
-}
-start()
+    if (config.NODE_ENV != 'development') {
+        let isRunning = false;
+        const job = new CronJob(
+            config.SYNC_INTERVAL_CRON,
+            async () => {
+                if (isRunning) {
+                    logger.warn('Sync anterior aún en curso, salto ciclo', 'Cron');
+                    return;
+                }
+                isRunning = true;
+                await runSync();
+                isRunning = false;
+            },
+            null,
+            true,
+            'America/Lima',
+        );
+
+        logger.log(
+            `Job programado (${config.SYNC_INTERVAL_CRON}) - zona America/Lima`,
+            'Bootstrap',
+        );
+    }
+})();
