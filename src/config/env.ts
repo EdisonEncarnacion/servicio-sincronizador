@@ -1,39 +1,20 @@
 import dotenv from 'dotenv';
 import path from 'path';
-import fs from 'fs';
-const env = process.env.NODE_ENV || 'development';
-if (env !== 'production') {
-  const envFile = `.env.${env}`;
-  const envPath = path.resolve(process.cwd(), envFile);
-  if (fs.existsSync(envPath)) {
-    dotenv.config({ path: envPath });
-  }
-}
-const NODE_ENV = env;
-const DB_HOST = process.env.DB_HOST!;
-const DB_PORT = Number(process.env.DB_PORT!);
-const DB_USER = process.env.DB_USER!;
-const DB_PASSWORD = process.env.DB_PASSWORD!;
-const DB_PRINCIPAL_DATABASE = process.env.DB_PRINCIPAL_DATABASE!;
-const DB_SYNC = process.env.DB_SYNC ?? 'xyz'
-const PROJECT_BASE_PATH = process.env.PROJECT_BASE_PATH || process.cwd();
-const SYNC_INTERVAL_CRON = process.env.SYNC_INTERVAL_CRON!;
-const EXTERNAL_API_URL = process.env.EXTERNAL_API_URL!;
-const DOCUMENT_SERIE = process.env.DOCUMENT_SERIE;
-const SYNC_API_KEY = process.env.SYNC_API_KEY;
+
+// Carga variables del archivo .env.development
+dotenv.config({
+  path: path.resolve(__dirname, '../../.env.development'),
+});
+
 export const config = {
-  NODE_ENV,
-  DB_HOST,
-  DB_PORT,
-  DB_USER,
-  DB_PASSWORD,
-  DB_PRINCIPAL_DATABASE,
-  DB_SYNC,
-  PROJECT_BASE_PATH,
-  SYNC_INTERVAL_CRON,
-  EXTERNAL_API_URL,
-  DOCUMENT_SERIE,
-  SYNC_API_KEY
-}
-
-
+  DB_HOST: process.env.DB_HOST ?? '',
+  DB_PORT: parseInt(process.env.DB_PORT ?? '5432', 10),
+  DB_USER: process.env.DB_USER ?? '',
+  DB_PASSWORD: process.env.DB_PASSWORD ?? '',
+  DB_PRINCIPAL_DATABASE: process.env.DB_PRINCIPAL_DATABASE ?? '',
+  DB_SYNC: process.env.DB_SYNC ?? '',
+  PROJECT_BASE_PATH: process.env.PROJECT_BASE_PATH ?? '',
+  EXTERNAL_API_URL: process.env.EXTERNAL_API_URL ?? 'http://localhost:3000',
+  SYNC_INTERVAL_CRON: process.env.SYNC_INTERVAL_CRON ?? '*/5 * * * *',
+  NODE_ENV: process.env.NODE_ENV ?? 'development', // ✅ AÑADIDO AQUÍ
+};

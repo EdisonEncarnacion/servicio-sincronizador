@@ -1,7 +1,8 @@
 import { TableName } from "../../config/table-names";
-import mysql from 'mysql2/promise';
+import { PoolClient } from 'pg';
 import { Person } from "../../interfaces/database/person.inteface";
-const getClients = async (db: mysql.Connection) => {
+
+const getClients = async (db: PoolClient): Promise<Person[]> => {
     const query = `
         SELECT
             c.id,
@@ -12,10 +13,14 @@ const getClients = async (db: mysql.Connection) => {
         FROM ${TableName.CUSTOMERS} AS c
         ORDER BY c.created_at DESC;
     `;
-    const [rows] = (await db.execute(query) as unknown) as [Person[], any];
-    return rows;
-}
-const getClientByDocumentNumber = async (db: mysql.Connection, documentNumber: string): Promise<Person | null> => {
+    const result = await db.query(query);
+    return result.rows;
+};
+
+const getClientByDocumentNumber = async (
+    db: PoolClient,
+    documentNumber: string
+): Promise<Person | null> => {
     const query = `
         SELECT
             c.id,
@@ -24,43 +29,50 @@ const getClientByDocumentNumber = async (db: mysql.Connection, documentNumber: s
             c.email,
             c.telephone
         FROM ${TableName.CUSTOMERS} AS c
-        WHERE c.number = ?
+        WHERE c.number = $1
     `;
-    const [rows] = (await db.execute(query, [documentNumber]) as unknown) as [Person[], any];
-    return rows[0] || null;
-}
+    const result = await db.query(query, [documentNumber]);
+    return result.rows[0] || null;
+};
+
+const saveClient = async (
+    db: PoolClient,
+    number: string,
+    name: string | null,
+    address: string | null,
+): Promise<Person> => {
+    const sql = `
+        INSERT INTO ${TableName.CUSTOMERS} 
+        (number, name, address, identity_document_type_id, country_id)
+        VALUES ($1, $2, $3, 6, 'PE')
+        RETURNING *;
+    `;
+    const result = await db.query(sql, [number, name, address]);
+    return result.rows[0];
+};
+
 const upsertCustomerByDocument = async (
-    db: mysql.Connection,
+    db: PoolClient,
     number: string,
     name: string | null,
     address: string | null,
 ): Promise<Person> => {
     const found = await getClientByDocumentNumber(db, number);
     if (found) return found;
+
     await saveClient(db, number, name, address);
     const client = await getClientByDocumentNumber(db, number);
+
     if (!client) {
         throw new Error(`Cliente con número de documento ${number} no encontrado después de guardar.`);
     }
-    return client;
 
+    return client;
 };
-export const saveClient = async (
-    db: mysql.Connection,
-    number: string,
-    name: string | null,
-    address: string | null,
-): Promise<Person> => {
-    const sql = `
-    INSERT INTO ${TableName.CUSTOMERS} (number, name, address,identity_document_type_id,country_id)
-    VALUES (?, ?, ?, 6,'PE');
-  `;
-    const [r] = await db.execute<mysql.ResultSetHeader>(sql, [number, name, address]);
-    return r as unknown as Person;
-};
+
 export const CustomerDatasource = {
     getClients,
     saveClient,
     getClientByDocumentNumber,
     upsertCustomerByDocument
-}
+};

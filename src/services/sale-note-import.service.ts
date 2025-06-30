@@ -1,60 +1,61 @@
-import mysql from 'mysql2/promise';
+import { PoolClient } from 'pg';
 import { PendingReservation } from '../interfaces/api/api-reservas-response.interface';
 import { SucursalDatasource } from '../datasource/db/sucursal-datasource';
 import { CustomerDatasource } from '../datasource/db/client-datasource';
 import { mapPendingToSaleNote } from '../interfaces/mappers/pending-to-sale-note.mapper';
-import { ReservationDatasource } from '../datasource/api/reservation-datasource';
 import { productDatasource } from '../datasource/db/product-datasouce';
 import { Product } from '../interfaces/database/product.interface';
 import { insertSaleNoteTx } from '../datasource/db/sale-note.datasource';
 
 export async function importReservation(
-    db: mysql.Connection,
-    pending: PendingReservation,
+    db: PoolClient,
+    pending: PendingReservation
 ): Promise<void> {
-    /* ── 1. Sucursal (establecimiento) ───────────────────────────── */
-    const establishmentId = await SucursalDatasource.getSucursalByCode(db, pending.idSede)/* upsertSucursal(
+    /* ── 1. Sucursal ───────────────────────────── */
+    const establishmentId = await SucursalDatasource.getSucursalByCode(
         db,
-        pending.idSede,
-        pending.nombreSede, 
-    ); */
-    /* ── 2. Cliente (o “genérico”) ─────────────── */
+        pending.idSede
+    );
+
+    /* ── 2. Cliente ───────────────────────────── */
     if (!pending.factura) {
         throw new Error('La factura de la reserva pendiente es nula');
     }
+
     const customerId = await CustomerDatasource.upsertCustomerByDocument(
         db,
         pending.factura.numeroDocumento,
         pending.factura.razonSocial,
-        pending.factura.direccion,
-    )
-    /* ── 3. Productos-campo y diccionario code → id ──────────────── */
+        pending.factura.direccion
+    );
+
+    /* ── 3. Productos y diccionario code → id ──────────────── */
     const productIdMap: Record<string, Product> = {};
     for (const d of pending.detalleReservas) {
-        const productId = await productDatasource.upsertProductCampo(
+        const product = await productDatasource.upsertProductCampo(
             db,
             d.campo.idCampo,
             d.campo.nombre,
-            Number(d.precio),
+            Number(d.precio)
         );
-        productIdMap[d.campo.idCampo] = productId;
+        productIdMap[d.campo.idCampo] = product;
     }
+
     try {
-           /* ── 4. Mapper → cabecera + ítems (con IDs reales) ───────────── */
-    const payload = await mapPendingToSaleNote(
-        pending,
-        customerId,
-        establishmentId ?? 1,
-        productIdMap,          // ← nuevo parámetro
-    );
-        await db.beginTransaction();  
-        await insertSaleNoteTx(db, payload);             
-        await ReservationDatasource.confirmReservationMigration(
-            pending.idReserva,
-        );                                                 
-        await db.commit();                                
+        /* ── 4. Mapper → cabecera + ítems ───────────── */
+        const payload = await mapPendingToSaleNote(
+            pending,
+            customerId,
+            establishmentId ?? 1,
+            productIdMap
+        );
+
+        await db.query('BEGIN');
+        await insertSaleNoteTx(db, payload);
+        // TODO: Confirmar migración si se implementa funcionalidad propia
+        await db.query('COMMIT');
     } catch (err) {
-        await db.rollback();                               
-        throw err;                             
+        await db.query('ROLLBACK');
+        throw err;
     }
 }

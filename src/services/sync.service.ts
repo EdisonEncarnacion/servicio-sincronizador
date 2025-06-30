@@ -1,33 +1,33 @@
-import { createDatabaseConnection } from '../config/db';
-import { ReservationService } from './reservation.service';
-import { importReservation } from './sale-note-import.service';
+// src/services/sync.service.ts
+
+import { Pool } from 'pg';
 import { ensureMigrationColumns } from './database-service';
 import { config } from '../config/env';
 import { TableName } from '../config/table-names';
 import { MIGRATION_COLUMNS_DOCUMENT } from '../config/columns';
-import mysql from 'mysql2/promise';
-import { migrateDocumentNumbers } from './document-number-migrate.service';
 import { logger } from '../logger';
 
-export async function sync(conn: mysql.Connection) {
+import { syncSalesAndDetails } from './sale-sync.service'; // 🧾 ventas
+import { syncClients } from './syncClients';       // 👤 clientes
+
+export async function sync(pool: Pool) {
+    const client = await pool.connect();
     try {
-        const pendings = await ReservationService.getPending(); 
-        if (pendings.length === 0) {
-            logger.log('No hay reservas pendientes para importar', 'Sync');
-            return;
-        }
-        for (const p of pendings) {
-            try {
-                await importReservation(conn, p);
-                logger.log(`Reserva ${p.codigoReserva} importada ✅`);
-            } catch (err: any) {
-                logger.error(`Error en ${p.codigoReserva}: ${err.message}`);
-            }
-        }
-        await migrateDocumentNumbers(conn);
+        logger.log('Iniciando sincronización');
+
+        // 1. Asegurar columnas necesarias para otras tablas (ej: sale_notes)
+        await ensureMigrationColumns(client, config.DB_SYNC ?? '', TableName.SALE_NOTES, MIGRATION_COLUMNS_DOCUMENT);
+
+        // 2. Sincronizar ventas y detalles
+        await syncSalesAndDetails(client);
+
+        // 3. Sincronizar clientes
+        await syncClients(client);
+
+        logger.log('Sincronización completada');
     } catch (prepErr: any) {
-        logger.error(`Error: ${prepErr.message}`);
+        logger.error(`Error general en sync: ${prepErr.message}`);
     } finally {
-        await conn.end();
+        client.release();
     }
 }

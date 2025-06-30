@@ -46,7 +46,7 @@ const updateDocumentState = (
     data: { estadoDocumento },
   });
 
-export const ReservationDatasource = {
+export const atasource = {
   listPendingReservations,
   confirmReservationMigration,
   addBankDocNumber,

@@ -1,20 +1,24 @@
-import mysql from 'mysql2/promise';
+import { Pool } from 'pg';
 import { config } from './env';
 import { logger } from '../logger';
 
-const COMMON_OPTIONS: mysql.PoolOptions = {
+const pool = new Pool({
     host: config.DB_HOST,
-    port: config.DB_PORT,
+    port: Number(config.DB_PORT),
     user: config.DB_USER,
     password: config.DB_PASSWORD,
-};
-export async function createDatabaseConnection() {
-    const conexion = await mysql.createConnection({
-        ...COMMON_OPTIONS,
-        database: config.DB_SYNC,
-    });
-    if (conexion) {
-       logger.log(`Conexión a la base de datos ${config.DB_SYNC} establecida correctamente`);
+    database: config.DB_PRINCIPAL_DATABASE, // ✅ Usa el nombre correcto de la base de datos
+});
+
+
+export async function createDatabaseConnection(): Promise<Pool> {
+    try {
+        const client = await pool.connect();
+        logger.log(`Conexión a la base de datos ${config.DB_SYNC} establecida correctamente`);
+        client.release();
+        return pool;
+    } catch (error) {
+        logger.error('Error al conectar con la base de datos', String(error));
+        throw error;
     }
-    return conexion;
 }
