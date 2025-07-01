@@ -1,28 +1,21 @@
-// src/services/sync.service.ts
-
 import { Pool } from 'pg';
-import { ensureMigrationColumns } from './database-service';
-import { config } from '../config/env';
-import { TableName } from '../config/table-names';
-import { MIGRATION_COLUMNS_DOCUMENT } from '../config/columns';
-import { logger } from '../logger';
+// import { syncSalesAndDetails } from './sale-sync.service';
+// import { syncClients } from './syncClients';
+import { syncCashRegisters } from './syncCashRegisters';
+import { LoggerService } from '../logger/logger.service';
 
-import { syncSalesAndDetails } from './sale-sync.service'; // 🧾 ventas
-import { syncClients } from './syncClients';       // 👤 clientes
+const logger = new LoggerService();
 
 export async function sync(pool: Pool) {
     const client = await pool.connect();
     try {
         logger.log('Iniciando sincronización');
 
-        // 1. Asegurar columnas necesarias para otras tablas (ej: sale_notes)
-        await ensureMigrationColumns(client, config.DB_SYNC ?? '', TableName.SALE_NOTES, MIGRATION_COLUMNS_DOCUMENT);
+        // 🔕 No sincronizar ventas ni clientes por ahora
+        // await syncSalesAndDetails(client);
+        // await syncClients(client);
 
-        // 2. Sincronizar ventas y detalles
-        await syncSalesAndDetails(client);
-
-        // 3. Sincronizar clientes
-        await syncClients(client);
+        await syncCashRegisters(client);
 
         logger.log('Sincronización completada');
     } catch (prepErr: any) {
@@ -31,3 +24,4 @@ export async function sync(pool: Pool) {
         client.release();
     }
 }
+

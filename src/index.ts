@@ -17,9 +17,9 @@ import { MIGRATION_COLUMNS_DOCUMENT } from './config/columns';
 
         const runSync = async () => {
             try {
-                logger.log('Iniciando sincronización', 'Sync');
+
                 await sync(pool); // 👈 aquí sí puedes pasar el pool completo si lo usa así internamente
-                logger.log('Sincronización completada', 'Sync');
+
             } catch (err: any) {
                 logger.error(`❌ Error general: ${err.message}`, err.stack, 'Sync');
             }
