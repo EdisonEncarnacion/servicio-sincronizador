@@ -2,6 +2,7 @@ import { Pool } from 'pg';
 // import { syncSalesAndDetails } from './sale-sync.service';
 // import { syncClients } from './syncClients';
 import { syncCashRegisters } from './syncCashRegisters';
+import { syncDeposits } from './syncDeposits'; // ✅ Importar nuevo servicio
 import { LoggerService } from '../logger/logger.service';
 
 const logger = new LoggerService();
@@ -15,7 +16,8 @@ export async function sync(pool: Pool) {
         // await syncSalesAndDetails(client);
         // await syncClients(client);
 
-        await syncCashRegisters(client);
+        await syncCashRegisters(client);  // ✅ Ya existente
+        await syncDeposits(client);       // ✅ Nuevo agregado
 
         logger.log('Sincronización completada');
     } catch (prepErr: any) {
@@ -24,4 +26,3 @@ export async function sync(pool: Pool) {
         client.release();
     }
 }
-

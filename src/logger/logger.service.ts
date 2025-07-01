@@ -21,3 +21,6 @@ export class LoggerService implements ILoggerService {
         this.logger.debug(message, { context });
     }
 }
+
+export const logger = new LoggerService(); // ✅ Instancia global reutilizable
+
