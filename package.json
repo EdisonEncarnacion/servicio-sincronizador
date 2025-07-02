@@ -6,8 +6,9 @@
   "scripts": {
     "start:dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only ./src/index.ts",
     "start:prod": "cross-env NODE_ENV=production ts-node-dev --respawn --transpile-only ./src/index.ts",
+    "start": "node dist/index.js",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "build:sync": "tsc -p tsconfig.sync.json"
   },
   "keywords": [],
   "author": "",
