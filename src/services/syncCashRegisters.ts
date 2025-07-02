@@ -47,10 +47,10 @@ export async function syncCashRegisters(client: PoolClient) {
                     register.id_cash_register,
                 ]);
             } catch (err: any) {
-                logger.error(`❌ Error al sincronizar caja ${register.id_cash_register}: ${err.message}`);
+                logger.error(`Error al sincronizar caja ${register.id_cash_register}: ${err.message}`);
             }
         }
     } catch (err: any) {
-        logger.error(`❌ Error general en syncCashRegisters: ${err.message}`);
+        logger.error(`Error general en syncCashRegisters: ${err.message}`);
     }
 }

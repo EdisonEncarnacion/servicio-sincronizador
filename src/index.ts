@@ -26,10 +26,10 @@ import { MIGRATION_COLUMNS_DOCUMENT } from './config/columns';
         };
 
         if (config.NODE_ENV === 'development') {
-            logger.warn('Modo development');
             await runSync();
             process.exit(0);
         }
+        
 
         if (config.NODE_ENV !== 'development') {
             let isRunning = false;

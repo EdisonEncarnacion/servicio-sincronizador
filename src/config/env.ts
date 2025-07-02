@@ -1,10 +1,6 @@
 import dotenv from 'dotenv';
-import path from 'path';
 
-// Carga variables del archivo .env.development
-dotenv.config({
-  path: path.resolve(__dirname, '../../.env.development'),
-});
+dotenv.config(); // ← carga automáticamente .env desde la raíz
 
 export const config = {
   DB_HOST: process.env.DB_HOST ?? '',
@@ -16,5 +12,5 @@ export const config = {
   PROJECT_BASE_PATH: process.env.PROJECT_BASE_PATH ?? '',
   EXTERNAL_API_URL: process.env.EXTERNAL_API_URL ?? 'http://localhost:3000',
   SYNC_INTERVAL_CRON: process.env.SYNC_INTERVAL_CRON ?? '*/5 * * * *',
-  NODE_ENV: process.env.NODE_ENV ?? 'development', // ✅ AÑADIDO AQUÍ
+  NODE_ENV: process.env.NODE_ENV ?? 'development',
 };
