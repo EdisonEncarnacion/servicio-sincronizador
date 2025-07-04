@@ -7,16 +7,16 @@ import { transformSaleToBackoffice } from '../utils/transformSale';
 
 export async function syncSalesAndDetails(client: PoolClient) {
     try {
-        logger.log('🔄 Buscando ventas nuevas para sincronizar');
+        logger.log('Buscando ventas nuevas para sincronizar');
 
-        // Consulta solo las ventas que aún no están en sales_synced
+
         const { rows: sales } = await client.query(`
             SELECT * FROM sale 
             WHERE id_sale NOT IN (SELECT id_sale FROM sales_synced)
         `);
 
         for (const sale of sales) {
-            // 🔍 Solo procesar la venta con document_number 'BA1000000001'
+
 
 
             const { rows: details } = await client.query(
@@ -25,7 +25,7 @@ export async function syncSalesAndDetails(client: PoolClient) {
             );
 
             const transformed = transformSaleToBackoffice(sale, details);
-            logger.log(`📦 Datos transformados de venta ID: ${sale.id_sale}`);
+            logger.log(`Datos transformados de venta ID: ${sale.id_sale}`);
             console.dir(transformed, { depth: null });
 
             try {
@@ -36,10 +36,10 @@ export async function syncSalesAndDetails(client: PoolClient) {
                     [sale.id_sale]
                 );
 
-                logger.log(`✅ Venta ${sale.id_sale} sincronizada`);
+                logger.log(`Venta ${sale.id_sale} sincronizada`);
             } catch (apiError: any) {
                 const errorMessage = apiError.response?.data || apiError.message || apiError;
-                logger.error(`❌ Error al enviar venta ${sale.id_sale}: ${JSON.stringify(errorMessage)}`);
+                logger.error(`Error al enviar venta ${sale.id_sale}: ${JSON.stringify(errorMessage)}`);
             }
         }
     } catch (err: any) {

@@ -8,18 +8,19 @@ export async function syncDeposits(client: PoolClient) {
   const res = await client.query(`
     SELECT * FROM deposit WHERE sincronizado IS DISTINCT FROM TRUE
   `);
-  for (const row of res.rows) {
+  for (const row of res.rows) { 
     const body = {
-      date_process: row.date_process,
-      id_cash_register: Number(row.id_cash_register),
-      total_amount: Number(row.total_amount),
-      deposit_number: row.deposit_number,
-      id_currency: Number(row.id_currency),
-      state: Number(row.state),
-      created_at: row.created_at,
-      updated_at: row.updated_at,
-      code_deposit_type: row.code_deposit_type,
-    };
+        date_process: row.date_process,
+        id_cash_register: Number(row.id_cash_register),
+        total_amount: Number(row.total_amount),
+        deposit_number: row.deposit_number,
+        id_currency: Number(row.id_currency),
+        state: Number(row.state),
+        created_at: row.created_at,
+        updated_at: row.updated_at ? new Date(row.updated_at).toISOString() : new Date().toISOString(),
+        code_deposit_type: row.code_deposit_type,
+      };
+      
   
     try {
       logger.debug(`Depósito a enviar: ${JSON.stringify(row)}`, 'syncDeposits');

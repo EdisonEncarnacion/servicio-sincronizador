@@ -16,7 +16,7 @@ export async function syncClients(client: PoolClient) {
             const mappedId = mapClients[clientRow.id_client];
 
             if (!mappedId) {
-                logger.error(`❌ Cliente con id_client = ${clientRow.id_client} no tiene UUID mapeado`);
+                logger.error(`Cliente con id_client = ${clientRow.id_client} no tiene UUID mapeado`);
                 continue;
             }
 
@@ -29,10 +29,10 @@ export async function syncClients(client: PoolClient) {
                 logger.log(`✅ Cliente ${clientRow.id_client} sincronizado como UUID ${mappedId}`);
             } catch (apiError: any) {
                 const errorMessage = apiError.response?.data || apiError.message || apiError;
-                logger.error(`❌ Error al sincronizar cliente ${clientRow.id_client}: ${JSON.stringify(errorMessage)}`);
+                logger.error(`Error al sincronizar cliente ${clientRow.id_client}: ${JSON.stringify(errorMessage)}`);
             }
         }
     } catch (err: any) {
-        logger.error(`❌ Error en syncClients: ${err.message}`);
+        logger.error(`Error en syncClients: ${err.message}`);
     }
 }

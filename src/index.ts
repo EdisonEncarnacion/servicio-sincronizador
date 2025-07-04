@@ -8,60 +8,50 @@ import { TableName } from './config/table-names';
 import { MIGRATION_COLUMNS_DOCUMENT } from './config/columns';
 
 (async () => {
-    const pool = await createDatabaseConnection();
-    const client = await pool.connect(); // 👈 obtener PoolClient
+  const pool = await createDatabaseConnection();
+  const client = await pool.connect();
 
-    try {
-        await ensureMigrationColumns(client, 'public', TableName.SALE_NOTES, MIGRATION_COLUMNS_DOCUMENT);
-        client.release(); // 👈 libéralo aquí
+  try {
+    await ensureMigrationColumns(client, 'public', TableName.SALE_NOTES, MIGRATION_COLUMNS_DOCUMENT);
+    client.release();
 
-        const runSync = async () => {
-            try {
+    const runSync = async () => {
+      try {
+        logger.log('⏱ Ejecutando sincronización...');
+        await sync(pool);
+      } catch (err: any) {
+        logger.error(`❌ Error general: ${err.message}`, err.stack, 'Sync');
+      }
+    };
 
-                await sync(pool); // 👈 aquí sí puedes pasar el pool completo si lo usa así internamente
+    // Siempre usar cron, incluso en desarrollo
+    const cronExpression = '*/30 * * * * *'; // cada 30 segundos
 
-            } catch (err: any) {
-                logger.error(`❌ Error general: ${err.message}`, err.stack, 'Sync');
-            }
-        };
+    let isRunning = false;
 
-        if (config.NODE_ENV === 'development') {
-            await runSync();
-            process.exit(0);
+    const job = new CronJob(
+      cronExpression,
+      async () => {
+        if (isRunning) {
+          logger.warn('⚠️ Sincronización anterior aún en curso, se omite esta ejecución.', 'Cron');
+          return;
         }
-        
+        isRunning = true;
+        await runSync();
+        isRunning = false;
+      },
+      null,
+      true,
+      'America/Lima',
+    );
 
-        if (config.NODE_ENV !== 'development') {
-            let isRunning = false;
-            const job = new CronJob(
-                config.SYNC_INTERVAL_CRON,
-                async () => {
-                    if (isRunning) {
-                        logger.warn('Sync anterior aún en curso, salto ciclo', 'Cron');
-                        return;
-                    }
-                    isRunning = true;
-                    await runSync();
-                    isRunning = false;
-                },
-                null,
-                true,
-                'America/Lima',
-            );
-
-            logger.log(
-                `Job programado (${config.SYNC_INTERVAL_CRON}) - zona America/Lima`,
-                'Bootstrap',
-            );
-        }
-
-    } catch (err: unknown) {
-        client.release(); // 👈 libéralo también en error
-        if (err instanceof Error) {
-            logger.error(`❌ Error al inicializar: ${err.message}`, err.stack, 'Bootstrap');
-        } else {
-            logger.error('❌ Error desconocido al inicializar', undefined, 'Bootstrap');
-        }
+    logger.log(`🗓 Job programado para cada 30 segundos (cron: ${cronExpression}) [Zona: America/Lima]`, 'Bootstrap');
+  } catch (err: unknown) {
+    client.release();
+    if (err instanceof Error) {
+      logger.error(`❌ Error al inicializar: ${err.message}`, err.stack, 'Bootstrap');
+    } else {
+      logger.error('❌ Error desconocido al inicializar', undefined, 'Bootstrap');
     }
-
+  }
 })();
