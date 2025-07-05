@@ -12,18 +12,19 @@ interface LocalCashRegister {
   id_local: number;
   id_work_shift: number;
   id_serie: number;
-  migrated?: boolean;
-  needs_update?: boolean;
+  synced_at?: Date;
 }
 
 export async function syncCashRegisters(client: PoolClient) {
-  logger.log('Buscando cajas nuevas o actualizadas para sincronizar');
+  logger.log(' Buscando cajas nuevas o modificadas para sincronizar (usando synced_at)');
 
   try {
     const { rows: cashRegisters } = await client.query<LocalCashRegister>(`
-      SELECT * FROM cash_register 
-      WHERE migrated IS DISTINCT FROM true 
-         OR needs_update IS TRUE
+      SELECT * FROM cash_register
+      WHERE synced_at IS NULL
+         OR register_date > synced_at
+         OR opennig_date > synced_at
+         OR last_closing_date > synced_at
     `);
 
     if (cashRegisters.length === 0) {
@@ -45,9 +46,8 @@ export async function syncCashRegisters(client: PoolClient) {
       };
 
       try {
-        logger.log(`Enviando caja con ID ${register.id_cash_register} al servidor`);
-
-        logger.log(`📤 Payload enviado:\n${JSON.stringify(payload, null, 2)}`);
+        logger.log(`📤 Enviando caja con ID ${register.id_cash_register} al servidor`);
+        logger.log(`📦 Payload enviado:\n${JSON.stringify(payload, null, 2)}`);
 
         await axios.post('http://localhost:3000/cash-registers', payload);
 
@@ -56,37 +56,36 @@ export async function syncCashRegisters(client: PoolClient) {
         const status = err.response?.status;
 
         if (status === 400 || status === 409) {
-          logger.warn(`Caja ${register.id_cash_register} ya existe. Se intentará actualizar estado`);
+          logger.warn(`⚠️ Caja ${register.id_cash_register} ya existe. Se intentará actualizar estado`);
 
           try {
             await axios.patch(`http://localhost:3000/cash-registers/${register.id_cash_register}`, {
               id_state: register.id_state,
             });
 
-            logger.log(`Caja ${register.id_cash_register} actualizada correctamente (estado cambiado)`);
-
+            logger.log(`🔄 Caja ${register.id_cash_register} actualizada correctamente (estado cambiado)`);
           } catch (patchErr: any) {
             logger.error(`❌ Error al hacer PATCH para la caja ${register.id_cash_register}: ${patchErr.message}`);
-            continue; 
+            continue;
           }
         } else {
           logger.error(`❌ Error al hacer POST para la caja ${register.id_cash_register}: ${err.message}`);
           if (err.response) {
-            logger.error(`Respuesta del servidor: ${JSON.stringify(err.response.data)}`);
+            logger.error(`📨 Respuesta del servidor: ${JSON.stringify(err.response.data)}`);
           }
-          continue; 
+          continue;
         }
       }
 
+      // ✅ Marcar la caja como sincronizada
       await client.query(
         `UPDATE cash_register 
-         SET migrated = true, needs_update = false 
+         SET synced_at = NOW() 
          WHERE id_cash_register = $1`,
         [register.id_cash_register]
       );
     }
-
   } catch (err: any) {
-    logger.error(`Error general en la sincronización de cajas: ${err.message}`);
+    logger.error(`❌ Error general en la sincronización de cajas: ${err.message}`);
   }
 }
