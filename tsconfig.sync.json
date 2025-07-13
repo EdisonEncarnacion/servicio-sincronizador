@@ -10,10 +10,12 @@
         "skipLibCheck": true
     },
     "include": [
-        "src/index.ts",
-        "src/sync/syncCashRegisters.ts",
-        "src/sync/syncDeposits.ts",
-        "src/services/sync.service.ts",
-        "src/logger/**/*"
-    ]
+  "src/index.ts",
+  "src/logger/**/*",
+  "src/services/**/*",
+  "src/sync/**/*",
+  "src/controllers/**/*",
+  "src/entities/**/*"
+]
+
 }

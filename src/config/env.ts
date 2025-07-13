@@ -1,6 +1,13 @@
+import path from 'path';
 import dotenv from 'dotenv';
 
-dotenv.config(); // ← carga automáticamente .env desde la raíz
+// ✅ Carga el archivo .env desde la raíz del proyecto, sin importar desde dónde ejecutes
+dotenv.config({
+  path: path.resolve(__dirname, '../../.env'),
+});
+
+// ✅ Solo para depurar: imprime el valor de DB_PASSWORD
+console.log('📦 DB_PASSWORD =', process.env.DB_PASSWORD);
 
 export const config = {
   DB_HOST: process.env.DB_HOST ?? '',
@@ -13,4 +20,8 @@ export const config = {
   EXTERNAL_API_URL: process.env.EXTERNAL_API_URL ?? 'http://localhost:3000',
   SYNC_INTERVAL_CRON: process.env.SYNC_INTERVAL_CRON ?? '*/5 * * * *',
   NODE_ENV: process.env.NODE_ENV ?? 'development',
+
+  DOCUMENT_SERIE: process.env.DOCUMENT_SERIE ?? '',
+  SYNC_API_KEY: process.env.SYNC_API_KEY ?? '',
 };
+
