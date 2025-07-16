@@ -1,8 +1,10 @@
 import { Pool } from 'pg';
 import { syncCashRegisters } from './syncCashRegisters';
-import { syncDeposits } from './syncDeposits'; 
+import { syncDeposits } from './syncDeposits';
 import { syncSales } from './syncSales';
-import { syncUsers } from './syncUsers'; // 👈 agrega esto si aún no lo tienes
+import { syncUsers } from './syncUsers';
+import { syncSide } from './syncSide'; // 👈 agregado
+
 import { LoggerService } from '../logger/logger.service';
 
 const logger = new LoggerService();
@@ -17,10 +19,11 @@ export async function sync(pool: Pool, context: SyncContext) {
   try {
     logger.log('Iniciando sincronización');
 
-    await syncCashRegisters(client);  
-    await syncDeposits(client);     
-    await syncSales(client); 
-    await syncUsers(client, context); // 👈 aquí pasas los IDs para sincronizar usuarios
+    await syncCashRegisters(client);
+    await syncDeposits(client);
+    await syncSales(client);
+    await syncUsers(client, context);
+    await syncSide(client, context); // 👈 llamada añadida aquí
 
     logger.log('Sincronización completada');
   } catch (prepErr: any) {
